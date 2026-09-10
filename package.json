@@ -1,0 +1,10 @@
+{
+  "name": "opencode-artes",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A modular monorepo containing production-ready AI agent skills stored as structured Markdown files.",
+  "license": "MIT",
+  "main": "registry.json",
+  "scripts": {
+    "build": "node scripts/build-registry.js",
+    "test": "node scripts/build-registry.js && echo 'Registry generated successfully!'
