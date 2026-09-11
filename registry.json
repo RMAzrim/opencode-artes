@@ -289,14 +289,114 @@
     "version": "1.0.0",
     "description": "Scaffold interactive command-line interface tools with argument parsing, flags, spinners, and help menus."
   },
-  {
-    "id": "regex-builder-parser",
-    "file_path": "skills/regex-builder-parser.md",
-    "name": "Regex Builder & Parser",
-    "category": "core-coding",
-    "tags": ["regex", "redoS", "parser", "string-extraction", "patterns"],
-    "author": "opencode-core",
-    "version": "1.0.0",
-    "description": "Construct ReDoS-safe regular expressions and string parser logic for complex input string extraction."
-  }
+{
+  "id": "regex-builder-parser",
+  "file_path": "skills/regex-builder-parser.md",
+  "name": "Regex Builder & Parser",
+  "category": "core-coding",
+  "tags": ["regex", "redoS", "parser", "string-extraction", "patterns"],
+  "author": "opencode-core",
+  "version": "1.0.0",
+  "description": "Construct ReDoS-safe regular expressions and string parser logic for complex input string extraction."
+},
+{
+  "id": "cmd-sanitizer",
+  "file_path": "skills/cmd-sanitizer.md",
+  "name": "Cmd Sanitizer",
+  "category": "core-engine-hardening",
+  "tags": ["powershell", "windows", "exit-status", "utf-16", "command-chaining", "silent-errors"],
+  "author": "opencode-core",
+  "version": "1.5.0",
+  "description": "Static linter over command strings before execution. Detects and rewrites unsafe Win32/PowerShell 5.1 patterns: bare && chaining, unquoted spaced paths, $? vs $LASTEXITCODE confusion, UTF-16 pipe corruption, and timeout-kill indeterminacy. Emits sanitized command + guard boilerplate."
+},
+{
+  "id": "verify-orchestrator",
+  "file_path": "skills/verify-orchestrator.md",
+  "name": "Verify Orchestrator",
+  "category": "core-engine-hardening",
+  "tags": ["verification", "test-suite", "lint", "typecheck", "auto-discovery", "evidence-gate"],
+  "author": "opencode-core",
+  "version": "1.5.0",
+  "description": "Auto-discovers project verification surface (test/lint/typecheck configs), runs the minimal verification suite, and gates every completion claim on machine-parsed exit codes and assertion output. Returns UNVERIFIED rather than silent on discovery failure."
+},
+{
+  "id": "context-bank",
+  "file_path": "skills/context-bank.md",
+  "name": "Context Bank",
+  "category": "core-engine-hardening",
+  "tags": ["context-window", "token-management", "memory", "grounding", "decision-log"],
+  "author": "opencode-core",
+  "version": "1.5.0",
+  "description": "Materializes a structured CONTEXT_BANK.md + JSON file that captures verified file paths, decided invariants, active TODOs, and open risks, allowing subagents and repeated sessions to reload a lean current snapshot instead of decaying transcript memory."
+},
+{
+  "id": "deptomap",
+  "file_path": "skills/deptomap.md",
+  "name": "Dep Map",
+  "category": "core-engine-hardening",
+  "tags": ["dependency-graph", "import-mapping", "ripple-effect", "blast-radius", "symbol-consumer"],
+  "author": "opencode-core",
+  "version": "1.5.0",
+  "description": "Builds a persistent dependency graph (`dep-graph.json`) by scanning `import`/`require`/`include` patterns across the codebase. Before any edit it lists the blast radius of consumers for the target symbol; after the edit it re-verifies no orphaned references exist."
+},
+{
+  "id": "spec-loop-closer",
+  "file_path": "skills/spec-loop-closer.md",
+  "name": "Spec Loop Closer",
+  "category": "core-engine-hardening",
+  "tags": ["requirement-closure", "assertion-mapping", "gigo-prevention", "checkable-assertions"],
+  "author": "opencode-core",
+  "version": "1.5.0",
+  "description": "Forces every user requirement through a 1:1 mapping to a checkable assertion (grep-able token, executable test, or numeric threshold) before implementation begins. Blocks \"done\" until each assertion has a machine-runnable check."
+},
+{
+  "id": "regression-sentinel",
+  "file_path": "skills/regression-sentinel.md",
+  "name": "Regression Sentinel",
+  "category": "core-engine-hardening",
+  "tags": ["smoke-test", "regression-detection", "checkpoint", "long-horizon", "guard-rail"],
+  "author": "opencode-core",
+  "version": "1.5.0",
+  "description": "Before each new task in a long session, re-runs the last N passing checkpoints captured by verify-orchestrator as a smoke suite, catching regressions caused by recent edits before they compound."
+},
+{
+  "id": "memory-journal",
+  "file_path": "skills/memory-journal.md",
+  "name": "Memory Journal",
+  "category": "core-engine-hardening",
+  "tags": ["cross-session-memory", "decision-log", "session-diff", "persistent-state", "rationale-preservation"],
+  "author": "opencode-core",
+  "version": "1.5.0",
+  "description": "Cross-session ledger at `~/.opencode/memory/*.md`: appends decisions/rejections/root-causes during a session; on session start, diffs against the live transcript so the agent stops re-litigating settled decisions."
+},
+{
+  "id": "output-trust-check",
+  "file_path": "skills/output-trust-check.md",
+  "name": "Output Trust Check",
+  "category": "core-engine-hardening",
+  "tags": ["trust-but-verify", "truncation", "encoding", "faithfulness", "output-parsing"],
+  "author": "opencode-core",
+  "version": "1.5.0",
+  "description": "Wraps every truncating tool call: when output is truncated/byte-capped, refuses to decide on the truncated portion and automatically requests the tail window or a targeted grep. Flags encoding anomalies (UTF-16 NULs, BOMs) as suspect."
+},
+{
+  "id": "subagent-evidence",
+  "file_path": "skills/subagent-evidence.md",
+  "name": "Subagent Evidence",
+  "category": "core-engine-hardening",
+  "tags": ["subagent-compression", "evidence-citation", "inference-tagging", "citation-verification", "lossy-audit"],
+  "author": "opencode-core",
+  "version": "1.5.0",
+  "description": "Dispatch-time contract for explore agents: return only observations each with a `file:line` citation and raw excerpt; inference must be explicitly tagged `[INFERRED]`. Post-dispatch, I sample-cite — verify ≥2 citations per summary myself before trusting conclusions."
+},
+{
+  "id": "schema-sync",
+  "file_path": "skills/schema-sync.md",
+  "name": "Schema Sync",
+  "category": "core-engine-hardening",
+  "tags": ["api-schema", "integration-drift", "schema-diff", "toolkit-sync", "live-validation"],
+  "author": "opencode-core",
+  "version": "1.5.0",
+  "description": "Before multi-step toolkit workflows, pings the live tool (via schema-style endpoints / search tools) and diffs against my cached schema; on mismatch, rewrites the workflow plan, never the cached assumptions silently."
+}
 ]
