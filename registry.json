@@ -398,5 +398,35 @@
   "author": "opencode-core",
   "version": "1.5.0",
   "description": "Before multi-step toolkit workflows, pings the live tool (via schema-style endpoints / search tools) and diffs against my cached schema; on mismatch, rewrites the workflow plan, never the cached assumptions silently."
+},
+{
+  "id": "mega-pipeline-deployer",
+  "file_path": "skills/mega-pipeline-deployer.md",
+  "name": "Mega Pipeline Deployer",
+  "category": "orchestrator",
+  "tags": ["orchestrator", "workflow", "automation", "multi-skill", "pipeline", "selective"],
+  "author": "opencode-core",
+  "version": "1.0.0",
+  "description": "Flexible orchestration engine that executes pipeline workflows in Full Mode (all 7 steps sequentially) or Selective Mode (user-specified step subset). Performs data contracting and validation between active steps, skips inactive steps gracefully without breaking the chain, and halts execution with exact error logging when an active step fails."
+},
+{
+  "id": "project-auto-builder",
+  "file_path": "skills/project-auto-builder.md",
+  "name": "Project Auto Builder",
+  "category": "orchestrator",
+  "tags": ["orchestrator", "workflow", "automation", "multi-skill", "registry", "dynamic"],
+  "author": "opencode-core",
+  "version": "1.0.0",
+  "description": "Dynamic orchestrator that inspects ./registry.json, analyzes the project workspace stack (Node.js, Python, Docker, etc.), automatically matches and orders optimal skills into an execution sequence, runs the selected skills, and generates a final readiness summary report."
+},
+{
+  "id": "looping-auto-fixer",
+  "file_path": "skills/looping-auto-fixer.md",
+  "name": "Looping Auto Fixer",
+  "category": "orchestrator",
+  "tags": ["orchestrator", "workflow", "automation", "multi-skill", "feedback-loop", "debugging"],
+  "author": "opencode-core",
+  "version": "1.0.0",
+  "description": "Iterative fixer that runs unit-test-generator → validates via skill-tester → if tests fail, feeds error logs to memory-leak-debugger or patches code → repeats up to 3 retry iterations → exits on SUCCESS or halts on FAILED_AFTER_MAX_RETRIES."
 }
 ]
