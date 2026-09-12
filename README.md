@@ -96,7 +96,7 @@ Canonical skill files live at `skills/<skill-id>/<skill-id>.md` (with the full Y
 Every skill below is loadable via its folder-derived ID as a slash command
 (`/<id>`), discoverable by natural language through its `description`, and has a
 complete production reference implementation inside its document. Header row
-per category shows the category-wide skill count for the current `main` branch.
+per category shows the category-wide skill count for the **v2.5.0** release.
 
 | Skill ID | Display name | What it does (description) |
 |---|---|---|
