@@ -3,10 +3,10 @@ id: k8s-manifest-validator
 file_path: skills/k8s-manifest-validator/k8s-manifest-validator.md
 name: K8s Manifest Validator
 category: cloud
-tags: ["terraform", "iac", "cloud", "infrastructure", "modules"]
+tags: ["kubernetes", "k8s", "manifest", "validation", "yaml", "kubectl"]
 author: opencode-core
 version: 1.0.0
-description: Draft modular, reusable Infrastructure-as-Code Terraform modules for cloud infrastructure.
+description: Validate and lint Kubernetes manifest files (YAML/JSON) against required fields, resource constraints, and best practices, with an optional kubectl dry-run schema check.
 ---
 # K8s Manifest Validator
 
