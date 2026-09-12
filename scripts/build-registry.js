@@ -2,7 +2,7 @@
 /**
  * build-registry.js
  * 
- * Recursively scans ./skills/*/*.md directories and extracts frontmatter
+ * Recursively scans the skills directory and extracts frontmatter
  * to generate registry.json with all registered skills.
  */
 

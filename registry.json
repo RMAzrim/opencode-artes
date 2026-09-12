@@ -1,582 +1,714 @@
 [
   {
     "id": "accessibility-auditor",
-    "file_path": "skills/accessibility-auditor/accessibility-auditor.md",
-    "name": "Accessibility Auditor",
-    "category": "frontend",
-    "tags": "[accessibility, wcag, aria, html, jsx]",
+    "file_path": "..\\skills\\accessibility-auditor\\accessibility-auditor.md",
+    "name": "accessibility-auditor",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Audit HTML/JSX code against WCAG 2.1 guidelines and provide accessible ARIA code fixes."
+    "description": ""
   },
   {
     "id": "async-concurrency-handler",
-    "file_path": "skills/async-concurrency-handler/async-concurrency-handler.md",
-    "name": "Async Concurrency Handler",
-    "category": "core-coding",
-    "tags": "[async, concurrency, promises, worker-threads, goroutines]",
+    "file_path": "..\\skills\\async-concurrency-handler\\async-concurrency-handler.md",
+    "name": "async-concurrency-handler",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Implement async/await workflows, promise pools, worker threads, or goroutines while preventing race conditions."
+    "description": ""
   },
   {
     "id": "caching-strategy-implementer",
-    "file_path": "skills/caching-strategy-implementer/caching-strategy-implementer.md",
-    "name": "Caching Strategy Implementer",
-    "category": "backend",
-    "tags": "[caching, redis, cache-aside, write-through, lru]",
+    "file_path": "..\\skills\\caching-strategy-implementer\\caching-strategy-implementer.md",
+    "name": "caching-strategy-implementer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Implement Cache-Aside, Write-Through, and TTL-based caching logic using Redis or in-memory LRU caches."
+    "description": ""
   },
   {
     "id": "changelog-generator",
-    "file_path": "skills/changelog-generator/changelog-generator.md",
-    "name": "Changelog Generator",
-    "category": "developer-experience",
-    "tags": "[changelog, conventional-commits, semver, git-cliff, release-notes]",
+    "file_path": "..\\skills\\changelog-generator\\changelog-generator.md",
+    "name": "changelog-generator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Parse Git commit logs to generate a CHANGELOG.md adhering to Conventional Commits."
+    "description": ""
   },
   {
     "id": "chart-config-generator",
-    "file_path": "skills/chart-config-generator/chart-config-generator.md",
-    "name": "Chart Config Generator",
-    "category": "data-science",
-    "tags": "[chartjs, recharts, echarts, json, visualization]",
+    "file_path": "..\\skills\\chart-config-generator\\chart-config-generator.md",
+    "name": "chart-config-generator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Map raw JSON datasets into ready-to-use chart configuration objects (Chart.js, Recharts, or ECharts)."
+    "description": ""
   },
   {
     "id": "cli-tool-scaffolder",
-    "file_path": "skills/cli-tool-scaffolder/cli-tool-scaffolder.md",
-    "name": "CLI Tool Scaffolder",
-    "category": "developer-experience",
-    "tags": "[cli, commander, yargs, spinners, developer-experience]",
+    "file_path": "..\\skills\\cli-tool-scaffolder\\cli-tool-scaffolder.md",
+    "name": "cli-tool-scaffolder",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Scaffold interactive command-line interface tools with argument parsing, flags, spinners, and help menus."
+    "description": ""
   },
   {
     "id": "cmd-sanitizer",
-    "file_path": "skills/cmd-sanitizer/cmd-sanitizer.md",
+    "file_path": "..\\skills\\cmd-sanitizer\\cmd-sanitizer.md",
     "name": "Cmd Sanitizer",
     "category": "core-engine-hardening",
-    "tags": "[\"powershell\", \"windows\", \"exit-status\", \"utf-16\", \"command-chaining\", \"silent-errors\"]",
+    "tags": [
+      "[\"powershell\"",
+      "\"windows\"",
+      "\"exit-status\"",
+      "\"utf-16\"",
+      "\"command-chaining\"",
+      "\"silent-errors\"]"
+    ],
     "author": "opencode-core",
     "version": "1.5.0",
     "description": "Static linter over command strings before execution. Detects and rewrites unsafe Win32/PowerShell 5.1 patterns: bare && chaining, unquoted spaced paths, $? vs $LASTEXITCODE confusion, UTF-16 pipe corruption, and timeout-kill indeterminacy. Emits sanitized command + guard boilerplate."
   },
   {
     "id": "code-translator",
-    "file_path": "skills/code-translator/code-translator.md",
-    "name": "Code Translator",
-    "category": "developer-experience",
-    "tags": "[code-conversion, polyglot, refactoring, behavioral-parity]",
+    "file_path": "..\\skills\\code-translator\\code-translator.md",
+    "name": "code-translator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Precisely convert code logic from one programming language to another."
+    "description": ""
   },
   {
     "id": "context-bank",
-    "file_path": "skills/context-bank/context-bank.md",
-    "name": "Context Bank",
-    "category": "core-engine-hardening",
-    "tags": "[context-window, token-management, memory, grounding, decision-log]",
+    "file_path": "..\\skills\\context-bank\\context-bank.md",
+    "name": "context-bank",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
-    "version": "1.5.0",
-    "description": "Materializes a structured CONTEXT_BANK.md + JSON file that captures verified file paths, decided invariants, active TODOs, and open risks, allowing subagents and repeated sessions to reload a lean current snapshot instead of decaying transcript memory."
+    "version": "1.0.0",
+    "description": ""
   },
   {
     "id": "context-compressor",
-    "file_path": "skills/context-compressor/context-compressor.md",
-    "name": "Context Compressor",
-    "category": "ai-ops",
-    "tags": "[context-window, token-optimization, summarization, conversation-memory]",
+    "file_path": "..\\skills\\context-compressor\\context-compressor.md",
+    "name": "context-compressor",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Compress long conversation histories or documents to save context window token limits."
+    "description": ""
   },
   {
     "id": "cron-schedule-parser",
-    "file_path": "skills/cron-schedule-parser/cron-schedule-parser.md",
+    "file_path": "..\\skills\\cron-schedule-parser\\cron-schedule-parser.md",
     "name": "Cron Schedule Parser",
     "category": "developer-experience",
-    "tags": "[\"cron\", \"scheduling\", \"time-rules\", \"nodejs\", \"python\"]",
+    "tags": [
+      "[\"cron\"",
+      "\"scheduling\"",
+      "\"time-rules\"",
+      "\"nodejs\"",
+      "\"python\"]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Translate natural language time rules into valid 5-part or 6-part Cron schedule expressions."
   },
   {
     "id": "data-structure-optimizer",
-    "file_path": "skills/data-structure-optimizer/data-structure-optimizer.md",
-    "name": "Data Structure Optimizer",
-    "category": "algorithms",
-    "tags": "[algorithms, big-o, data-structures, optimization]",
+    "file_path": "..\\skills\\data-structure-optimizer\\data-structure-optimizer.md",
+    "name": "data-structure-optimizer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Analyze algorithm time/space complexity (Big O) and refactor logic using optimal data structures (Heaps, Tries, Hash Maps)."
+    "description": ""
   },
   {
     "id": "db-migration-generator",
-    "file_path": "skills/db-migration-generator/db-migration-generator.md",
-    "name": "DB Migration Generator",
-    "category": "database",
-    "tags": "[migrations, schema-evolution, prisma, typeorm, alembic]",
+    "file_path": "..\\skills\\db-migration-generator\\db-migration-generator.md",
+    "name": "db-migration-generator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Generate database schema migration scripts (Prisma/TypeORM/Alembic) based on model changes."
+    "description": ""
   },
   {
     "id": "dependency-injection-wire",
-    "file_path": "skills/dependency-injection-wire/dependency-injection-wire.md",
-    "name": "Dependency Injection Wiring",
-    "category": "software-architecture",
-    "tags": "[dependency-injection, ioc, inversion-of-control, typescript]",
+    "file_path": "..\\skills\\dependency-injection-wire\\dependency-injection-wire.md",
+    "name": "dependency-injection-wire",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Decouple code modules using Inversion of Control (IoC) containers and explicit interface abstractions."
+    "description": ""
   },
   {
     "id": "deptomap",
-    "file_path": "skills/deptomap/deptomap.md",
-    "name": "Dep Map",
-    "category": "core-engine-hardening",
-    "tags": "[dependency-graph, import-mapping, ripple-effect, blast-radius, symbol-consumer]",
+    "file_path": "..\\skills\\deptomap\\deptomap.md",
+    "name": "deptomap",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
-    "version": "1.5.0",
-    "description": "Builds a persistent dependency graph (`dep-graph.json`) by scanning `import`/`require`/`include` patterns across the codebase. Before any edit it lists the blast radius of consumers for the target symbol; after the edit it re-verifies no orphaned references exist."
+    "version": "1.0.0",
+    "description": ""
   },
   {
     "id": "design-pattern-implementer",
-    "file_path": "skills/design-pattern-implementer/design-pattern-implementer.md",
-    "name": "Design Pattern Implementer",
-    "category": "software-architecture",
-    "tags": "[object-oriented, design-patterns, refactoring, architecture]",
+    "file_path": "..\\skills\\design-pattern-implementer\\design-pattern-implementer.md",
+    "name": "design-pattern-implementer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Refactor code to apply object-oriented design patterns (Factory, Strategy, Observer, Decorator, Adapter) cleanly."
+    "description": ""
   },
   {
     "id": "dockerfile-builder",
-    "file_path": "skills/dockerfile-builder/dockerfile-builder.md",
-    "name": "Dockerfile Builder",
-    "category": "devops",
-    "tags": "[docker, multi-stage-build, container-security, image-optimization]",
+    "file_path": "..\\skills\\dockerfile-builder\\dockerfile-builder.md",
+    "name": "dockerfile-builder",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Draft efficient, secure, and minimal multi-stage Dockerfiles."
+    "description": ""
   },
   {
     "id": "error-class-hierarchy-builder",
-    "file_path": "skills/error-class-hierarchy-builder/error-class-hierarchy-builder.md",
-    "name": "Error Class Hierarchy Builder",
-    "category": "core-coding",
-    "tags": "[error-handling, custom-exceptions, hierarchy, typescript]",
+    "file_path": "..\\skills\\error-class-hierarchy-builder\\error-class-hierarchy-builder.md",
+    "name": "error-class-hierarchy-builder",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Create domain-specific custom exception classes with standardized error codes, HTTP statuses, and metadata payloads."
+    "description": ""
   },
   {
     "id": "github-actions-generator",
-    "file_path": "skills/github-actions-generator/github-actions-generator.md",
-    "name": "GitHub Actions Generator",
-    "category": "devops",
-    "tags": "[ci-cd, github-actions, automation, testing, deployment]",
+    "file_path": "..\\skills\\github-actions-generator\\github-actions-generator.md",
+    "name": "github-actions-generator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Design automated CI/CD workflows for testing, building, and deployment."
+    "description": ""
   },
   {
     "id": "graphql-schema-designer",
-    "file_path": "skills/graphql-schema-designer/graphql-schema-designer.md",
-    "name": "GraphQL Schema Designer",
-    "category": "api",
-    "tags": "[graphql, schema, type-definitions, resolvers, apollo]",
+    "file_path": "..\\skills\\graphql-schema-designer\\graphql-schema-designer.md",
+    "name": "graphql-schema-designer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Design GraphQL type definitions, query/mutation schemas, and resolver boilerplate code."
+    "description": ""
   },
   {
     "id": "i18n-locale-extractor",
-    "file_path": "skills/i18n-locale-extractor/i18n-locale-extractor.md",
-    "name": "i18n Locale Extractor",
-    "category": "frontend",
-    "tags": "[i18n, localization, json, translation, ui]",
+    "file_path": "..\\skills\\i18n-locale-extractor\\i18n-locale-extractor.md",
+    "name": "i18n-locale-extractor",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Extract hardcoded UI text strings into structured internationalization JSON translation files."
+    "description": ""
   },
   {
     "id": "jwt-token-rotator",
-    "file_path": "skills/jwt-token-rotator/jwt-token-rotator.md",
-    "name": "JWT Token Rotator",
-    "category": "backend",
-    "tags": "[jwt, authentication, token-rotation, security]",
+    "file_path": "..\\skills\\jwt-token-rotator\\jwt-token-rotator.md",
+    "name": "jwt-token-rotator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Implement secure short-lived access token renewal and refresh token rotation with revocation blacklisting."
+    "description": ""
   },
   {
     "id": "k8s-manifest-validator",
-    "file_path": "skills/k8s-manifest-validator/k8s-manifest-validator.md",
+    "file_path": "..\\skills\\k8s-manifest-validator\\k8s-manifest-validator.md",
     "name": "K8s Manifest Validator",
     "category": "cloud",
-    "tags": "[\"terraform\", \"iac\", \"cloud\", \"infrastructure\", \"modules\"]",
+    "tags": [
+      "[\"terraform\"",
+      "\"iac\"",
+      "\"cloud\"",
+      "\"infrastructure\"",
+      "\"modules\"]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Draft modular, reusable Infrastructure-as-Code Terraform modules for cloud infrastructure."
   },
   {
     "id": "looping-auto-fixer",
-    "file_path": "skills/looping-auto-fixer/looping-auto-fixer.md",
-    "name": "Looping Auto Fixer",
-    "category": "orchestrator",
-    "tags": "[orchestrator, workflow, automation, multi-skill, feedback-loop, debugging]",
+    "file_path": "..\\skills\\looping-auto-fixer\\looping-auto-fixer.md",
+    "name": "looping-auto-fixer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Iterative fixer that runs unit-test-generator → validates via skill-tester → if tests fail, feeds error logs to memory-leak-debugger or patches code → repeats up to 3 retry iterations → exits on SUCCESS or halts on FAILED_AFTER_MAX_RETRIES."
+    "description": ""
   },
   {
     "id": "mega-pipeline-deployer",
-    "file_path": "skills/mega-pipeline-deployer/mega-pipeline-deployer.md",
-    "name": "Mega Pipeline Deployer",
-    "category": "orchestrator",
-    "tags": "[orchestrator, workflow, automation, multi-skill, pipeline, selective]",
+    "file_path": "..\\skills\\mega-pipeline-deployer\\mega-pipeline-deployer.md",
+    "name": "mega-pipeline-deployer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Flexible orchestration engine that executes pipeline workflows in Full Mode (all 7 steps sequentially) or Selective Mode (user-specified step subset). Performs data contracting and validation between active steps, skips inactive steps gracefully without breaking the chain, and halts execution with exact error logging when an active step fails."
+    "description": ""
   },
   {
     "id": "memory-journal",
-    "file_path": "skills/memory-journal/memory-journal.md",
-    "name": "Memory Journal",
-    "category": "core-engine-hardening",
-    "tags": "[cross-session-memory, decision-log, session-diff, persistent-state, rationale-preservation]",
+    "file_path": "..\\skills\\memory-journal\\memory-journal.md",
+    "name": "memory-journal",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
-    "version": "1.5.0",
-    "description": "Cross-session ledger at `~/.opencode/memory/*.md`: appends decisions/rejections/root-causes during a session; on session start, diffs against the live transcript so the agent stops re-litigating settled decisions."
+    "version": "1.0.0",
+    "description": ""
   },
   {
     "id": "memory-leak-debugger",
-    "file_path": "skills/memory-leak-debugger/memory-leak-debugger.md",
-    "name": "Memory Leak Debugger",
-    "category": "debugging",
-    "tags": "[memory-leak, debugging, garbage-collection, event-listeners]",
+    "file_path": "..\\skills\\memory-leak-debugger\\memory-leak-debugger.md",
+    "name": "memory-leak-debugger",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Identify and resolve unmanaged memory leaks, event listener leaks, and circular references across runtimes."
+    "description": ""
   },
   {
     "id": "mermaid-diagrammer",
-    "file_path": "skills/mermaid-diagrammer/mermaid-diagrammer.md",
-    "name": "Mermaid Diagrammer",
-    "category": "developer-experience",
-    "tags": "[mermaid, diagrams, documentation, visualisation, code-to-diagram]",
+    "file_path": "..\\skills\\mermaid-diagrammer\\mermaid-diagrammer.md",
+    "name": "mermaid-diagrammer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Convert code logic, database structures, or system architectures into valid Mermaid.js visual diagrams."
+    "description": ""
   },
   {
     "id": "openapi-spec-writer",
-    "file_path": "skills/openapi-spec-writer/openapi-spec-writer.md",
-    "name": "OpenAPI Spec Writer",
-    "category": "developer-experience",
-    "tags": "[openapi, swagger, api-docs, rest, documentation]",
+    "file_path": "..\\skills\\openapi-spec-writer\\openapi-spec-writer.md",
+    "name": "openapi-spec-writer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Extract backend API code into OpenAPI/Swagger 3.0 documentation."
+    "description": ""
   },
   {
     "id": "output-trust-check",
-    "file_path": "skills/output-trust-check/output-trust-check.md",
-    "name": "Output Trust Check",
-    "category": "core-engine-hardening",
-    "tags": "[trust-but-verify, truncation, encoding, faithfulness, output-parsing]",
+    "file_path": "..\\skills\\output-trust-check\\output-trust-check.md",
+    "name": "output-trust-check",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
-    "version": "1.5.0",
-    "description": "Wraps every truncating tool call: when output is truncated/byte-capped, refuses to decide on the truncated portion and automatically requests the tail window or a targeted grep. Flags encoding anomalies (UTF-16 NULs, BOMs) as suspect."
+    "version": "1.0.0",
+    "description": ""
   },
   {
     "id": "owasp-vulnerability-checker",
-    "file_path": "skills/owasp-vulnerability-checker/owasp-vulnerability-checker.md",
-    "name": "OWASP Vulnerability Checker",
-    "category": "security",
-    "tags": "[owasp-top-10, api-security, xss, sql-injection, csrf]",
+    "file_path": "..\\skills\\owasp-vulnerability-checker\\owasp-vulnerability-checker.md",
+    "name": "owasp-vulnerability-checker",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Audit API endpoints for common security vulnerabilities (XSS, SQLi, CSRF)."
+    "description": ""
   },
   {
     "id": "pagination-cursor-builder",
-    "file_path": "skills/pagination-cursor-builder/pagination-cursor-builder.md",
-    "name": "Pagination Cursor Builder",
-    "category": "backend",
-    "tags": "[pagination, cursor, keyset, database, api]",
+    "file_path": "..\\skills\\pagination-cursor-builder\\pagination-cursor-builder.md",
+    "name": "pagination-cursor-builder",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Build cursor-based and keyset pagination handlers for database queries and API endpoints."
+    "description": ""
   },
   {
     "id": "pandas-data-cleaner",
-    "file_path": "skills/pandas-data-cleaner/pandas-data-cleaner.md",
-    "name": "Pandas Data Cleaner",
-    "category": "data-science",
-    "tags": "[pandas, data-cleaning, data-science, python, normalization]",
+    "file_path": "..\\skills\\pandas-data-cleaner\\pandas-data-cleaner.md",
+    "name": "pandas-data-cleaner",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Generate Python Pandas scripts to handle missing values, drop duplicates, and normalize column data types."
+    "description": ""
   },
   {
     "id": "project-auto-builder",
-    "file_path": "skills/project-auto-builder/project-auto-builder.md",
-    "name": "Project Auto Builder",
-    "category": "orchestrator",
-    "tags": "[orchestrator, workflow, automation, multi-skill, registry, dynamic]",
+    "file_path": "..\\skills\\project-auto-builder\\project-auto-builder.md",
+    "name": "project-auto-builder",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Dynamic orchestrator that inspects ./registry.json, analyzes the project workspace stack (Node.js, Python, Docker, etc.), automatically matches and orders optimal skills into an execution sequence, runs the selected skills, and generates a final readiness summary report."
+    "description": ""
   },
   {
     "id": "prompt-evaluator",
-    "file_path": "skills/prompt-evaluator/prompt-evaluator.md",
-    "name": "Prompt Evaluator",
-    "category": "ai-ops",
-    "tags": "[prompt-engineering, llm-evaluation, accuracy, token-budget, benchmarking]",
+    "file_path": "..\\skills\\prompt-evaluator\\prompt-evaluator.md",
+    "name": "prompt-evaluator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Evaluate agent prompt effectiveness using accuracy metrics and token constraints."
+    "description": ""
   },
   {
     "id": "rag-chunking-evaluator",
-    "file_path": "skills/rag-chunking-evaluator/rag-chunking-evaluator.md",
-    "name": "RAG Chunking Evaluator",
-    "category": "ai-ops",
-    "tags": "[rag, chunking, embeddings, llm, pipelines]",
+    "file_path": "..\\skills\\rag-chunking-evaluator\\rag-chunking-evaluator.md",
+    "name": "rag-chunking-evaluator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Analyze document structures to recommend optimal chunking strategies and overlap ratios for RAG pipelines."
+    "description": ""
   },
   {
     "id": "rate-limiter-middleware",
-    "file_path": "skills/rate-limiter-middleware/rate-limiter-middleware.md",
-    "name": "Rate Limiter Middleware",
-    "category": "backend",
-    "tags": "[rate-limiting, token-bucket, sliding-window, express, middleware]",
+    "file_path": "..\\skills\\rate-limiter-middleware\\rate-limiter-middleware.md",
+    "name": "rate-limiter-middleware",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Build API rate-limiting middleware using Token Bucket or Sliding Window algorithms."
+    "description": ""
   },
   {
     "id": "regex-builder-explainer",
-    "file_path": "skills/regex-builder-explainer/regex-builder-explainer.md",
-    "name": "Regex Builder & Explainer",
-    "category": "developer-experience",
-    "tags": "[regex, pattern-matching, expressions, debugging, coding]",
+    "file_path": "..\\skills\\regex-builder-explainer\\regex-builder-explainer.md",
+    "name": "regex-builder-explainer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Construct complex regular expressions based on pattern requirements with step-by-step logic breakdown."
+    "description": ""
   },
   {
     "id": "regex-builder-parser",
-    "file_path": "skills/regex-builder-parser/regex-builder-parser.md",
-    "name": "Regex Builder & Parser",
-    "category": "core-coding",
-    "tags": "[regex, redoS, parser, string-extraction, patterns]",
+    "file_path": "..\\skills\\regex-builder-parser\\regex-builder-parser.md",
+    "name": "regex-builder-parser",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Construct ReDoS-safe regular expressions and string parser logic for complex input string extraction."
+    "description": ""
   },
   {
     "id": "regression-sentinel",
-    "file_path": "skills/regression-sentinel/regression-sentinel.md",
-    "name": "Regression Sentinel",
-    "category": "core-engine-hardening",
-    "tags": "[smoke-test, regression-detection, checkpoint, long-horizon, guard-rail]",
+    "file_path": "..\\skills\\regression-sentinel\\regression-sentinel.md",
+    "name": "regression-sentinel",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
-    "version": "1.5.0",
-    "description": "Before each new task in a long session, re-runs the last N passing checkpoints captured by verify-orchestrator as a smoke suite, catching regressions caused by recent edits before they compound."
+    "version": "1.0.0",
+    "description": ""
   },
   {
     "id": "schema-sync",
-    "file_path": "skills/schema-sync/schema-sync.md",
-    "name": "Schema Sync",
-    "category": "core-engine-hardening",
-    "tags": "[api-schema, integration-drift, schema-diff, toolkit-sync, live-validation]",
+    "file_path": "..\\skills\\schema-sync\\schema-sync.md",
+    "name": "schema-sync",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
-    "version": "1.5.0",
-    "description": "Before multi-step toolkit workflows, pings the live tool (via schema-style endpoints / search tools) and diffs against my cached schema; on mismatch, rewrites the workflow plan, never the cached assumptions silently."
+    "version": "1.0.0",
+    "description": ""
   },
   {
     "id": "secrets-leak-detector",
-    "file_path": "skills/secrets-leak-detector/secrets-leak-detector.md",
-    "name": "Secrets Leak Detector",
-    "category": "security",
-    "tags": "[secrets-detection, gitleaks, trufflehog, credential-rotation, code-audit]",
+    "file_path": "..\\skills\\secrets-leak-detector\\secrets-leak-detector.md",
+    "name": "secrets-leak-detector",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Scan codebases to detect leaked API keys, tokens, or credentials."
+    "description": ""
   },
   {
     "id": "seo-metadata-builder",
-    "file_path": "skills/seo-metadata-builder/seo-metadata-builder.md",
-    "name": "SEO & Metadata Builder",
-    "category": "frontend",
-    "tags": "[seo, metadata, open-graph, twitter-cards, json-ld]",
+    "file_path": "..\\skills\\seo-metadata-builder\\seo-metadata-builder.md",
+    "name": "seo-metadata-builder",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Generate complete HTML meta tags, Open Graph, Twitter Cards, and JSON-LD structured data."
+    "description": ""
   },
   {
     "id": "serverless-function-generator",
-    "file_path": "skills/serverless-function-generator/serverless-function-generator.md",
-    "name": "Serverless Function Generator",
-    "category": "cloud",
-    "tags": "[serverless, lambda, cloudflare-workers, cors, error-handling]",
+    "file_path": "..\\skills\\serverless-function-generator\\serverless-function-generator.md",
+    "name": "serverless-function-generator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Scaffold lightweight serverless handlers for Cloudflare Workers or AWS Lambda with standard CORS and error handling."
+    "description": ""
   },
   {
     "id": "spec-loop-closer",
-    "file_path": "skills/spec-loop-closer/spec-loop-closer.md",
+    "file_path": "..\\skills\\spec-loop-closer\\spec-loop-closer.md",
     "name": "Spec Loop Closer",
     "category": "core-engine-hardening",
-    "tags": "[\"requirement-closure\", \"assertion-mapping\", \"gigo-prevention\", \"checkable-assertions\"]",
+    "tags": [
+      "[\"requirement-closure\"",
+      "\"assertion-mapping\"",
+      "\"gigo-prevention\"",
+      "\"checkable-assertions\"]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Forces every user requirement through a 1:1 mapping to a checkable assertion (grep-able token, executable test, or numeric threshold) before implementation begins. Blocks \"done\" until each assertion has a machine-runnable check."
   },
   {
     "id": "sql-query-optimizer",
-    "file_path": "skills/sql-query-optimizer/sql-query-optimizer.md",
-    "name": "SQL Query Optimizer",
-    "category": "database",
-    "tags": "[sql, performance-tuning, indexing, explain-plan, query-rewriting]",
+    "file_path": "..\\skills\\sql-query-optimizer\\sql-query-optimizer.md",
+    "name": "sql-query-optimizer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Analyze slow SQL queries, recommend indexes, and restructure join clauses."
+    "description": ""
   },
   {
     "id": "state-management-architect",
-    "file_path": "skills/state-management-architect/state-management-architect.md",
-    "name": "State Management Architect",
-    "category": "frontend",
-    "tags": "[zustand, redux-toolkit, pinia, atomic-state, reactive]",
+    "file_path": "..\\skills\\state-management-architect\\state-management-architect.md",
+    "name": "state-management-architect",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Implement clean application state management patterns (Zustand, Redux Toolkit, Pinia) with atomic state updates."
+    "description": ""
   },
   {
     "id": "structured-output-enforcer",
-    "file_path": "skills/structured-output-enforcer/structured-output-enforcer.md",
-    "name": "Structured Output Enforcer",
-    "category": "ai-ops",
-    "tags": "[zod, json-schema, llm-output, validation, typescript]",
+    "file_path": "..\\skills\\structured-output-enforcer\\structured-output-enforcer.md",
+    "name": "structured-output-enforcer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Convert unstructured LLM output into validated JSON adhering to strict Zod or JSON Schema rules."
+    "description": ""
   },
   {
     "id": "subagent-evidence",
-    "file_path": "skills/subagent-evidence/subagent-evidence.md",
-    "name": "Subagent Evidence",
-    "category": "core-engine-hardening",
-    "tags": "[subagent-compression, evidence-citation, inference-tagging, citation-verification, lossy-audit]",
+    "file_path": "..\\skills\\subagent-evidence\\subagent-evidence.md",
+    "name": "subagent-evidence",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
-    "version": "1.5.0",
-    "description": "Dispatch-time contract for explore agents: return only observations each with a `file:line` citation and raw excerpt; inference must be explicitly tagged `[INFERRED]`. Post-dispatch, I sample-cite — verify ≥2 citations per summary myself before trusting conclusions."
+    "version": "1.0.0",
+    "description": ""
   },
   {
     "id": "tailwind-converter",
-    "file_path": "skills/tailwind-converter/tailwind-converter.md",
-    "name": "Tailwind CSS Converter",
-    "category": "frontend",
-    "tags": "[css, tailwind, utility-classes, styling, responsive]",
+    "file_path": "..\\skills\\tailwind-converter\\tailwind-converter.md",
+    "name": "tailwind-converter",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Convert raw CSS or inline styles into clean, idiomatic Tailwind CSS utility classes."
+    "description": ""
   },
   {
     "id": "terraform-module-builder",
-    "file_path": "skills/terraform-module-builder/terraform-module-builder.md",
-    "name": "Terraform Module Builder",
-    "category": "cloud",
-    "tags": "[terraform, iac, cloud, infrastructure, modules]",
+    "file_path": "..\\skills\\terraform-module-builder\\terraform-module-builder.md",
+    "name": "terraform-module-builder",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Draft modular, reusable Infrastructure-as-Code Terraform modules for cloud infrastructure."
+    "description": ""
   },
   {
     "id": "tool-schema-builder",
-    "file_path": "skills/tool-schema-builder/tool-schema-builder.md",
-    "name": "Tool Schema Builder",
-    "category": "ai-ops",
-    "tags": "[function-calling, json-schema, tool-use, type-mapping, openai-tools]",
+    "file_path": "..\\skills\\tool-schema-builder\\tool-schema-builder.md",
+    "name": "tool-schema-builder",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Convert standard code functions into JSON schema format for AI function calling."
+    "description": ""
   },
   {
     "id": "type-definition-generator",
-    "file_path": "skills/type-definition-generator/type-definition-generator.md",
-    "name": "Type Definition Generator",
-    "category": "core-coding",
-    "tags": "[typescript, type-definitions, python, json-schema, static-typing]",
+    "file_path": "..\\skills\\type-definition-generator\\type-definition-generator.md",
+    "name": "type-definition-generator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Convert untyped JavaScript, Python dicts, or raw JSON payloads into strict TypeScript interfaces or Type Hint annotations."
+    "description": ""
   },
   {
     "id": "unit-test-generator",
-    "file_path": "skills/unit-test-generator/unit-test-generator.md",
-    "name": "Unit Test Generator",
-    "category": "testing",
-    "tags": "[jest, pytest, go-test, mocking, coverage]",
+    "file_path": "..\\skills\\unit-test-generator\\unit-test-generator.md",
+    "name": "unit-test-generator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Generate automated unit test suites (Jest, Pytest, Go test) with complete mocking."
+    "description": ""
   },
   {
     "id": "vector-db-indexer",
-    "file_path": "skills/vector-db-indexer/vector-db-indexer.md",
-    "name": "Vector DB Indexer",
-    "category": "database",
-    "tags": "[embeddings, vector-database, rag, chunking, qdrant]",
+    "file_path": "..\\skills\\vector-db-indexer\\vector-db-indexer.md",
+    "name": "vector-db-indexer",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Chunk documents and store vector embeddings into a Vector DB."
+    "description": ""
   },
   {
     "id": "verify-orchestrator",
-    "file_path": "skills/verify-orchestrator/verify-orchestrator.md",
-    "name": "Verify Orchestrator",
-    "category": "core-engine-hardening",
-    "tags": "[verification, test-suite, lint, typecheck, auto-discovery, evidence-gate]",
+    "file_path": "..\\skills\\verify-orchestrator\\verify-orchestrator.md",
+    "name": "verify-orchestrator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
-    "version": "1.5.0",
-    "description": "Auto-discovers project verification surface (test/lint/typecheck configs), runs the minimal verification suite, and gates every completion claim on machine-parsed exit codes and assertion output. Returns UNVERIFIED rather than silent on discovery failure."
+    "version": "1.0.0",
+    "description": ""
   },
   {
     "id": "webhook-handler-generator",
-    "file_path": "skills/webhook-handler-generator/webhook-handler-generator.md",
-    "name": "Webhook Handler Generator",
-    "category": "api",
-    "tags": "[webhook, security, signature-verification, stripe, github]",
+    "file_path": "..\\skills\\webhook-handler-generator\\webhook-handler-generator.md",
+    "name": "webhook-handler-generator",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Draft secure webhook receiver endpoints complete with cryptographic signature verification (Stripe, GitHub, Midtrans)."
+    "description": ""
   },
   {
     "id": "websocket-realtime-handler",
-    "file_path": "skills/websocket-realtime-handler/websocket-realtime-handler.md",
-    "name": "WebSocket Realtime Handler",
-    "category": "backend",
-    "tags": "[websocket, realtime, heartbeat, reconnect, broadcasting]",
+    "file_path": "..\\skills\\websocket-realtime-handler\\websocket-realtime-handler.md",
+    "name": "websocket-realtime-handler",
+    "category": "uncategorized",
+    "tags": [
+      "[]"
+    ],
     "author": "opencode-core",
     "version": "1.0.0",
-    "description": "Implement WebSocket connection lifecycles, ping/pong heartbeats, reconnect logic, and event broadcasting."
+    "description": ""
   }
 ]
