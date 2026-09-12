@@ -1,16 +1,6 @@
 ---
 id: async-concurrency-handler
-name: async-concurrency-handler
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: async-concurrency-handler
-file_path: skills/async-concurrency-handler.md
+file_path: skills/async-concurrency-handler/async-concurrency-handler.md
 name: Async Concurrency Handler
 category: core-coding
 tags: [async, concurrency, promises, worker-threads, goroutines]

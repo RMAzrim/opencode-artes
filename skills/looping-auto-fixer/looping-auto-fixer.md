@@ -1,15 +1,6 @@
 ---
 id: looping-auto-fixer
-name: looping-auto-fixer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: looping-auto-fixer
+file_path: skills/looping-auto-fixer/looping-auto-fixer.md
 name: Looping Auto Fixer
 category: orchestrator
 tags: [orchestrator, workflow, automation, multi-skill, feedback-loop, debugging]

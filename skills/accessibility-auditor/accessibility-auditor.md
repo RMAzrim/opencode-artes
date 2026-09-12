@@ -1,18 +1,6 @@
 ---
 id: accessibility-auditor
-name: accessibility-auditor
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
-
-
----
-id: accessibility-auditor
-file_path: skills/accessibility-auditor.md
+file_path: skills/accessibility-auditor/accessibility-auditor.md
 name: Accessibility Auditor
 category: frontend
 tags: [accessibility, wcag, aria, html, jsx]

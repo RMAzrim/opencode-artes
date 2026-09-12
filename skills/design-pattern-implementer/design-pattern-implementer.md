@@ -1,16 +1,6 @@
 ---
 id: design-pattern-implementer
-name: design-pattern-implementer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: design-pattern-implementer
-file_path: skills/design-pattern-implementer.md
+file_path: skills/design-pattern-implementer/design-pattern-implementer.md
 name: Design Pattern Implementer
 category: software-architecture
 tags: [object-oriented, design-patterns, refactoring, architecture]

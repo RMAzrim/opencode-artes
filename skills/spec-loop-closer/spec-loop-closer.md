@@ -1,5 +1,6 @@
 ---
 id: spec-loop-closer
+file_path: skills/spec-loop-closer/spec-loop-closer.md
 name: Spec Loop Closer
 category: core-engine-hardening
 tags: ["requirement-closure", "assertion-mapping", "gigo-prevention", "checkable-assertions"]

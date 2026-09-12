@@ -1,16 +1,6 @@
 ---
 id: state-management-architect
-name: state-management-architect
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: state-management-architect
-file_path: skills/state-management-architect.md
+file_path: skills/state-management-architect/state-management-architect.md
 name: State Management Architect
 category: frontend
 tags: [zustand, redux-toolkit, pinia, atomic-state, reactive]

@@ -1,16 +1,6 @@
 ---
 id: serverless-function-generator
-name: serverless-function-generator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: serverless-function-generator
-file_path: skills/serverless-function-generator.md
+file_path: skills/serverless-function-generator/serverless-function-generator.md
 name: Serverless Function Generator
 category: cloud
 tags: [serverless, lambda, cloudflare-workers, cors, error-handling]

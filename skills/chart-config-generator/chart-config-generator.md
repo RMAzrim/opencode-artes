@@ -1,16 +1,6 @@
 ---
 id: chart-config-generator
-name: chart-config-generator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: chart-config-generator
-file_path: skills/chart-config-generator.md
+file_path: skills/chart-config-generator/chart-config-generator.md
 name: Chart Config Generator
 category: data-science
 tags: [chartjs, recharts, echarts, json, visualization]

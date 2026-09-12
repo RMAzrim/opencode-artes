@@ -1,16 +1,6 @@
 ---
 id: vector-db-indexer
-name: vector-db-indexer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: vector-db-indexer
-file_path: skills/vector-db-indexer.md
+file_path: skills/vector-db-indexer/vector-db-indexer.md
 name: Vector DB Indexer
 category: database
 tags: [embeddings, vector-database, rag, chunking, qdrant]

@@ -1,16 +1,6 @@
 ---
 id: dockerfile-builder
-name: dockerfile-builder
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: dockerfile-builder
-file_path: skills/dockerfile-builder.md
+file_path: skills/dockerfile-builder/dockerfile-builder.md
 name: Dockerfile Builder
 category: devops
 tags: [docker, multi-stage-build, container-security, image-optimization]

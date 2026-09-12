@@ -1,15 +1,6 @@
 ---
 id: verify-orchestrator
-name: verify-orchestrator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: verify-orchestrator
+file_path: skills/verify-orchestrator/verify-orchestrator.md
 name: Verify Orchestrator
 category: core-engine-hardening
 tags: [verification, test-suite, lint, typecheck, auto-discovery, evidence-gate]

@@ -1,16 +1,6 @@
 ---
 id: sql-query-optimizer
-name: sql-query-optimizer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: sql-query-optimizer
-file_path: skills/sql-query-optimizer.md
+file_path: skills/sql-query-optimizer/sql-query-optimizer.md
 name: SQL Query Optimizer
 category: database
 tags: [sql, performance-tuning, indexing, explain-plan, query-rewriting]

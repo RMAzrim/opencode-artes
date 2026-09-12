@@ -1,16 +1,6 @@
 ---
 id: seo-metadata-builder
-name: seo-metadata-builder
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: seo-metadata-builder
-file_path: skills/seo-metadata-builder.md
+file_path: skills/seo-metadata-builder/seo-metadata-builder.md
 name: SEO & Metadata Builder
 category: frontend
 tags: [seo, metadata, open-graph, twitter-cards, json-ld]

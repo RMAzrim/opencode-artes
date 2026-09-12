@@ -1,16 +1,6 @@
 ---
 id: i18n-locale-extractor
-name: i18n-locale-extractor
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: i18n-locale-extractor
-file_path: skills/i18n-locale-extractor.md
+file_path: skills/i18n-locale-extractor/i18n-locale-extractor.md
 name: i18n Locale Extractor
 category: frontend
 tags: [i18n, localization, json, translation, ui]

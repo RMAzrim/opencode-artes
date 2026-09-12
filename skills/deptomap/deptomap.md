@@ -1,15 +1,6 @@
 ---
 id: deptomap
-name: deptomap
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: deptomap
+file_path: skills/deptomap/deptomap.md
 name: Dep Map
 category: core-engine-hardening
 tags: [dependency-graph, import-mapping, ripple-effect, blast-radius, symbol-consumer]

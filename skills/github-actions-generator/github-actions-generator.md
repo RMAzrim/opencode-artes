@@ -1,16 +1,6 @@
 ---
 id: github-actions-generator
-name: github-actions-generator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: github-actions-generator
-file_path: skills/github-actions-generator.md
+file_path: skills/github-actions-generator/github-actions-generator.md
 name: GitHub Actions Generator
 category: devops
 tags: [ci-cd, github-actions, automation, testing, deployment]

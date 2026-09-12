@@ -1,16 +1,6 @@
 ---
 id: rag-chunking-evaluator
-name: rag-chunking-evaluator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: rag-chunking-evaluator
-file_path: skills/rag-chunking-evaluator.md
+file_path: skills/rag-chunking-evaluator/rag-chunking-evaluator.md
 name: RAG Chunking Evaluator
 category: ai-ops
 tags: [rag, chunking, embeddings, llm, pipelines]

@@ -1,16 +1,6 @@
 ---
 id: changelog-generator
-name: changelog-generator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: changelog-generator
-file_path: skills/changelog-generator.md
+file_path: skills/changelog-generator/changelog-generator.md
 name: Changelog Generator
 category: developer-experience
 tags: [changelog, conventional-commits, semver, git-cliff, release-notes]

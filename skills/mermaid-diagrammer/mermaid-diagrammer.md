@@ -1,16 +1,6 @@
 ---
 id: mermaid-diagrammer
-name: mermaid-diagrammer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: mermaid-diagrammer
-file_path: skills/mermaid-diagrammer.md
+file_path: skills/mermaid-diagrammer/mermaid-diagrammer.md
 name: Mermaid Diagrammer
 category: developer-experience
 tags: [mermaid, diagrams, documentation, visualisation, code-to-diagram]

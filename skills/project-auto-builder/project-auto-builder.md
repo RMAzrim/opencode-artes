@@ -1,15 +1,6 @@
 ---
 id: project-auto-builder
-name: project-auto-builder
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: project-auto-builder
+file_path: skills/project-auto-builder/project-auto-builder.md
 name: Project Auto Builder
 category: orchestrator
 tags: [orchestrator, workflow, automation, multi-skill, registry, dynamic]

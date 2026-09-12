@@ -1,16 +1,6 @@
 ---
 id: tool-schema-builder
-name: tool-schema-builder
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: tool-schema-builder
-file_path: skills/tool-schema-builder.md
+file_path: skills/tool-schema-builder/tool-schema-builder.md
 name: Tool Schema Builder
 category: ai-ops
 tags: [function-calling, json-schema, tool-use, type-mapping, openai-tools]

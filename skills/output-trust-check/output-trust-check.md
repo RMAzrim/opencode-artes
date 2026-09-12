@@ -1,15 +1,6 @@
 ---
 id: output-trust-check
-name: output-trust-check
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: output-trust-check
+file_path: skills/output-trust-check/output-trust-check.md
 name: Output Trust Check
 category: core-engine-hardening
 tags: [trust-but-verify, truncation, encoding, faithfulness, output-parsing]

@@ -1,5 +1,6 @@
 ---
 id: k8s-manifest-validator
+file_path: skills/k8s-manifest-validator/k8s-manifest-validator.md
 name: K8s Manifest Validator
 category: cloud
 tags: ["terraform", "iac", "cloud", "infrastructure", "modules"]

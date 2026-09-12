@@ -1,16 +1,6 @@
 ---
 id: data-structure-optimizer
-name: data-structure-optimizer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: data-structure-optimizer
-file_path: skills/data-structure-optimizer.md
+file_path: skills/data-structure-optimizer/data-structure-optimizer.md
 name: Data Structure Optimizer
 category: algorithms
 tags: [algorithms, big-o, data-structures, optimization]

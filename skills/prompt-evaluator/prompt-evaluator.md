@@ -1,16 +1,6 @@
 ---
 id: prompt-evaluator
-name: prompt-evaluator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: prompt-evaluator
-file_path: skills/prompt-evaluator.md
+file_path: skills/prompt-evaluator/prompt-evaluator.md
 name: Prompt Evaluator
 category: ai-ops
 tags: [prompt-engineering, llm-evaluation, accuracy, token-budget, benchmarking]

@@ -1,16 +1,6 @@
 ---
 id: unit-test-generator
-name: unit-test-generator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: unit-test-generator
-file_path: skills/unit-test-generator.md
+file_path: skills/unit-test-generator/unit-test-generator.md
 name: Unit Test Generator
 category: testing
 tags: [jest, pytest, go-test, mocking, coverage]

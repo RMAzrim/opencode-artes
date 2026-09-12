@@ -1,16 +1,6 @@
 ---
 id: db-migration-generator
-name: db-migration-generator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: db-migration-generator
-file_path: skills/db-migration-generator.md
+file_path: skills/db-migration-generator/db-migration-generator.md
 name: DB Migration Generator
 category: database
 tags: [migrations, schema-evolution, prisma, typeorm, alembic]

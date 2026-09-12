@@ -1,16 +1,6 @@
 ---
 id: caching-strategy-implementer
-name: caching-strategy-implementer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: caching-strategy-implementer
-file_path: skills/caching-strategy-implementer.md
+file_path: skills/caching-strategy-implementer/caching-strategy-implementer.md
 name: Caching Strategy Implementer
 category: backend
 tags: [caching, redis, cache-aside, write-through, lru]

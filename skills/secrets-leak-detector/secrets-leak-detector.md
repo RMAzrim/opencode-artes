@@ -1,16 +1,6 @@
 ---
 id: secrets-leak-detector
-name: secrets-leak-detector
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: secrets-leak-detector
-file_path: skills/secrets-leak-detector.md
+file_path: skills/secrets-leak-detector/secrets-leak-detector.md
 name: Secrets Leak Detector
 category: security
 tags: [secrets-detection, gitleaks, trufflehog, credential-rotation, code-audit]

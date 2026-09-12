@@ -1,16 +1,6 @@
 ---
 id: dependency-injection-wire
-name: dependency-injection-wire
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: dependency-injection-wire
-file_path: skills/dependency-injection-wire.md
+file_path: skills/dependency-injection-wire/dependency-injection-wire.md
 name: Dependency Injection Wiring
 category: software-architecture
 tags: [dependency-injection, ioc, inversion-of-control, typescript]

@@ -1,16 +1,6 @@
 ---
 id: pandas-data-cleaner
-name: pandas-data-cleaner
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: pandas-data-cleaner
-file_path: skills/pandas-data-cleaner.md
+file_path: skills/pandas-data-cleaner/pandas-data-cleaner.md
 name: Pandas Data Cleaner
 category: data-science
 tags: [pandas, data-cleaning, data-science, python, normalization]

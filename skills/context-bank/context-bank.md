@@ -1,15 +1,6 @@
 ---
 id: context-bank
-name: context-bank
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: context-bank
+file_path: skills/context-bank/context-bank.md
 name: Context Bank
 category: core-engine-hardening
 tags: [context-window, token-management, memory, grounding, decision-log]

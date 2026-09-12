@@ -9,8 +9,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const SKILLS_DIR = path.join(__dirname, '..', 'skills');
-const REGISTRY_PATH = path.join(__dirname, '..', 'registry.json');
+const PROJECT_ROOT = path.join(__dirname, '..');
+const SKILLS_DIR = path.join(PROJECT_ROOT, 'skills');
+const REGISTRY_PATH = path.join(PROJECT_ROOT, 'registry.json');
 
 /**
  * Parses YAML frontmatter from a markdown file.
@@ -54,6 +55,33 @@ function parseFrontmatter(content) {
 }
 
 /**
+ * Parses a tags value into an array of tag strings.
+ * Handles YAML flow-list syntax such as `[a, b, c]` (including quoted
+ * elements like `["a", "b"]`), a plain comma-separated list `a, b, c`,
+ * and empty values `[]` or `` which both resolve to an empty array.
+ *
+ * @param {string|Array} value - Raw tags value as stored by parseFrontmatter
+ * @returns {Array} Array of trimmed tag strings
+ */
+function parseTags(value) {
+  if (Array.isArray(value)) return value;
+  if (typeof value !== 'string' || value.trim() === '') return [];
+
+  let v = value.trim();
+
+  if (v.startsWith('[') && v.endsWith(']')) {
+    v = v.slice(1, -1).trim();
+  }
+
+  if (v === '') return [];
+
+  return v
+    .split(',')
+    .map(t => t.trim().replace(/^["']|["']$/g, ''))
+    .filter(Boolean);
+}
+
+/**
  * Recursively scans the skills directory for all skill markdown files.
  * Expects the structure: ./skills/<skill-id>/<skill-id>.md
  * 
@@ -81,10 +109,10 @@ function scanSkillsDirectory() {
       
       skills.push({
         id: frontmatter.id || dir.name,
-        file_path: path.relative(__dirname, mdFile),
+        file_path: path.relative(PROJECT_ROOT, mdFile).split(path.sep).join('/'),
         name: frontmatter.name || dir.name,
         category: frontmatter.category || 'uncategorized',
-        tags: frontmatter.tags ? (Array.isArray(frontmatter.tags) ? frontmatter.tags : frontmatter.tags.split(',').map(t => t.trim())) : [],
+        tags: parseTags(frontmatter.tags),
         author: frontmatter.author || 'opencode-core',
         version: frontmatter.version || '1.0.0',
         description: frontmatter.description || ''

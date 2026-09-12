@@ -1,16 +1,6 @@
 ---
 id: tailwind-converter
-name: tailwind-converter
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: tailwind-converter
-file_path: skills/tailwind-converter.md
+file_path: skills/tailwind-converter/tailwind-converter.md
 name: Tailwind CSS Converter
 category: frontend
 tags: [css, tailwind, utility-classes, styling, responsive]

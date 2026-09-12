@@ -1,16 +1,6 @@
 ---
 id: code-translator
-name: code-translator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: code-translator
-file_path: skills/code-translator.md
+file_path: skills/code-translator/code-translator.md
 name: Code Translator
 category: developer-experience
 tags: [code-conversion, polyglot, refactoring, behavioral-parity]

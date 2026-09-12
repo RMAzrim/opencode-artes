@@ -1,16 +1,6 @@
 ---
 id: rate-limiter-middleware
-name: rate-limiter-middleware
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: rate-limiter-middleware
-file_path: skills/rate-limiter-middleware.md
+file_path: skills/rate-limiter-middleware/rate-limiter-middleware.md
 name: Rate Limiter Middleware
 category: backend
 tags: [rate-limiting, token-bucket, sliding-window, express, middleware]

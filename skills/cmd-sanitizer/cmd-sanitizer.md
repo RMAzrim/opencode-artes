@@ -1,5 +1,6 @@
 ---
 id: cmd-sanitizer
+file_path: skills/cmd-sanitizer/cmd-sanitizer.md
 name: Cmd Sanitizer
 category: core-engine-hardening
 tags: ["powershell", "windows", "exit-status", "utf-16", "command-chaining", "silent-errors"]

@@ -1,16 +1,6 @@
 ---
 id: regex-builder-parser
-name: regex-builder-parser
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: regex-builder-parser
-file_path: skills/regex-builder-parser.md
+file_path: skills/regex-builder-parser/regex-builder-parser.md
 name: Regex Builder & Parser
 category: core-coding
 tags: [regex, redoS, parser, string-extraction, patterns]

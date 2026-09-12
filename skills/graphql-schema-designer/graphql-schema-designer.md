@@ -1,16 +1,6 @@
 ---
 id: graphql-schema-designer
-name: graphql-schema-designer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: graphql-schema-designer
-file_path: skills/graphql-schema-designer.md
+file_path: skills/graphql-schema-designer/graphql-schema-designer.md
 name: GraphQL Schema Designer
 category: api
 tags: [graphql, schema, type-definitions, resolvers, apollo]

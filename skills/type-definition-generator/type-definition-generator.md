@@ -1,16 +1,6 @@
 ---
 id: type-definition-generator
-name: type-definition-generator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: type-definition-generator
-file_path: skills/type-definition-generator.md
+file_path: skills/type-definition-generator/type-definition-generator.md
 name: Type Definition Generator
 category: core-coding
 tags: [typescript, type-definitions, python, json-schema, static-typing]

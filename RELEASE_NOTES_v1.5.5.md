@@ -1,6 +1,7 @@
 # Release Notes v1.5.5 - Nested Skills Architecture & QC Audit Updates
 
-**Published**: `2026-09-11`
+**Published**: `2026-09-11`  
+**Last updated**: `2026-09-12` (registry/frontmatter bug fixes)
 
 ---
 
@@ -54,11 +55,15 @@ skills/
 
 ## 🛠️ Bug Fixes & Refactoring
 
-- **Cross-reference path corrections:** Updated all internal `skills/X.md` references across skill documents to the new `skills/X/X.md` format
-- **`scripts/build-registry.js`** scanning logic: Rewrote the Node.js script to recursively scan `./skills/*/*.md` and extract frontmatter from all validated skill files, outputting to `./registry.json`
-- **Fixed `ERR_INVALID_PACKAGE_CONFIG` error:** Updated `package.json` to `"type": "module"` and resolved Node.js module resolution issues
-- **Registry rebuild:** `registry.json` regenerated with 58 skills across 17 categories (ai-ops: 5, algorithms: 1, api: 2, backend: 5, cloud: 3, core-coding: 4, core-engine-hardening: 10, data-science: 2, database: 3, debugging: 1, developer-experience: 7, devops: 2, frontend: 5, orchestrator: 3, security: 2, software-architecture: 2, testing: 1, uncategorized: 4)
-- **QC audit scripts added:** `scripts/clean_frontmatter.py`, `scripts/regenerate_v3.py`, `scripts/regenerate_robust.py`, `scripts/regenerate_registry.py`, `scripts/rewrite_frontmatter.py`, `scripts/fix_v2.py` (all for migration and QC purposes)
+- **Duplicate frontmatter removed (all 58 skills):** Every `skills/<id>/<id>.md` file contained two stacked frontmatter blocks — a broken first block (`category: uncategorized`, `tags: []`, empty `description`, no `file_path`) sitting above the real one. The empty first block and the intervening blank lines were removed so each file now has exactly one valid frontmatter block followed directly by the markdown body.
+- **`file_path` corrected in every skill file:** Flat paths of the form `skills/<id>.md` were rewritten to `skills/<id>/<id>.md`; the core-engine-hardening and orchestrator skills that had no `file_path` field at all had one inserted.
+- **`scripts/build-registry.js` `file_path` computation:** Now computed relative to the project root (not the `scripts/` folder) and normalized to forward slashes, so the emitted value is exactly `skills/<id>/<id>.md` on every platform (no leading `..`, no backslashes).
+- **`scripts/build-registry.js` tags parsing:** Added a `parseTags()` helper that correctly handles YAML flow-lists — `[]` → `[]`, and `[a, b, c]` / `["a", "b"]` → `["a", "b", "c"]` — instead of emitting a literal `["[]"]` or tags with stray brackets/quotes.
+- **`scripts/build-registry.js` scanning logic:** Rewrote the Node.js script to recursively scan `./skills/*/*.md`, extract frontmatter from every validated skill file, and output to `./registry.json`.
+- **`package.json` repaired:** Restored valid JSON (unterminated `test` script string and missing closing braces) so Node/npm can parse and run the project.
+- **Registry rebuild:** `registry.json` regenerated with 58 skills across 17 categories — ai-ops: 5, algorithms: 1, api: 2, backend: 5, cloud: 3, core-coding: 4, core-engine-hardening: 10, data-science: 2, database: 3, debugging: 1, developer-experience: 7, devops: 2, frontend: 5, orchestrator: 3, security: 2, software-architecture: 2, testing: 1. No `uncategorized` entries remain; every `description` is populated and matches its source file.
+- **Cross-reference path corrections:** Updated all internal `skills/X.md` references across skill documents to the new `skills/X/X.md` format.
+- **QC audit scripts added:** `scripts/clean_frontmatter.py`, `scripts/regenerate_v3.py`, `scripts/regenerate_robust.py`, `scripts/regenerate_registry.py`, `scripts/rewrite_frontmatter.py`, `scripts/fix_v2.py` (all for migration and QC purposes).
 
 ---
 

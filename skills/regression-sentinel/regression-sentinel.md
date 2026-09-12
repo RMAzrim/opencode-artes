@@ -1,15 +1,6 @@
 ---
 id: regression-sentinel
-name: regression-sentinel
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: regression-sentinel
+file_path: skills/regression-sentinel/regression-sentinel.md
 name: Regression Sentinel
 category: core-engine-hardening
 tags: [smoke-test, regression-detection, checkpoint, long-horizon, guard-rail]

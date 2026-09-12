@@ -1,16 +1,6 @@
 ---
 id: webhook-handler-generator
-name: webhook-handler-generator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: webhook-handler-generator
-file_path: skills/webhook-handler-generator.md
+file_path: skills/webhook-handler-generator/webhook-handler-generator.md
 name: Webhook Handler Generator
 category: api
 tags: [webhook, security, signature-verification, stripe, github]

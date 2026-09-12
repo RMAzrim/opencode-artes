@@ -1,16 +1,6 @@
 ---
 id: pagination-cursor-builder
-name: pagination-cursor-builder
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: pagination-cursor-builder
-file_path: skills/pagination-cursor-builder.md
+file_path: skills/pagination-cursor-builder/pagination-cursor-builder.md
 name: Pagination Cursor Builder
 category: backend
 tags: [pagination, cursor, keyset, database, api]

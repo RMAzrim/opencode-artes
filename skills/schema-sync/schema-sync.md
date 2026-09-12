@@ -1,15 +1,6 @@
 ---
 id: schema-sync
-name: schema-sync
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: schema-sync
+file_path: skills/schema-sync/schema-sync.md
 name: Schema Sync
 category: core-engine-hardening
 tags: [api-schema, integration-drift, schema-diff, toolkit-sync, live-validation]

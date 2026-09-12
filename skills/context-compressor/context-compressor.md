@@ -1,16 +1,6 @@
 ---
 id: context-compressor
-name: context-compressor
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: context-compressor
-file_path: skills/context-compressor.md
+file_path: skills/context-compressor/context-compressor.md
 name: Context Compressor
 category: ai-ops
 tags: [context-window, token-optimization, summarization, conversation-memory]

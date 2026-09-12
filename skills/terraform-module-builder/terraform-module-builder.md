@@ -1,16 +1,6 @@
 ---
 id: terraform-module-builder
-name: terraform-module-builder
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: terraform-module-builder
-file_path: skills/terraform-module-builder.md
+file_path: skills/terraform-module-builder/terraform-module-builder.md
 name: Terraform Module Builder
 category: cloud
 tags: [terraform, iac, cloud, infrastructure, modules]

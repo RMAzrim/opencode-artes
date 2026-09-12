@@ -1,16 +1,6 @@
 ---
 id: structured-output-enforcer
-name: structured-output-enforcer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: structured-output-enforcer
-file_path: skills/structured-output-enforcer.md
+file_path: skills/structured-output-enforcer/structured-output-enforcer.md
 name: Structured Output Enforcer
 category: ai-ops
 tags: [zod, json-schema, llm-output, validation, typescript]

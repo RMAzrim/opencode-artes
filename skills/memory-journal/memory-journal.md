@@ -1,15 +1,6 @@
 ---
 id: memory-journal
-name: memory-journal
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: memory-journal
+file_path: skills/memory-journal/memory-journal.md
 name: Memory Journal
 category: core-engine-hardening
 tags: [cross-session-memory, decision-log, session-diff, persistent-state, rationale-preservation]

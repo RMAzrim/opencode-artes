@@ -1,16 +1,6 @@
 ---
 id: cli-tool-scaffolder
-name: cli-tool-scaffolder
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: cli-tool-scaffolder
-file_path: skills/cli-tool-scaffolder.md
+file_path: skills/cli-tool-scaffolder/cli-tool-scaffolder.md
 name: CLI Tool Scaffolder
 category: developer-experience
 tags: [cli, commander, yargs, spinners, developer-experience]

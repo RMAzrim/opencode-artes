@@ -1,15 +1,6 @@
 ---
 id: subagent-evidence
-name: subagent-evidence
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: subagent-evidence
+file_path: skills/subagent-evidence/subagent-evidence.md
 name: Subagent Evidence
 category: core-engine-hardening
 tags: [subagent-compression, evidence-citation, inference-tagging, citation-verification, lossy-audit]

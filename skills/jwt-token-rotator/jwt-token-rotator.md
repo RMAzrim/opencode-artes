@@ -1,16 +1,6 @@
 ---
 id: jwt-token-rotator
-name: jwt-token-rotator
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: jwt-token-rotator
-file_path: skills/jwt-token-rotator.md
+file_path: skills/jwt-token-rotator/jwt-token-rotator.md
 name: JWT Token Rotator
 category: backend
 tags: [jwt, authentication, token-rotation, security]

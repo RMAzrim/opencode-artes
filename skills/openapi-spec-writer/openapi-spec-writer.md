@@ -1,16 +1,6 @@
 ---
 id: openapi-spec-writer
-name: openapi-spec-writer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: openapi-spec-writer
-file_path: skills/openapi-spec-writer.md
+file_path: skills/openapi-spec-writer/openapi-spec-writer.md
 name: OpenAPI Spec Writer
 category: developer-experience
 tags: [openapi, swagger, api-docs, rest, documentation]

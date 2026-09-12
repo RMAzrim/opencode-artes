@@ -1,5 +1,6 @@
 ---
 id: cron-schedule-parser
+file_path: skills/cron-schedule-parser/cron-schedule-parser.md
 name: Cron Schedule Parser
 category: developer-experience
 tags: ["cron", "scheduling", "time-rules", "nodejs", "python"]

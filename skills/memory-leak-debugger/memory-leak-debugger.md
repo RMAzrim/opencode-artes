@@ -1,16 +1,6 @@
 ---
 id: memory-leak-debugger
-name: memory-leak-debugger
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: memory-leak-debugger
-file_path: skills/memory-leak-debugger.md
+file_path: skills/memory-leak-debugger/memory-leak-debugger.md
 name: Memory Leak Debugger
 category: debugging
 tags: [memory-leak, debugging, garbage-collection, event-listeners]

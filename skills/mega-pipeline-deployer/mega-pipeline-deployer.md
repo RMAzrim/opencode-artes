@@ -1,15 +1,6 @@
 ---
 id: mega-pipeline-deployer
-name: mega-pipeline-deployer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: mega-pipeline-deployer
+file_path: skills/mega-pipeline-deployer/mega-pipeline-deployer.md
 name: Mega Pipeline Deployer
 category: orchestrator
 tags: [orchestrator, workflow, automation, multi-skill, pipeline, selective]

@@ -1,16 +1,6 @@
 ---
 id: error-class-hierarchy-builder
-name: error-class-hierarchy-builder
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: error-class-hierarchy-builder
-file_path: skills/error-class-hierarchy-builder.md
+file_path: skills/error-class-hierarchy-builder/error-class-hierarchy-builder.md
 name: Error Class Hierarchy Builder
 category: core-coding
 tags: [error-handling, custom-exceptions, hierarchy, typescript]

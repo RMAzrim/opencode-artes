@@ -1,16 +1,6 @@
 ---
 id: regex-builder-explainer
-name: regex-builder-explainer
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: regex-builder-explainer
-file_path: skills/regex-builder-explainer.md
+file_path: skills/regex-builder-explainer/regex-builder-explainer.md
 name: Regex Builder & Explainer
 category: developer-experience
 tags: [regex, pattern-matching, expressions, debugging, coding]

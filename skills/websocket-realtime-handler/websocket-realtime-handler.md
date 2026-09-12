@@ -1,16 +1,6 @@
 ---
 id: websocket-realtime-handler
-name: websocket-realtime-handler
-category: uncategorized
-tags: []
-author: opencode-core
-version: 1.0.0
-description:
----
-
----
-id: websocket-realtime-handler
-file_path: skills/websocket-realtime-handler.md
+file_path: skills/websocket-realtime-handler/websocket-realtime-handler.md
 name: WebSocket Realtime Handler
 category: backend
 tags: [websocket, realtime, heartbeat, reconnect, broadcasting]
