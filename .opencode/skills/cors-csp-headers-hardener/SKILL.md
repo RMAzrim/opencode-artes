@@ -30,7 +30,7 @@ metadata:
 
 **Output artifacts:**
 - `{report_dir}/headers_report.json` — collected headers + findings for each endpoint
-- `{report_dir}/honors_only_CSP.txt` — strict CSP policy string
+- `{report_dir}/strict_csp.txt` — strict CSP policy string
 - `{report_dir}/helmet_hardened.js` — Node helmet + CORS allowlist middleware
 - `{report_dir}/fastapi_hardened.py` — FastAPI CORSMiddleware + SecurityHeaders middleware
 

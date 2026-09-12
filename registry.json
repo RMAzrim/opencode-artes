@@ -79,6 +79,21 @@
     "description": "Implements comprehensive user authentication systems supporting secure cookie sessions, JWT refresh token rotation, password hashing, and third-party OAuth2 social logins."
   },
   {
+    "id": "backend-suite-orchestrator",
+    "file_path": "skills/backend-suite-orchestrator/backend-suite-orchestrator.md",
+    "name": "Backend Suite Orchestrator",
+    "category": "orchestrator",
+    "tags": [
+      "orchestrator",
+      "workflow",
+      "automation",
+      "backend"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Orchestrates the 4-stage backend build chain — REST routes with OpenAPI spec (skills/express-fastapi-route-builder), auth/session/OAuth2 (skills/auth-session-oauth2-scaffolder), GraphQL schema plus per-request DataLoaders (skills/graphql-schema-dataloader-builder), and JWT-guarded realtime WebSockets (skills/websocket-realtime-secure-engine) — followed by route-integrity, middleware-registration, build, smoke-test, and API-spec validation. Accepts full_run, include_steps, and skip_steps parameters to execute only a selected chain subset, applies predecessor gating and fail_fast semantics, captures per-step stdout and reports, and consolidates everything into a single BACKEND_SUITE_REPORT.md with aggregate counts, per-step pass/fail status, and recommendations."
+  },
+  {
     "id": "bola-idor-vulnerability-scanner",
     "file_path": "skills/bola-idor-vulnerability-scanner/bola-idor-vulnerability-scanner.md",
     "name": "BOLA / IDOR Vulnerability Scanner",
@@ -482,6 +497,21 @@
     "description": "Builds robust, type-safe interactive web forms featuring complex validation logic, real-time error feedback, and seamless client-server schema synchronization."
   },
   {
+    "id": "frontend-suite-orchestrator",
+    "file_path": "skills/frontend-suite-orchestrator/frontend-suite-orchestrator.md",
+    "name": "Frontend Suite Orchestrator",
+    "category": "orchestrator",
+    "tags": [
+      "orchestrator",
+      "workflow",
+      "automation",
+      "frontend"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Orchestrates a 5-stage frontend build chain over a Next.js project: App Router scaffold, Tailwind responsive/dark-mode styling, zod-backed progressive forms, and the Zustand + TanStack Query state/query pipeline, followed by a build validation gate that runs `npm run build` / `next build`, verifies the component tree and routes exist, and consolidates everything into a FRONTEND_SUITE_REPORT.md. Supports full_run, include_steps, skip_steps, fail_fast, and artifact_dir customization so teams can re-materialize any subset of the scaffolding chain. The final report captures the scaffolded file-tree summary, the validation build exit code, and open items for follow-up."
+  },
+  {
     "id": "git-bisect-time-traveler",
     "file_path": "skills/git-bisect-time-traveler/git-bisect-time-traveler.md",
     "name": "Git Bisect Time Traveler",
@@ -559,6 +589,21 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Extract hardcoded UI text strings into structured internationalization JSON translation files."
+  },
+  {
+    "id": "infra-qa-suite-orchestrator",
+    "file_path": "skills/infra-qa-suite-orchestrator/infra-qa-suite-orchestrator.md",
+    "name": "Infrastructure & QA Suite Orchestrator",
+    "category": "orchestrator",
+    "tags": [
+      "orchestrator",
+      "workflow",
+      "automation",
+      "infra-qa"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Orchestrates the 5-stage infrastructure and QA chain — ORM schemas plus zero-downtime migrations (skills/drizzle-prisma-orm-architect), Redis caching and pub/sub event bus (skills/redis-pubsub-cache-manager), multi-stage Docker images with Compose stack (skills/docker-multi-stage-stack-builder), Playwright E2E and security flows (skills/playwright-e2e-security-flow-tester), and Lighthouse Core Web Vitals audits (skills/lighthouse-web-vitals-optimizer) — all executed against the provisioned stack. Accepts full_run, include_steps, and skip_steps parameters to select the chain subset, applies predecessor gating and fail_fast semantics, captures per-step stdout and reports, and consolidates DB migration status, cache health, docker build/health, E2E pass counts, a Lighthouse scores table, and recommendations into a single INFRA_QA_SUITE_REPORT.md."
   },
   {
     "id": "jwt-security-cracker-tester",
@@ -1083,6 +1128,21 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Scan codebases to detect leaked API keys, tokens, or credentials."
+  },
+  {
+    "id": "security-suite-orchestrator",
+    "file_path": "skills/security-suite-orchestrator/security-suite-orchestrator.md",
+    "name": "Security Suite Orchestrator",
+    "category": "orchestrator",
+    "tags": [
+      "orchestrator",
+      "workflow",
+      "automation",
+      "security"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Orchestrates a full 8-stage security audit chain over a local web app: dependency CVE scan, OWASP SAST static audit, SQLi/XSS input sanitization, JWT security cracking, BOLA/IDOR authorization scan, rate-limit brute-force shielding, and CORS/CSP header hardening, then consolidates every per-stage report into one SECURITY_AUDIT_REPORT.md. Supports full_run, include_steps, skip_steps, fail_fast, and report_dir customization so operators can re-run a subset of the chain without touching the others. Aggregates severity counts per category, per-stage pass/fail status, and a top-remediation ranked list from all seven stage artifacts."
   },
   {
     "id": "seo-metadata-builder",
