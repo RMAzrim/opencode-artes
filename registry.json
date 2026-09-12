@@ -16,6 +16,38 @@
     "description": "Audit HTML/JSX code against WCAG 2.1 guidelines and provide accessible ARIA code fixes."
   },
   {
+    "id": "agent-self-debugger-loop",
+    "file_path": "skills/agent-self-debugger-loop/agent-self-debugger-loop.md",
+    "name": "Agent Self-Debugger Loop",
+    "category": "ai-ops",
+    "tags": [
+      "agent",
+      "debugging",
+      "self-healing",
+      "pytest",
+      "ast"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "A Python CLI (self_debug.py) that parses pytest stderr/stdout tracebacks, extracts the failing File x.py line N location, reads and rewrites that file via an ast.NodeTransformer to inject sys._getframe()-based log probes and None/missing-attribute guards, re-runs pytest up to 4 attempts, and rolls back via git stash on exhaustion. Pure stdlib (ast, re, subprocess, tempfile, pathlib) plus pytest."
+  },
+  {
+    "id": "ast-anti-pattern-slayer",
+    "file_path": "skills/ast-anti-pattern-slayer/ast-anti-pattern-slayer.md",
+    "name": "AST Anti-Pattern Slayer",
+    "category": "core-coding",
+    "tags": [
+      "ast",
+      "refactoring",
+      "cyclomatic-complexity",
+      "dead-code",
+      "guard-clauses"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Parses Python or JavaScript-style source into an AST, computes cyclomatic complexity v(G) as decision count plus one, maximum block nesting depth, bare except clauses and unreachable dead code, then uses a conservative ast.NodeTransformer to rewrite trailing if/else wrappers into semantics-preserving early return and continue guard clauses, emitting a structured JSON diagnostics report with file line and column locations."
+  },
+  {
     "id": "async-concurrency-handler",
     "file_path": "skills/async-concurrency-handler/async-concurrency-handler.md",
     "name": "Async Concurrency Handler",
@@ -30,6 +62,22 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Implement async/await workflows, promise pools, worker threads, or goroutines while preventing race conditions."
+  },
+  {
+    "id": "bytecode-decompiler-assistant",
+    "file_path": "skills/bytecode-decompiler-assistant/bytecode-decompiler-assistant.md",
+    "name": "Bytecode Decompiler & Obfuscation Assistant",
+    "category": "core-coding",
+    "tags": [
+      "bytecode",
+      "decompiler",
+      "dis",
+      "pyc",
+      "obfuscation"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Loads Python pyc bytecode via marshal after importlib header validation, pretty-prints raw dis, reconstructs a basic-block control-flow graph annotated with loop heads and try/except regions, renames mangled single-letter variables using usage heuristics, renders a readable structured pseudo-Python outline, flags obfuscation signatures such as missing strings, oversized constants and dynamic eval execution, and documents the uncompyle6 byte-exact pipeline when it is installable."
   },
   {
     "id": "caching-strategy-implementer",
@@ -78,6 +126,22 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Map raw JSON datasets into ready-to-use chart configuration objects (Chart.js, Recharts, or ECharts)."
+  },
+  {
+    "id": "chess-engine-mechanic-builder",
+    "file_path": "skills/chess-engine-mechanic-builder/chess-engine-mechanic-builder.md",
+    "name": "Custom Chess Engine Mechanic Builder",
+    "category": "core-coding",
+    "tags": [
+      "chess",
+      "python-chess",
+      "pygame",
+      "game-mechanics",
+      "cooldown"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Wraps python-chess inside a SkillChessBoard that adds turn tracking, per-skill cooldown ticks, a Teleport mechanic and a Freeze Square mechanic with expiry timers, plus rotate_view_180 coordinate mapping, a pygame-free ASCII renderer and an optional pygame renderer, all driven by a runnable demo."
   },
   {
     "id": "cli-tool-scaffolder",
@@ -190,6 +254,22 @@
     "description": "Analyze algorithm time/space complexity (Big O) and refactor logic using optimal data structures (Heaps, Tries, Hash Maps)."
   },
   {
+    "id": "database-zero-downtime-migrator",
+    "file_path": "skills/database-zero-downtime-migrator/database-zero-downtime-migrator.md",
+    "name": "Database Zero-Downtime Migrator",
+    "category": "database",
+    "tags": [
+      "database",
+      "migrations",
+      "zero-downtime",
+      "expand-contract",
+      "backfill"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Generates Expand-and-Contract (Parallel Change) migration SQL as four ordered stage files plus a JSON manifest from a MigrationPlan, emitting Postgres or MySQL dialect output through a Python stdlib argparse module."
+  },
+  {
     "id": "db-migration-generator",
     "file_path": "skills/db-migration-generator/db-migration-generator.md",
     "name": "DB Migration Generator",
@@ -280,6 +360,22 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Create domain-specific custom exception classes with standardized error codes, HTTP statuses, and metadata payloads."
+  },
+  {
+    "id": "git-bisect-time-traveler",
+    "file_path": "skills/git-bisect-time-traveler/git-bisect-time-traveler.md",
+    "name": "Git Bisect Time Traveler",
+    "category": "developer-experience",
+    "tags": [
+      "git",
+      "bisect",
+      "regression",
+      "subprocess",
+      "patch"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Automates regression tracking by orchestrating non-interactive git bisect sessions wrapped around a headless test harness, parses the first-bad-commit SHA, subject and date plus the number of commits examined, and generates a minimal git-apply-compatible revert patch for exactly the files the offending commit touched, with optional dry-run verification."
   },
   {
     "id": "github-actions-generator",
@@ -379,6 +475,22 @@
     "description": "Iterative fixer that runs unit-test-generator → validates via skill-tester → if tests fail, feeds error logs to memory-leak-debugger or patches code → repeats up to 3 retry iterations → exits on SUCCESS or halts on FAILED_AFTER_MAX_RETRIES."
   },
   {
+    "id": "mcp-tools-auto-bridge",
+    "file_path": "skills/mcp-tools-auto-bridge/mcp-tools-auto-bridge.md",
+    "name": "MCP Tools Auto Bridge",
+    "category": "api",
+    "tags": [
+      "mcp",
+      "fastmcp",
+      "python",
+      "ast",
+      "tool-bridge"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "A Python generator (bridge_gen.py) that reads a target source file via ast reflection, extracts public function signatures (name, parameters, type annotations, docstrings, return types), and writes a standalone MCP server (mcp_server.py) using mcp.server.fastmcp.FastMCP with one @mcp.tool() per function and a stdio transport entry point. Stdlib-only generator; runtime requires mcp package."
+  },
+  {
     "id": "mega-pipeline-deployer",
     "file_path": "skills/mega-pipeline-deployer/mega-pipeline-deployer.md",
     "name": "Mega Pipeline Deployer",
@@ -425,6 +537,22 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Identify and resolve unmanaged memory leaks, event listener leaks, and circular references across runtimes."
+  },
+  {
+    "id": "memory-leak-profiler-debugger",
+    "file_path": "skills/memory-leak-profiler-debugger/memory-leak-profiler-debugger.md",
+    "name": "Memory Leak Profiler & Debugger",
+    "category": "core-engine-hardening",
+    "tags": [
+      "memory",
+      "tracemalloc",
+      "leak",
+      "profiling",
+      "garbage-collection"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Instruments a target callable under tracemalloc and the cyclic garbage collector, takes paired allocation snapshots across repeated runs, flags allocations whose cumulative bytes keep growing across iterations with a repeating traceback as leak signatures, counts live objects per type, verifies weak-reference lifetimes, and reports circular-reference clusters via gc.get_referrers, emitting a structured JSON LeakReport of LeakCandidate entries and documented Node.js v8 heap-snapshot equivalents."
   },
   {
     "id": "mermaid-diagrammer",
@@ -523,6 +651,23 @@
     "description": "Generate Python Pandas scripts to handle missing values, drop duplicates, and normalize column data types."
   },
   {
+    "id": "procedural-dungeon-generator",
+    "file_path": "skills/procedural-dungeon-generator/procedural-dungeon-generator.md",
+    "name": "Procedural Dungeon & Map Generator",
+    "category": "algorithms",
+    "tags": [
+      "procedural",
+      "dungeon",
+      "bsp",
+      "cellular-automata",
+      "tiles",
+      "astar"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Implements deterministic 2D tilemap generation with Binary Space Partitioning for rectangular rooms, A* grid pathfinding for corridor carving between room centers, and a Cellular Automata cave smoother using BFS connected-component flood-fill to keep a single reachable region, emitting a grid, ASCII map and JSON statistics."
+  },
+  {
     "id": "project-auto-builder",
     "file_path": "skills/project-auto-builder/project-auto-builder.md",
     "name": "Project Auto Builder",
@@ -554,6 +699,38 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Evaluate agent prompt effectiveness using accuracy metrics and token constraints."
+  },
+  {
+    "id": "prompt-injection-shield",
+    "file_path": "skills/prompt-injection-shield/prompt-injection-shield.md",
+    "name": "Prompt Injection & Security Shield",
+    "category": "security",
+    "tags": [
+      "security",
+      "prompt-injection",
+      "jailbreak",
+      "canary",
+      "rag"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "A stdlib-only Python module (shield.py) implementing InjectionShield static inspection for jailbreak signatures, system-prompt extraction patterns, and command-injection payloads across input strings and RAG context windows, plus deterministic canary-token injection and verification (the f(n) model-output challenge). Classes ShieldConfig, InjectionShield, ScanReport, and a scan_cli() argparse entry point that reads files/stdin and emits a JSON report."
+  },
+  {
+    "id": "pygame-state-machine-architect",
+    "file_path": "skills/pygame-state-machine-architect/pygame-state-machine-architect.md",
+    "name": "Pygame State Machine Architect",
+    "category": "software-architecture",
+    "tags": [
+      "pygame",
+      "state-machine",
+      "game",
+      "python",
+      "dt"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Defines an abstract BaseState lifecycle (startup, cleanup, get_event, update, draw) plus a StateMachine manager running a fixed delta-time loop with dt = clock.tick(60) / 1000.0, providing concrete MenuState, GameplayState, and PauseState implementations and a SpriteSheetSlicer that parses TexturePacker XML or JSON atlases into pygame.Surface subsurface frames."
   },
   {
     "id": "rag-chunking-evaluator",
@@ -827,6 +1004,22 @@
     "description": "Convert standard code functions into JSON schema format for AI function calling."
   },
   {
+    "id": "tui-app-scaffolder",
+    "file_path": "skills/tui-app-scaffolder/tui-app-scaffolder.md",
+    "name": "Interactive TUI Application Scaffolder",
+    "category": "developer-experience",
+    "tags": [
+      "tui",
+      "textual",
+      "rich",
+      "bubbletea",
+      "go"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Scaffolds a complete reactive Textual terminal Todo application with header, input, DataTable, footer, status label, custom keybindings and CRUD handlers, and includes a fully written Go Bubbletea counter alternative."
+  },
+  {
     "id": "type-definition-generator",
     "file_path": "skills/type-definition-generator/type-definition-generator.md",
     "name": "Type Definition Generator",
@@ -857,6 +1050,23 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Generate automated unit test suites (Jest, Pytest, Go test) with complete mocking."
+  },
+  {
+    "id": "vector-db-hybrid-indexer",
+    "file_path": "skills/vector-db-hybrid-indexer/vector-db-hybrid-indexer.md",
+    "name": "Vector DB Hybrid Search Indexer",
+    "category": "database",
+    "tags": [
+      "vector-db",
+      "hybrid-search",
+      "bm25",
+      "hnsw",
+      "rrf",
+      "rerank"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "A dependency-light Python module (hybrid_index.py) implementing a self-contained BM25 sparse scorer, a cosine-similarity dense index with optional numpy and pure-math fallback, Reciprocal Rank Fusion (RRF, k=60) merging, and a Cross-Encoder-style re-ranker via embedding dot products (drop-in replaceable by sentence-transformers). Functions index_documents(docs), search(query, top_k), rrf(rankings, k=60), plus a main() demo over a built-in corpus."
   },
   {
     "id": "vector-db-indexer",
@@ -892,6 +1102,22 @@
     "description": "Auto-discovers project verification surface (test/lint/typecheck configs), runs the minimal verification suite, and gates every completion claim on machine-parsed exit codes and assertion output. Returns UNVERIFIED rather than silent on discovery failure."
   },
   {
+    "id": "wasm-rust-compiler",
+    "file_path": "skills/wasm-rust-compiler/wasm-rust-compiler.md",
+    "name": "WebAssembly Rust Compiler",
+    "category": "backend",
+    "tags": [
+      "wasm",
+      "rust",
+      "wasm-bindgen",
+      "performance",
+      "wasm-pack"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Surveys JS and Python sources for CPU-bound hot loops, then provides a complete wasm-bindgen Rust implementation, Cargo manifest, wasm-pack build scripts, and browser loader glue for porting the bottlenecks to WebAssembly."
+  },
+  {
     "id": "webhook-handler-generator",
     "file_path": "skills/webhook-handler-generator/webhook-handler-generator.md",
     "name": "Webhook Handler Generator",
@@ -922,5 +1148,22 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Implement WebSocket connection lifecycles, ping/pong heartbeats, reconnect logic, and event broadcasting."
+  },
+  {
+    "id": "websocket-realtime-sync-engine",
+    "file_path": "skills/websocket-realtime-sync-engine/websocket-realtime-sync-engine.md",
+    "name": "WebSocket Realtime Sync Engine",
+    "category": "backend",
+    "tags": [
+      "websocket",
+      "sse",
+      "reconnection",
+      "backoff",
+      "heartbeat",
+      "sync"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Implements a dependency-light ESM WebSocket sync client with exponential-backoff reconnection, heartbeat ping/pong keep-alive, JSON Patch style delta application, and version-vector resync reconciliation, plus a runnable in-memory echo-server demo."
   }
 ]
