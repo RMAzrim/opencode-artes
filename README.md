@@ -59,6 +59,7 @@ Before submitting a PR, every skill file must pass a quality control audit:
 1. `git clone https://github.com/RMAzrim/opencode-artes.git`
 2. `cd opencode-artes`
 3. `npm run build` ← generates `registry.json` **and** the OpenCode-discoverable `.opencode/skills/<id>/SKILL.md` files by recursively scanning `skills/*/*.md`
+4. Repo maintainers: run `npm run update-description` after each build so the GitHub repository description always advertises the current skill count (automated via `gh repo edit`).
 4. Start OpenCode from this directory (`opencode run '<your request>' --dir .`) – all skills are auto-discovered as slash-commands (e.g. `/accessibility-auditor`) and natural-language triggers via their description. No other configuration needed.
 
 > **Note:** OpenCode loads skills at startup. Restart OpenCode after running `npm run build` (or after pulling new versions of this repo) so the new/updated skills are picked up.
@@ -197,6 +198,7 @@ show the per-category skill count for the **v2.0.0** release.
 |--------|-------------|
 | `npm run build` | Regenerates `registry.json` and `syncs .opencode/skills/<id>/SKILL.md` by scanning `./skills/*/*.md` |
 | `npm run sync-skills` | Alias of `npm run build` – regenerates the OpenCode `.opencode/skills/` copies |
+| `npm run update-description` | Reads the skill count from `registry.json` and writes it into the GitHub repository description via `gh repo edit` (run after every `npm run build`) |
 | `npm test` | Runs build and confirms registry generation |
 
 ## 🤝 Contributing
