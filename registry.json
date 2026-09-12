@@ -64,6 +64,36 @@
     "description": "Implement async/await workflows, promise pools, worker threads, or goroutines while preventing race conditions."
   },
   {
+    "id": "auth-session-oauth2-scaffolder",
+    "file_path": "skills/auth-session-oauth2-scaffolder/auth-session-oauth2-scaffolder.md",
+    "name": "Auth Session & OAuth2 Scaffolder",
+    "category": "backend",
+    "tags": [
+      "authentication",
+      "oauth2",
+      "jwt",
+      "argon2"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Implements comprehensive user authentication systems supporting secure cookie sessions, JWT refresh token rotation, password hashing, and third-party OAuth2 social logins."
+  },
+  {
+    "id": "bola-idor-vulnerability-scanner",
+    "file_path": "skills/bola-idor-vulnerability-scanner/bola-idor-vulnerability-scanner.md",
+    "name": "BOLA / IDOR Vulnerability Scanner",
+    "category": "security",
+    "tags": [
+      "bola",
+      "idor",
+      "authorization",
+      "owasp"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Inspects API endpoints for Broken Object Level Authorization (BOLA/IDOR) flaws to ensure users cannot manipulate resource IDs to access foreign data."
+  },
+  {
     "id": "bytecode-decompiler-assistant",
     "file_path": "skills/bytecode-decompiler-assistant/bytecode-decompiler-assistant.md",
     "name": "Bytecode Decompiler & Obfuscation Assistant",
@@ -223,6 +253,21 @@
     "description": "Compress long conversation histories or documents to save context window token limits."
   },
   {
+    "id": "cors-csp-headers-hardener",
+    "file_path": "skills/cors-csp-headers-hardener/cors-csp-headers-hardener.md",
+    "name": "CORS & CSP Headers Hardener",
+    "category": "security",
+    "tags": [
+      "cors",
+      "csp",
+      "security-headers",
+      "helmet"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Inspects HTTP response headers on local web servers and injects defensive security headers to prevent clickjacking, cross-site scripting, and unauthorized domain access."
+  },
+  {
     "id": "cron-schedule-parser",
     "file_path": "skills/cron-schedule-parser/cron-schedule-parser.md",
     "name": "Cron Schedule Parser",
@@ -286,6 +331,21 @@
     "description": "Generate database schema migration scripts (Prisma/TypeORM/Alembic) based on model changes."
   },
   {
+    "id": "dependency-cve-audit-patcher",
+    "file_path": "skills/dependency-cve-audit-patcher/dependency-cve-audit-patcher.md",
+    "name": "Dependency CVE Audit & Patcher",
+    "category": "security",
+    "tags": [
+      "cve",
+      "npm-audit",
+      "dependencies",
+      "security"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Audits third-party open-source packages for known vulnerabilities (CVEs), evaluating breaking change risks and generating automated patch updates."
+  },
+  {
     "id": "dependency-injection-wire",
     "file_path": "skills/dependency-injection-wire/dependency-injection-wire.md",
     "name": "Dependency Injection Wiring",
@@ -332,6 +392,21 @@
     "description": "Refactor code to apply object-oriented design patterns (Factory, Strategy, Observer, Decorator, Adapter) cleanly."
   },
   {
+    "id": "docker-multi-stage-stack-builder",
+    "file_path": "skills/docker-multi-stage-stack-builder/docker-multi-stage-stack-builder.md",
+    "name": "Docker Multi-Stage Stack Builder",
+    "category": "backend",
+    "tags": [
+      "docker",
+      "docker-compose",
+      "nginx",
+      "devops"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Containerizes web applications and dependencies into lightweight, production-ready multi-stage Docker images orchestrated via Docker Compose."
+  },
+  {
     "id": "dockerfile-builder",
     "file_path": "skills/dockerfile-builder/dockerfile-builder.md",
     "name": "Dockerfile Builder",
@@ -347,6 +422,21 @@
     "description": "Draft efficient, secure, and minimal multi-stage Dockerfiles."
   },
   {
+    "id": "drizzle-prisma-orm-architect",
+    "file_path": "skills/drizzle-prisma-orm-architect/drizzle-prisma-orm-architect.md",
+    "name": "Drizzle & Prisma ORM Architect",
+    "category": "database",
+    "tags": [
+      "drizzle",
+      "prisma",
+      "postgresql",
+      "migrations"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Architect relational database schemas, model complex entity relationships, optimize query execution, and generate zero-downtime database migration files."
+  },
+  {
     "id": "error-class-hierarchy-builder",
     "file_path": "skills/error-class-hierarchy-builder/error-class-hierarchy-builder.md",
     "name": "Error Class Hierarchy Builder",
@@ -360,6 +450,36 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Create domain-specific custom exception classes with standardized error codes, HTTP statuses, and metadata payloads."
+  },
+  {
+    "id": "express-fastapi-route-builder",
+    "file_path": "skills/express-fastapi-route-builder/express-fastapi-route-builder.md",
+    "name": "Express & FastAPI Route Builder",
+    "category": "backend",
+    "tags": [
+      "express",
+      "fastapi",
+      "rest-api",
+      "openapi"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Generates enterprise-grade RESTful API routes in Node.js (Express) or Python (FastAPI) complete with payload validation, unified error handling, and automated Swagger specs."
+  },
+  {
+    "id": "form-validation-schema-builder",
+    "file_path": "skills/form-validation-schema-builder/form-validation-schema-builder.md",
+    "name": "Form Validation & Schema Builder",
+    "category": "frontend",
+    "tags": [
+      "react-hook-form",
+      "zod",
+      "validation",
+      "typescript"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Builds robust, type-safe interactive web forms featuring complex validation logic, real-time error feedback, and seamless client-server schema synchronization."
   },
   {
     "id": "git-bisect-time-traveler",
@@ -394,6 +514,21 @@
     "description": "Design automated CI/CD workflows for testing, building, and deployment."
   },
   {
+    "id": "graphql-schema-dataloader-builder",
+    "file_path": "skills/graphql-schema-dataloader-builder/graphql-schema-dataloader-builder.md",
+    "name": "GraphQL Schema & DataLoader Builder",
+    "category": "backend",
+    "tags": [
+      "graphql",
+      "dataloader",
+      "apollo-server",
+      "schema"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Designs performance-optimized GraphQL APIs with strict type definitions, clean Query/Mutation resolvers, and batching mechanisms to eliminate N+1 database queries."
+  },
+  {
     "id": "graphql-schema-designer",
     "file_path": "skills/graphql-schema-designer/graphql-schema-designer.md",
     "name": "GraphQL Schema Designer",
@@ -426,6 +561,21 @@
     "description": "Extract hardcoded UI text strings into structured internationalization JSON translation files."
   },
   {
+    "id": "jwt-security-cracker-tester",
+    "file_path": "skills/jwt-security-cracker-tester/jwt-security-cracker-tester.md",
+    "name": "JWT Security & Algorithm Cracker Tester",
+    "category": "security",
+    "tags": [
+      "jwt",
+      "security-testing",
+      "cracking",
+      "api"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Evaluates JSON Web Token handling on local API routes to identify token forgery, algorithm confusion, and weak signature secrets."
+  },
+  {
     "id": "jwt-token-rotator",
     "file_path": "skills/jwt-token-rotator/jwt-token-rotator.md",
     "name": "JWT Token Rotator",
@@ -456,6 +606,21 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Validate and lint Kubernetes manifest files (YAML/JSON) against required fields, resource constraints, and best practices, with an optional kubectl dry-run schema check."
+  },
+  {
+    "id": "lighthouse-web-vitals-optimizer",
+    "file_path": "skills/lighthouse-web-vitals-optimizer/lighthouse-web-vitals-optimizer.md",
+    "name": "Lighthouse & Web Vitals Optimizer",
+    "category": "frontend",
+    "tags": [
+      "lighthouse",
+      "core-web-vitals",
+      "performance",
+      "nextjs"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Audits web performance metrics, optimizes client-side bundle footprints, and refactors resource delivery to achieve maximum Core Web Vitals scores."
   },
   {
     "id": "looping-auto-fixer",
@@ -571,6 +736,21 @@
     "description": "Convert code logic, database structures, or system architectures into valid Mermaid.js visual diagrams."
   },
   {
+    "id": "nextjs-app-router-scaffolder",
+    "file_path": "skills/nextjs-app-router-scaffolder/nextjs-app-router-scaffolder.md",
+    "name": "Next.js App Router Scaffolder",
+    "category": "frontend",
+    "tags": [
+      "nextjs",
+      "react-server-components",
+      "app-router",
+      "typescript"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Automatically scaffolds production-ready Next.js App Router directory structures, isolating React Server Components (RSC) from Client Components, configuring standardized layout boundaries, error handlers, and loading states."
+  },
+  {
     "id": "openapi-spec-writer",
     "file_path": "skills/openapi-spec-writer/openapi-spec-writer.md",
     "name": "OpenAPI Spec Writer",
@@ -601,6 +781,21 @@
     "author": "opencode-core",
     "version": "1.5.0",
     "description": "Wraps every truncating tool call: when output is truncated/byte-capped, refuses to decide on the truncated portion and automatically requests the tail window or a targeted grep. Flags encoding anomalies (UTF-16 NULs, BOMs) as suspect."
+  },
+  {
+    "id": "owasp-sast-auditor",
+    "file_path": "skills/owasp-sast-auditor/owasp-sast-auditor.md",
+    "name": "OWASP SAST Security Auditor",
+    "category": "security",
+    "tags": [
+      "owasp",
+      "sast",
+      "static-analysis",
+      "security"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Audits local web application source code for OWASP Top 10 vulnerabilities, generating security report logs and applying immediate automated code fixes."
   },
   {
     "id": "owasp-vulnerability-checker",
@@ -649,6 +844,21 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Generate Python Pandas scripts to handle missing values, drop duplicates, and normalize column data types."
+  },
+  {
+    "id": "playwright-e2e-security-flow-tester",
+    "file_path": "skills/playwright-e2e-security-flow-tester/playwright-e2e-security-flow-tester.md",
+    "name": "Playwright E2E Security Flow Tester",
+    "category": "backend",
+    "tags": [
+      "playwright",
+      "e2e",
+      "page-object-model",
+      "testing"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Crafts automated End-to-End (E2E) browser testing suites validating critical user journeys, edge cases, and client-side security boundary enforcement."
   },
   {
     "id": "procedural-dungeon-generator",
@@ -749,6 +959,21 @@
     "description": "Analyze document structures to recommend optimal chunking strategies and overlap ratios for RAG pipelines."
   },
   {
+    "id": "rate-limit-bruteforce-shield",
+    "file_path": "skills/rate-limit-bruteforce-shield/rate-limit-bruteforce-shield.md",
+    "name": "Rate-Limit & Brute-Force Shield",
+    "category": "security",
+    "tags": [
+      "rate-limiting",
+      "brute-force",
+      "redis",
+      "authentication"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Scans sensitive authentication endpoints and implements Redis-backed rate-limiting controls to block credential stuffing and brute-force attacks."
+  },
+  {
     "id": "rate-limiter-middleware",
     "file_path": "skills/rate-limiter-middleware/rate-limiter-middleware.md",
     "name": "Rate Limiter Middleware",
@@ -763,6 +988,21 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Build API rate-limiting middleware using Token Bucket or Sliding Window algorithms."
+  },
+  {
+    "id": "redis-pubsub-cache-manager",
+    "file_path": "skills/redis-pubsub-cache-manager/redis-pubsub-cache-manager.md",
+    "name": "Redis Pub/Sub & Cache Manager",
+    "category": "backend",
+    "tags": [
+      "redis",
+      "ioredis",
+      "pub-sub",
+      "caching"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Deploys high-performance caching strategies and distributed message pub/sub event buses to reduce database load and handle background processing."
   },
   {
     "id": "regex-builder-explainer",
@@ -908,6 +1148,21 @@
     "description": "Analyze slow SQL queries, recommend indexes, and restructure join clauses."
   },
   {
+    "id": "sqli-xss-payload-sanitizer",
+    "file_path": "skills/sqli-xss-payload-sanitizer/sqli-xss-payload-sanitizer.md",
+    "name": "SQLi & XSS Payload Sanitizer",
+    "category": "security",
+    "tags": [
+      "sqli",
+      "xss",
+      "sanitization",
+      "parameterized-queries"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Identifies unescaped user inputs and unparameterized database queries, injecting sanitization middleware and parameterized bindings to neutralize XSS and SQLi."
+  },
+  {
     "id": "state-management-architect",
     "file_path": "skills/state-management-architect/state-management-architect.md",
     "name": "State Management Architect",
@@ -922,6 +1177,21 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Implement clean application state management patterns (Zustand, Redux Toolkit, Pinia) with atomic state updates."
+  },
+  {
+    "id": "state-management-query-architect",
+    "file_path": "skills/state-management-query-architect/state-management-query-architect.md",
+    "name": "State Management & Query Architect",
+    "category": "frontend",
+    "tags": [
+      "zustand",
+      "tanstack-query",
+      "state-management",
+      "server-state"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Establishes a clean separation between global client UI state and asynchronous server state management using Zustand and TanStack Query (React Query)."
   },
   {
     "id": "structured-output-enforcer",
@@ -970,6 +1240,21 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Convert raw CSS or inline styles into clean, idiomatic Tailwind CSS utility classes."
+  },
+  {
+    "id": "tailwind-responsive-darkmode-styler",
+    "file_path": "skills/tailwind-responsive-darkmode-styler/tailwind-responsive-darkmode-styler.md",
+    "name": "Tailwind Responsive & Darkmode Styler",
+    "category": "frontend",
+    "tags": [
+      "tailwindcss",
+      "responsive-design",
+      "dark-mode",
+      "accessibility"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Transforms raw JSX or HTML structures into fully responsive, accessible, dark-mode ready web interfaces using Tailwind CSS utility classes."
   },
   {
     "id": "terraform-module-builder",
@@ -1148,6 +1433,21 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Implement WebSocket connection lifecycles, ping/pong heartbeats, reconnect logic, and event broadcasting."
+  },
+  {
+    "id": "websocket-realtime-secure-engine",
+    "file_path": "skills/websocket-realtime-secure-engine/websocket-realtime-secure-engine.md",
+    "name": "WebSocket Realtime Secure Engine",
+    "category": "backend",
+    "tags": [
+      "websocket",
+      "socket.io",
+      "realtime",
+      "jwt"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Scaffolds high-throughput, bidirectional real-time communication layers over WebSockets or Server-Sent Events (SSE) with robust reconnection and authentication controls."
   },
   {
     "id": "websocket-realtime-sync-engine",
