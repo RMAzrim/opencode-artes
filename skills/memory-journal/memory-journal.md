@@ -60,5 +60,5 @@ description: "Cross-session ledger at `~/.opencode/memory/*.md`: appends decisio
 ## Windows PowerShell Notes
 
 - Journal directory: `$env:HOMEPATH\.opencode\memory`
-- Use `Set-Content -Path ... -Encoding UTF8NoBOM` when writing entries
+- Use `Set-Content -Path ... -Encoding UTF8` when writing entries (`UTF8NoBOM` is PowerShell 7+ only; PS 5.1 writes a BOM otherwise)
 - Diff command: `diff -u <(grep -i "decision" transcript.md) <(cat ~/.opencode/memory/decisions.md)`
