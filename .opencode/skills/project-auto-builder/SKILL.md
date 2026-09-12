@@ -1,5 +1,5 @@
 ---
-name: project-auto-builder
+name: Project Auto Builder
 description: Dynamic orchestrator that inspects ./registry.json, analyzes the project workspace stack (Node.js, Python, Docker, etc.), automatically matches and orders optimal skills into an execution sequence, runs the selected skills, and generates a final readiness summary report.
 metadata:
   source: skills/project-auto-builder/project-auto-builder.md

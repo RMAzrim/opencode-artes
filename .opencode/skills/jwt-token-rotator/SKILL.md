@@ -1,5 +1,5 @@
 ---
-name: jwt-token-rotator
+name: JWT Token Rotator
 description: Implement secure short-lived access token renewal and refresh token rotation with revocation blacklisting.
 metadata:
   source: skills/jwt-token-rotator/jwt-token-rotator.md

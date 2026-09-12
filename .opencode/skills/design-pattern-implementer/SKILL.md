@@ -1,5 +1,5 @@
 ---
-name: design-pattern-implementer
+name: Design Pattern Implementer
 description: Refactor code to apply object-oriented design patterns (Factory, Strategy, Observer, Decorator, Adapter) cleanly.
 metadata:
   source: skills/design-pattern-implementer/design-pattern-implementer.md

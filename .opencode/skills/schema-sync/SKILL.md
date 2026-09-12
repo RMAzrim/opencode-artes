@@ -1,5 +1,5 @@
 ---
-name: schema-sync
+name: Schema Sync
 description: Before multi-step toolkit workflows, pings the live tool (via schema-style endpoints / search tools) and diffs against my cached schema; on mismatch, rewrites the workflow plan, never the cached assumptions silently.
 metadata:
   source: skills/schema-sync/schema-sync.md

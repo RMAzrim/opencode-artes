@@ -1,5 +1,5 @@
 ---
-name: rate-limiter-middleware
+name: Rate Limiter Middleware
 description: Build API rate-limiting middleware using Token Bucket or Sliding Window algorithms.
 metadata:
   source: skills/rate-limiter-middleware/rate-limiter-middleware.md

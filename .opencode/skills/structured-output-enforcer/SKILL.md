@@ -1,5 +1,5 @@
 ---
-name: structured-output-enforcer
+name: Structured Output Enforcer
 description: Convert unstructured LLM output into validated JSON adhering to strict Zod or JSON Schema rules.
 metadata:
   source: skills/structured-output-enforcer/structured-output-enforcer.md

@@ -1,5 +1,5 @@
 ---
-name: cli-tool-scaffolder
+name: CLI Tool Scaffolder
 description: Scaffold interactive command-line interface tools with argument parsing, flags, spinners, and help menus.
 metadata:
   source: skills/cli-tool-scaffolder/cli-tool-scaffolder.md

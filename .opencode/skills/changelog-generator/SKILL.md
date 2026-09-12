@@ -1,5 +1,5 @@
 ---
-name: changelog-generator
+name: Changelog Generator
 description: Parse Git commit logs to generate a CHANGELOG.md adhering to Conventional Commits.
 metadata:
   source: skills/changelog-generator/changelog-generator.md

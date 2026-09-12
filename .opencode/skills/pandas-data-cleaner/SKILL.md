@@ -1,5 +1,5 @@
 ---
-name: pandas-data-cleaner
+name: Pandas Data Cleaner
 description: Generate Python Pandas scripts to handle missing values, drop duplicates, and normalize column data types.
 metadata:
   source: skills/pandas-data-cleaner/pandas-data-cleaner.md

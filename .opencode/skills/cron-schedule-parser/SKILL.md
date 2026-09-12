@@ -1,5 +1,5 @@
 ---
-name: cron-schedule-parser
+name: Cron Schedule Parser
 description: Translate natural language time rules into valid 5-part or 6-part Cron schedule expressions.
 metadata:
   source: skills/cron-schedule-parser/cron-schedule-parser.md

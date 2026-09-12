@@ -1,5 +1,5 @@
 ---
-name: code-translator
+name: Code Translator
 description: Precisely convert code logic from one programming language to another.
 metadata:
   source: skills/code-translator/code-translator.md

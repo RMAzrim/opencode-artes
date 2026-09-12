@@ -1,5 +1,5 @@
 ---
-name: vector-db-indexer
+name: Vector DB Indexer
 description: Chunk documents and store vector embeddings into a Vector DB.
 metadata:
   source: skills/vector-db-indexer/vector-db-indexer.md

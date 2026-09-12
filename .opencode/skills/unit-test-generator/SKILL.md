@@ -1,5 +1,5 @@
 ---
-name: unit-test-generator
+name: Unit Test Generator
 description: Generate automated unit test suites (Jest, Pytest, Go test) with complete mocking.
 metadata:
   source: skills/unit-test-generator/unit-test-generator.md

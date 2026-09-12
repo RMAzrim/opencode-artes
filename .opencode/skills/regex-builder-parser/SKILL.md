@@ -1,5 +1,5 @@
 ---
-name: regex-builder-parser
+name: Regex Builder & Parser
 description: Construct ReDoS-safe regular expressions and string parser logic for complex input string extraction.
 metadata:
   source: skills/regex-builder-parser/regex-builder-parser.md

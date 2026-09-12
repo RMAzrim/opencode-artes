@@ -1,5 +1,5 @@
 ---
-name: data-structure-optimizer
+name: Data Structure Optimizer
 description: Analyze algorithm time/space complexity (Big O) and refactor logic using optimal data structures (Heaps, Tries, Hash Maps).
 metadata:
   source: skills/data-structure-optimizer/data-structure-optimizer.md

@@ -160,10 +160,12 @@ function extractBody(content) {
 
 /**
  * Generates OpenCode-discoverable SKILL.md files from the canonical skill
- * sources. OpenCode loads skills from .opencode/skills/<name>/SKILL.md,
- * where `name` in frontmatter must equal the folder name, and requires a
- * non-empty `description`. The canonical skills/<id>/<id>.md file remains
- * the single source of truth; this function maps it to OpenCode's format.
+ * sources. OpenCode loads skills from .opencode/skills/<id>/SKILL.md. The
+ * skill ID is path-derived (the folder name); frontmatter `name` is only a
+ * display label (the canonical human-readable name) and `description` must be
+ * non-empty for the skill to be advertised. The canonical skills/<id>/<id>.md
+ * file remains the single source of truth; this function maps it to OpenCode's
+ * format.
  *
  * @param {Array} skills - Skill objects from scanSkillsDirectory()
  * @returns {number} Number of SKILL.md files generated
@@ -182,7 +184,7 @@ function generateOpenCodeSkills(skills) {
 
     const sk = [
       '---',
-      `name: ${skill.id}`,
+      `name: ${yamlScalar(skill.name)}`,
       `description: ${yamlScalar(skill.description)}`,
       'metadata:',
       `  source: ${skill.file_path}`,

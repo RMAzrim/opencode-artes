@@ -1,5 +1,5 @@
 ---
-name: memory-journal
+name: Memory Journal
 description: "Cross-session ledger at `~/.opencode/memory/*.md`: appends decisions/rejections/root-causes during a session; on session start, diffs against the live transcript so the agent stops re-litigating settled decisions."
 metadata:
   source: skills/memory-journal/memory-journal.md

@@ -1,5 +1,5 @@
 ---
-name: type-definition-generator
+name: Type Definition Generator
 description: Convert untyped JavaScript, Python dicts, or raw JSON payloads into strict TypeScript interfaces or Type Hint annotations.
 metadata:
   source: skills/type-definition-generator/type-definition-generator.md

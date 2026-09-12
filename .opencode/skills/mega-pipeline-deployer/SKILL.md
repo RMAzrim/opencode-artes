@@ -1,5 +1,5 @@
 ---
-name: mega-pipeline-deployer
+name: Mega Pipeline Deployer
 description: Flexible orchestration engine that executes pipeline workflows in Full Mode (all 7 steps sequentially) or Selective Mode (user-specified step subset). Performs data contracting and validation between active steps, skips inactive steps gracefully without breaking the chain, and halts execution with exact error logging when an active step fails.
 metadata:
   source: skills/mega-pipeline-deployer/mega-pipeline-deployer.md

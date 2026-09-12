@@ -1,5 +1,5 @@
 ---
-name: rag-chunking-evaluator
+name: RAG Chunking Evaluator
 description: Analyze document structures to recommend optimal chunking strategies and overlap ratios for RAG pipelines.
 metadata:
   source: skills/rag-chunking-evaluator/rag-chunking-evaluator.md

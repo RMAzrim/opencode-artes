@@ -1,5 +1,5 @@
 ---
-name: github-actions-generator
+name: GitHub Actions Generator
 description: Design automated CI/CD workflows for testing, building, and deployment.
 metadata:
   source: skills/github-actions-generator/github-actions-generator.md

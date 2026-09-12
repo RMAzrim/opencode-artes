@@ -1,5 +1,5 @@
 ---
-name: state-management-architect
+name: State Management Architect
 description: Implement clean application state management patterns (Zustand, Redux Toolkit, Pinia) with atomic state updates.
 metadata:
   source: skills/state-management-architect/state-management-architect.md

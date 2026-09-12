@@ -1,5 +1,5 @@
 ---
-name: graphql-schema-designer
+name: GraphQL Schema Designer
 description: Design GraphQL type definitions, query/mutation schemas, and resolver boilerplate code.
 metadata:
   source: skills/graphql-schema-designer/graphql-schema-designer.md

@@ -1,5 +1,5 @@
 ---
-name: webhook-handler-generator
+name: Webhook Handler Generator
 description: Draft secure webhook receiver endpoints complete with cryptographic signature verification (Stripe, GitHub, Midtrans).
 metadata:
   source: skills/webhook-handler-generator/webhook-handler-generator.md

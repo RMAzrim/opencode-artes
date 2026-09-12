@@ -1,5 +1,5 @@
 ---
-name: dependency-injection-wire
+name: Dependency Injection Wiring
 description: Decouple code modules using Inversion of Control (IoC) containers and explicit interface abstractions.
 metadata:
   source: skills/dependency-injection-wire/dependency-injection-wire.md

@@ -1,5 +1,5 @@
 ---
-name: error-class-hierarchy-builder
+name: Error Class Hierarchy Builder
 description: Create domain-specific custom exception classes with standardized error codes, HTTP statuses, and metadata payloads.
 metadata:
   source: skills/error-class-hierarchy-builder/error-class-hierarchy-builder.md

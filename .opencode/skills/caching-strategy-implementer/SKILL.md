@@ -1,5 +1,5 @@
 ---
-name: caching-strategy-implementer
+name: Caching Strategy Implementer
 description: Implement Cache-Aside, Write-Through, and TTL-based caching logic using Redis or in-memory LRU caches.
 metadata:
   source: skills/caching-strategy-implementer/caching-strategy-implementer.md

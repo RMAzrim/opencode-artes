@@ -1,5 +1,5 @@
 ---
-name: subagent-evidence
+name: Subagent Evidence
 description: "Dispatch-time contract for explore agents: return only observations each with a `file:line` citation and raw excerpt; inference must be explicitly tagged `[INFERRED]`. Post-dispatch, I sample-cite — verify ≥2 citations per summary myself before trusting conclusions."
 metadata:
   source: skills/subagent-evidence/subagent-evidence.md

@@ -1,5 +1,5 @@
 ---
-name: regression-sentinel
+name: Regression Sentinel
 description: Before each new task in a long session, re-runs the last N passing checkpoints captured by verify-orchestrator as a smoke suite, catching regressions caused by recent edits before they compound.
 metadata:
   source: skills/regression-sentinel/regression-sentinel.md

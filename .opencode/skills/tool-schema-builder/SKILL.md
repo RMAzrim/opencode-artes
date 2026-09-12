@@ -1,5 +1,5 @@
 ---
-name: tool-schema-builder
+name: Tool Schema Builder
 description: Convert standard code functions into JSON schema format for AI function calling.
 metadata:
   source: skills/tool-schema-builder/tool-schema-builder.md

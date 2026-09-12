@@ -65,7 +65,7 @@ Before submitting a PR, every skill file must pass a quality control audit:
 
 ### 📁 Source of Truth
 
-Canonical skill files live at `skills/<skill-id>/<skill-id>.md` (with the full YAML frontmatter: `id`, `file_path`, `name`, `category`, `tags`, `author`, `version`, `description`). OpenCode itself reads the generated `.opencode/skills/<skill-id>/SKILL.md` copies, whose frontmatter is rewritten to OpenCode's format (`name` must equal the folder name; `description` drives auto-triggering). The generated copies are regenerated from the canonical files on every `npm run build` — **edit the canonical file, never the generated copy**, then rebuild.
+Canonical skill files live at `skills/<skill-id>/<skill-id>.md` (with the full YAML frontmatter: `id`, `file_path`, `name`, `category`, `tags`, `author`, `version`, `description`). OpenCode itself reads the generated `.opencode/skills/<skill-id>/SKILL.md` copies in the recommended directory form. Per OpenCode's docs, the skill **ID is path-derived** (the folder name, lowercase kebab-case); frontmatter `name` is only a display label (we write the canonical human-readable name) and a non-empty `description` is what lets the model discover and auto-trigger the skill. Such a skill directory is also the private home for any supporting `scripts/`, `references/`, or `templates/` files, referenced relative to the folder containing `SKILL.md`. The generated copies are regenerated from the canonical files on every `npm run build` — **edit the canonical file, never the generated copy**, then rebuild.
 
 👉 **Star ⭐ the repo** and never look for another skill repository again.
 

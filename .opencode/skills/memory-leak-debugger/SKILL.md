@@ -1,5 +1,5 @@
 ---
-name: memory-leak-debugger
+name: Memory Leak Debugger
 description: Identify and resolve unmanaged memory leaks, event listener leaks, and circular references across runtimes.
 metadata:
   source: skills/memory-leak-debugger/memory-leak-debugger.md

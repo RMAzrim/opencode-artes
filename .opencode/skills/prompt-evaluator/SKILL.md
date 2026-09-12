@@ -1,5 +1,5 @@
 ---
-name: prompt-evaluator
+name: Prompt Evaluator
 description: Evaluate agent prompt effectiveness using accuracy metrics and token constraints.
 metadata:
   source: skills/prompt-evaluator/prompt-evaluator.md

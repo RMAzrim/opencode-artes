@@ -1,5 +1,5 @@
 ---
-name: pagination-cursor-builder
+name: Pagination Cursor Builder
 description: Build cursor-based and keyset pagination handlers for database queries and API endpoints.
 metadata:
   source: skills/pagination-cursor-builder/pagination-cursor-builder.md

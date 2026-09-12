@@ -1,5 +1,5 @@
 ---
-name: deptomap
+name: Dep Map
 description: Builds a persistent dependency graph (`dep-graph.json`) by scanning `import`/`require`/`include` patterns across the codebase. Before any edit it lists the blast radius of consumers for the target symbol; after the edit it re-verifies no orphaned references exist.
 metadata:
   source: skills/deptomap/deptomap.md

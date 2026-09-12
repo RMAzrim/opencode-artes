@@ -1,5 +1,5 @@
 ---
-name: tailwind-converter
+name: Tailwind CSS Converter
 description: Convert raw CSS or inline styles into clean, idiomatic Tailwind CSS utility classes.
 metadata:
   source: skills/tailwind-converter/tailwind-converter.md

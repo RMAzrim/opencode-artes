@@ -1,5 +1,5 @@
 ---
-name: accessibility-auditor
+name: Accessibility Auditor
 description: Audit HTML/JSX code against WCAG 2.1 guidelines and provide accessible ARIA code fixes.
 metadata:
   source: skills/accessibility-auditor/accessibility-auditor.md

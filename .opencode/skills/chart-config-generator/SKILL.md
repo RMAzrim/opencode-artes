@@ -1,5 +1,5 @@
 ---
-name: chart-config-generator
+name: Chart Config Generator
 description: Map raw JSON datasets into ready-to-use chart configuration objects (Chart.js, Recharts, or ECharts).
 metadata:
   source: skills/chart-config-generator/chart-config-generator.md

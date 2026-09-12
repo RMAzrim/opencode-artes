@@ -1,5 +1,5 @@
 ---
-name: openapi-spec-writer
+name: OpenAPI Spec Writer
 description: Extract backend API code into OpenAPI/Swagger 3.0 documentation.
 metadata:
   source: skills/openapi-spec-writer/openapi-spec-writer.md

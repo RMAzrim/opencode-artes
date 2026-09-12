@@ -1,5 +1,5 @@
 ---
-name: serverless-function-generator
+name: Serverless Function Generator
 description: Scaffold lightweight serverless handlers for Cloudflare Workers or AWS Lambda with standard CORS and error handling.
 metadata:
   source: skills/serverless-function-generator/serverless-function-generator.md

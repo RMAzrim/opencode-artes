@@ -1,5 +1,5 @@
 ---
-name: regex-builder-explainer
+name: Regex Builder & Explainer
 description: Construct complex regular expressions based on pattern requirements with step-by-step logic breakdown.
 metadata:
   source: skills/regex-builder-explainer/regex-builder-explainer.md

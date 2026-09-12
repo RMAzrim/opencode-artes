@@ -1,5 +1,5 @@
 ---
-name: async-concurrency-handler
+name: Async Concurrency Handler
 description: Implement async/await workflows, promise pools, worker threads, or goroutines while preventing race conditions.
 metadata:
   source: skills/async-concurrency-handler/async-concurrency-handler.md

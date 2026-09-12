@@ -1,5 +1,5 @@
 ---
-name: secrets-leak-detector
+name: Secrets Leak Detector
 description: Scan codebases to detect leaked API keys, tokens, or credentials.
 metadata:
   source: skills/secrets-leak-detector/secrets-leak-detector.md

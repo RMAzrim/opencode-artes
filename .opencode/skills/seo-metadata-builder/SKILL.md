@@ -1,5 +1,5 @@
 ---
-name: seo-metadata-builder
+name: SEO & Metadata Builder
 description: Generate complete HTML meta tags, Open Graph, Twitter Cards, and JSON-LD structured data.
 metadata:
   source: skills/seo-metadata-builder/seo-metadata-builder.md

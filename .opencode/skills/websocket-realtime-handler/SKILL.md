@@ -1,5 +1,5 @@
 ---
-name: websocket-realtime-handler
+name: WebSocket Realtime Handler
 description: Implement WebSocket connection lifecycles, ping/pong heartbeats, reconnect logic, and event broadcasting.
 metadata:
   source: skills/websocket-realtime-handler/websocket-realtime-handler.md

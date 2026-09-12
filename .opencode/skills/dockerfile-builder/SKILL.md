@@ -1,5 +1,5 @@
 ---
-name: dockerfile-builder
+name: Dockerfile Builder
 description: Draft efficient, secure, and minimal multi-stage Dockerfiles.
 metadata:
   source: skills/dockerfile-builder/dockerfile-builder.md

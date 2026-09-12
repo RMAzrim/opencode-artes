@@ -1,5 +1,5 @@
 ---
-name: context-compressor
+name: Context Compressor
 description: Compress long conversation histories or documents to save context window token limits.
 metadata:
   source: skills/context-compressor/context-compressor.md

@@ -1,5 +1,5 @@
 ---
-name: i18n-locale-extractor
+name: i18n Locale Extractor
 description: Extract hardcoded UI text strings into structured internationalization JSON translation files.
 metadata:
   source: skills/i18n-locale-extractor/i18n-locale-extractor.md

@@ -1,5 +1,5 @@
 ---
-name: terraform-module-builder
+name: Terraform Module Builder
 description: Draft modular, reusable Infrastructure-as-Code Terraform modules for cloud infrastructure.
 metadata:
   source: skills/terraform-module-builder/terraform-module-builder.md

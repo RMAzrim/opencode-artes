@@ -1,5 +1,5 @@
 ---
-name: verify-orchestrator
+name: Verify Orchestrator
 description: Auto-discovers project verification surface (test/lint/typecheck configs), runs the minimal verification suite, and gates every completion claim on machine-parsed exit codes and assertion output. Returns UNVERIFIED rather than silent on discovery failure.
 metadata:
   source: skills/verify-orchestrator/verify-orchestrator.md

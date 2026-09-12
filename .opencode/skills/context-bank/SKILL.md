@@ -1,5 +1,5 @@
 ---
-name: context-bank
+name: Context Bank
 description: Materializes a structured CONTEXT_BANK.md + JSON file that captures verified file paths, decided invariants, active TODOs, and open risks, allowing subagents and repeated sessions to reload a lean current snapshot instead of decaying transcript memory.
 metadata:
   source: skills/context-bank/context-bank.md

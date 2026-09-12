@@ -1,5 +1,5 @@
 ---
-name: spec-loop-closer
+name: Spec Loop Closer
 description: Forces every user requirement through a 1:1 mapping to a checkable assertion (grep-able token, executable test, or numeric threshold) before implementation begins. Blocks "done" until each assertion has a machine-runnable check.
 metadata:
   source: skills/spec-loop-closer/spec-loop-closer.md

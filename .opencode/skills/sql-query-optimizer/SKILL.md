@@ -1,5 +1,5 @@
 ---
-name: sql-query-optimizer
+name: SQL Query Optimizer
 description: Analyze slow SQL queries, recommend indexes, and restructure join clauses.
 metadata:
   source: skills/sql-query-optimizer/sql-query-optimizer.md

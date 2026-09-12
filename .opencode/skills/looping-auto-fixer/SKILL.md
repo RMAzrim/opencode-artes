@@ -1,5 +1,5 @@
 ---
-name: looping-auto-fixer
+name: Looping Auto Fixer
 description: Iterative fixer that runs unit-test-generator → validates via skill-tester → if tests fail, feeds error logs to memory-leak-debugger or patches code → repeats up to 3 retry iterations → exits on SUCCESS or halts on FAILED_AFTER_MAX_RETRIES.
 metadata:
   source: skills/looping-auto-fixer/looping-auto-fixer.md

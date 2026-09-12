@@ -1,5 +1,5 @@
 ---
-name: mermaid-diagrammer
+name: Mermaid Diagrammer
 description: Convert code logic, database structures, or system architectures into valid Mermaid.js visual diagrams.
 metadata:
   source: skills/mermaid-diagrammer/mermaid-diagrammer.md

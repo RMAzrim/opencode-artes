@@ -1,5 +1,5 @@
 ---
-name: k8s-manifest-validator
+name: K8s Manifest Validator
 description: Validate and lint Kubernetes manifest files (YAML/JSON) against required fields, resource constraints, and best practices, with an optional kubectl dry-run schema check.
 metadata:
   source: skills/k8s-manifest-validator/k8s-manifest-validator.md

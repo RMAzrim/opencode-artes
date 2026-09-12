@@ -1,5 +1,5 @@
 ---
-name: db-migration-generator
+name: DB Migration Generator
 description: Generate database schema migration scripts (Prisma/TypeORM/Alembic) based on model changes.
 metadata:
   source: skills/db-migration-generator/db-migration-generator.md
