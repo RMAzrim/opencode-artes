@@ -95,8 +95,8 @@ Canonical skill files live at `skills/<skill-id>/<skill-id>.md` (with the full Y
 
 Every skill below is loadable via its folder-derived ID as a slash command
 (`/<id>`), discoverable by natural language through its `description`, and has a
-complete production reference implementation inside its document. Header rows
-show the per-category skill count for the **v2.0.0** release.
+complete production reference implementation inside its document. Header row
+per category shows the category-wide skill count for the current `main` branch.
 
 | Skill ID | Display name | What it does (description) |
 |---|---|---|
@@ -114,13 +114,20 @@ show the per-category skill count for the **v2.0.0** release.
 | `graphql-schema-designer` | GraphQL Schema Designer | Design GraphQL type definitions, query/mutation schemas, and resolver boilerplate code. |
 | `mcp-tools-auto-bridge` | MCP Tools Auto Bridge | A Python generator (bridge_gen.py) that reads a target source file via ast reflection, extracts public function signatures (name, parameters, type annotations, docstrings, return types), and writes a standalone MCP server (mcp_server.py) using mcp.server.fastmcp.FastMCP with one @mcp.tool() per function and a stdio transport entry point. Stdlib-only generator; runtime requires mcp package. |
 | `webhook-handler-generator` | Webhook Handler Generator | Draft secure webhook receiver endpoints complete with cryptographic signature verification (Stripe, GitHub, Midtrans). |
-| **backend** (7) | | | |
+| **backend** (14) | | | |
+| `auth-session-oauth2-scaffolder` | Auth Session & OAuth2 Scaffolder | Implements comprehensive user authentication systems supporting secure cookie sessions, JWT refresh token rotation, password hashing, and third-party OAuth2 social logins. |
 | `caching-strategy-implementer` | Caching Strategy Implementer | Implement Cache-Aside, Write-Through, and TTL-based caching logic using Redis or in-memory LRU caches. |
+| `docker-multi-stage-stack-builder` | Docker Multi-Stage Stack Builder | Containerizes web applications and dependencies into lightweight, production-ready multi-stage Docker images orchestrated via Docker Compose. |
+| `express-fastapi-route-builder` | Express & FastAPI Route Builder | Generates enterprise-grade RESTful API routes in Node.js (Express) or Python (FastAPI) complete with payload validation, unified error handling, and automated Swagger specs. |
+| `graphql-schema-dataloader-builder` | GraphQL Schema & DataLoader Builder | Designs performance-optimized GraphQL APIs with strict type definitions, clean Query/Mutation resolvers, and batching mechanisms to eliminate N+1 database queries. |
 | `jwt-token-rotator` | JWT Token Rotator | Implement secure short-lived access token renewal and refresh token rotation with revocation blacklisting. |
 | `pagination-cursor-builder` | Pagination Cursor Builder | Build cursor-based and keyset pagination handlers for database queries and API endpoints. |
+| `playwright-e2e-security-flow-tester` | Playwright E2E Security Flow Tester | Crafts automated End-to-End (E2E) browser testing suites validating critical user journeys, edge cases, and client-side security boundary enforcement. |
 | `rate-limiter-middleware` | Rate Limiter Middleware | Build API rate-limiting middleware using Token Bucket or Sliding Window algorithms. |
+| `redis-pubsub-cache-manager` | Redis Pub/Sub & Cache Manager | Deploys high-performance caching strategies and distributed message pub/sub event buses to reduce database load and handle background processing. |
 | `wasm-rust-compiler` | WebAssembly Rust Compiler | Surveys JS and Python sources for CPU-bound hot loops, then provides a complete wasm-bindgen Rust implementation, Cargo manifest, wasm-pack build scripts, and browser loader glue for porting the bottlenecks to WebAssembly. |
 | `websocket-realtime-handler` | WebSocket Realtime Handler | Implement WebSocket connection lifecycles, ping/pong heartbeats, reconnect logic, and event broadcasting. |
+| `websocket-realtime-secure-engine` | WebSocket Realtime Secure Engine | Scaffolds high-throughput, bidirectional real-time communication layers over WebSockets or Server-Sent Events (SSE) with robust reconnection and authentication controls. |
 | `websocket-realtime-sync-engine` | WebSocket Realtime Sync Engine | Implements a dependency-light ESM WebSocket sync client with exponential-backoff reconnection, heartbeat ping/pong keep-alive, JSON Patch style delta application, and version-vector resync reconciliation, plus a runnable in-memory echo-server demo. |
 | **cloud** (3) | | | |
 | `k8s-manifest-validator` | K8s Manifest Validator | Validate and lint Kubernetes manifest files (YAML/JSON) against required fields, resource constraints, and best practices, with an optional kubectl dry-run schema check. |
@@ -149,9 +156,10 @@ show the per-category skill count for the **v2.0.0** release.
 | **data-science** (2) | | | |
 | `chart-config-generator` | Chart Config Generator | Map raw JSON datasets into ready-to-use chart configuration objects (Chart.js, Recharts, or ECharts). |
 | `pandas-data-cleaner` | Pandas Data Cleaner | Generate Python Pandas scripts to handle missing values, drop duplicates, and normalize column data types. |
-| **database** (5) | | | |
+| **database** (6) | | | |
 | `database-zero-downtime-migrator` | Database Zero-Downtime Migrator | Generates Expand-and-Contract (Parallel Change) migration SQL as four ordered stage files plus a JSON manifest from a MigrationPlan, emitting Postgres or MySQL dialect output through a Python stdlib argparse module. |
 | `db-migration-generator` | DB Migration Generator | Generate database schema migration scripts (Prisma/TypeORM/Alembic) based on model changes. |
+| `drizzle-prisma-orm-architect` | Drizzle & Prisma ORM Architect | Architect relational database schemas, model complex entity relationships, optimize query execution, and generate zero-downtime database migration files. |
 | `sql-query-optimizer` | SQL Query Optimizer | Analyze slow SQL queries, recommend indexes, and restructure join clauses. |
 | `vector-db-hybrid-indexer` | Vector DB Hybrid Search Indexer | A dependency-light Python module (hybrid_index.py) implementing a self-contained BM25 sparse scorer, a cosine-similarity dense index with optional numpy and pure-math fallback, Reciprocal Rank Fusion (RRF, k=60) merging, and a Cross-Encoder-style re-ranker via embedding dot products (drop-in replaceable by sentence-transformers). Functions index_documents(docs), search(query, top_k), rrf(rankings, k=60), plus a main() demo over a built-in corpus. |
 | `vector-db-indexer` | Vector DB Indexer | Chunk documents and store vector embeddings into a Vector DB. |
@@ -170,27 +178,39 @@ show the per-category skill count for the **v2.0.0** release.
 | **devops** (2) | | | |
 | `dockerfile-builder` | Dockerfile Builder | Draft efficient, secure, and minimal multi-stage Dockerfiles. |
 | `github-actions-generator` | GitHub Actions Generator | Design automated CI/CD workflows for testing, building, and deployment. |
-| **frontend** (5) | | | |
+| **frontend** (10) | | | |
 | `accessibility-auditor` | Accessibility Auditor | Audit HTML/JSX code against WCAG 2.1 guidelines and provide accessible ARIA code fixes. |
+| `form-validation-schema-builder` | Form Validation & Schema Builder | Builds robust, type-safe interactive web forms featuring complex validation logic, real-time error feedback, and seamless client-server schema synchronization. |
 | `i18n-locale-extractor` | i18n Locale Extractor | Extract hardcoded UI text strings into structured internationalization JSON translation files. |
+| `lighthouse-web-vitals-optimizer` | Lighthouse & Web Vitals Optimizer | Audits web performance metrics, optimizes client-side bundle footprints, and refactors resource delivery to achieve maximum Core Web Vitals scores. |
+| `nextjs-app-router-scaffolder` | Next.js App Router Scaffolder | Automatically scaffolds production-ready Next.js App Router directory structures, isolating React Server Components (RSC) from Client Components, configuring standardized layout boundaries, error handlers, and loading states. |
 | `seo-metadata-builder` | SEO & Metadata Builder | Generate complete HTML meta tags, Open Graph, Twitter Cards, and JSON-LD structured data. |
+| `state-management-query-architect` | State Management & Query Architect | Establishes a clean separation between global client UI state and asynchronous server state management using Zustand and TanStack Query (React Query). |
 | `state-management-architect` | State Management Architect | Implement clean application state management patterns (Zustand, Redux Toolkit, Pinia) with atomic state updates. |
 | `tailwind-converter` | Tailwind CSS Converter | Convert raw CSS or inline styles into clean, idiomatic Tailwind CSS utility classes. |
+| `tailwind-responsive-darkmode-styler` | Tailwind Responsive & Darkmode Styler | Transforms raw JSX or HTML structures into fully responsive, accessible, dark-mode ready web interfaces using Tailwind CSS utility classes. |
 | **orchestrator** (3) | | | |
 | `looping-auto-fixer` | Looping Auto Fixer | Iterative fixer that runs unit-test-generator → validates via skill-tester → if tests fail, feeds error logs to memory-leak-debugger or patches code → repeats up to 3 retry iterations → exits on SUCCESS or halts on FAILED_AFTER_MAX_RETRIES. |
 | `mega-pipeline-deployer` | Mega Pipeline Deployer | Flexible orchestration engine that executes pipeline workflows in Full Mode (all 7 steps sequentially) or Selective Mode (user-specified step subset). Performs data contracting and validation between active steps, skips inactive steps gracefully without breaking the chain, and halts execution with exact error logging when an active step fails. |
 | `project-auto-builder` | Project Auto Builder | Dynamic orchestrator that inspects ./registry.json, analyzes the project workspace stack (Node.js, Python, Docker, etc.), automatically matches and orders optimal skills into an execution sequence, runs the selected skills, and generates a final readiness summary report. |
-| **security** (3) | | | |
+| **security** (10) | | | |
+| `bola-idor-vulnerability-scanner` | BOLA / IDOR Vulnerability Scanner | Inspects API endpoints for Broken Object Level Authorization (BOLA/IDOR) flaws to ensure users cannot manipulate resource IDs to access foreign data. |
+| `cors-csp-headers-hardener` | CORS & CSP Headers Hardener | Inspects HTTP response headers on local web servers and injects defensive security headers to prevent clickjacking, cross-site scripting, and unauthorized domain access. |
+| `dependency-cve-audit-patcher` | Dependency CVE Audit & Patcher | Audits third-party open-source packages for known vulnerabilities (CVEs), evaluating breaking change risks and generating automated patch updates. |
+| `jwt-security-cracker-tester` | JWT Security & Algorithm Cracker Tester | Evaluates JSON Web Token handling on local API routes to identify token forgery, algorithm confusion, and weak signature secrets. |
+| `owasp-sast-auditor` | OWASP SAST Security Auditor | Audits local web application source code for OWASP Top 10 vulnerabilities, generating security report logs and applying immediate automated code fixes. |
 | `owasp-vulnerability-checker` | OWASP Vulnerability Checker | Audit API endpoints for common security vulnerabilities (XSS, SQLi, CSRF). |
 | `prompt-injection-shield` | Prompt Injection & Security Shield | A stdlib-only Python module (shield.py) implementing InjectionShield static inspection for jailbreak signatures, system-prompt extraction patterns, and command-injection payloads across input strings and RAG context windows, plus deterministic canary-token injection and verification (the f(n) model-output challenge). Classes ShieldConfig, InjectionShield, ScanReport, and a scan_cli() argparse entry point that reads files/stdin and emits a JSON report. |
+| `rate-limit-bruteforce-shield` | Rate-Limit & Brute-Force Shield | Scans sensitive authentication endpoints and implements Redis-backed rate-limiting controls to block credential stuffing and brute-force attacks. |
 | `secrets-leak-detector` | Secrets Leak Detector | Scan codebases to detect leaked API keys, tokens, or credentials. |
+| `sqli-xss-payload-sanitizer` | SQLi & XSS Payload Sanitizer | Identifies unescaped user inputs and unparameterized database queries, injecting sanitization middleware and parameterized bindings to neutralize XSS and SQLi. |
 | **software-architecture** (3) | | | |
 | `dependency-injection-wire` | Dependency Injection Wiring | Decouple code modules using Inversion of Control (IoC) containers and explicit interface abstractions. |
 | `design-pattern-implementer` | Design Pattern Implementer | Refactor code to apply object-oriented design patterns (Factory, Strategy, Observer, Decorator, Adapter) cleanly. |
 | `pygame-state-machine-architect` | Pygame State Machine Architect | Defines an abstract BaseState lifecycle (startup, cleanup, get_event, update, draw) plus a StateMachine manager running a fixed delta-time loop with dt = clock.tick(60) / 1000.0, providing concrete MenuState, GameplayState, and PauseState implementations and a SpriteSheetSlicer that parses TexturePacker XML or JSON atlases into pygame.Surface subsurface frames. |
 | **testing** (1) | | | |
 | `unit-test-generator` | Unit Test Generator | Generate automated unit test suites (Jest, Pytest, Go test) with complete mocking. |
----
+
 
 ## 🔧 Available Scripts
 
