@@ -6,7 +6,7 @@ category: core-engine-hardening
 tags: [subagent-compression, evidence-citation, inference-tagging, citation-verification, lossy-audit]
 author: opencode-core
 version: 1.5.0
-description: Dispatch-time contract for explore agents: return only observations each with a `file:line` citation and raw excerpt; inference must be explicitly tagged `[INFERRED]`. Post-dispatch, I sample-cite — verify ≥2 citations per summary myself before trusting conclusions.
+description: "Dispatch-time contract for explore agents: return only observations each with a `file:line` citation and raw excerpt; inference must be explicitly tagged `[INFERRED]`. Post-dispatch, I sample-cite — verify ≥2 citations per summary myself before trusting conclusions."
 ---
 
 # Subagent Evidence

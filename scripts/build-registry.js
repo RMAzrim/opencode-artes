@@ -124,6 +124,25 @@ function scanSkillsDirectory() {
   return skills;
 }
 
+const INDICATOR_START = /^[-?:,[\]{}#&*!|>'"%@`]/;
+
+/**
+ * Serializes a scalar value into safe YAML.
+ * Returns the value unchanged when it is a plain scalar (no leading YAML
+ * indicator, no leading/trailing whitespace, no `: `, ` #`, newline or tab),
+ * otherwise JSON.stringify (a double-quoted YAML scalar).
+ *
+ * @param {string} value - Raw value
+ * @returns {string} YAML-safe scalar rendering
+ */
+function yamlScalar(value) {
+  const v = String(value);
+  if (!INDICATOR_START.test(v) && !/^\s|\s$/.test(v) && !/: | #|\n|\t/.test(v)) {
+    return v;
+  }
+  return JSON.stringify(v);
+}
+
 /**
  * Extracts the markdown body that follows a --- delimited frontmatter block.
  *
@@ -164,7 +183,7 @@ function generateOpenCodeSkills(skills) {
     const sk = [
       '---',
       `name: ${skill.id}`,
-      `description: ${skill.description}`,
+      `description: ${yamlScalar(skill.description)}`,
       'metadata:',
       `  source: ${skill.file_path}`,
       '---',

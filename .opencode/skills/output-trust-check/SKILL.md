@@ -1,6 +1,6 @@
 ---
 name: output-trust-check
-description: Wraps every truncating tool call: when output is truncated/byte-capped, refuses to decide on the truncated portion and automatically requests the tail window or a targeted grep. Flags encoding anomalies (UTF-16 NULs, BOMs) as suspect.
+description: "Wraps every truncating tool call: when output is truncated/byte-capped, refuses to decide on the truncated portion and automatically requests the tail window or a targeted grep. Flags encoding anomalies (UTF-16 NULs, BOMs) as suspect."
 metadata:
   source: skills/output-trust-check/output-trust-check.md
 ---

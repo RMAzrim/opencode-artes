@@ -6,7 +6,7 @@ category: core-engine-hardening
 tags: [cross-session-memory, decision-log, session-diff, persistent-state, rationale-preservation]
 author: opencode-core
 version: 1.5.0
-description: Cross-session ledger at `~/.opencode/memory/*.md`: appends decisions/rejections/root-causes during a session; on session start, diffs against the live transcript so the agent stops re-litigating settled decisions.
+description: "Cross-session ledger at `~/.opencode/memory/*.md`: appends decisions/rejections/root-causes during a session; on session start, diffs against the live transcript so the agent stops re-litigating settled decisions."
 ---
 
 # Memory Journal

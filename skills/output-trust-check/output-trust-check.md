@@ -6,7 +6,7 @@ category: core-engine-hardening
 tags: [trust-but-verify, truncation, encoding, faithfulness, output-parsing]
 author: opencode-core
 version: 1.5.0
-description: Wraps every truncating tool call: when output is truncated/byte-capped, refuses to decide on the truncated portion and automatically requests the tail window or a targeted grep. Flags encoding anomalies (UTF-16 NULs, BOMs) as suspect.
+description: "Wraps every truncating tool call: when output is truncated/byte-capped, refuses to decide on the truncated portion and automatically requests the tail window or a targeted grep. Flags encoding anomalies (UTF-16 NULs, BOMs) as suspect."
 ---
 
 # Output Trust Check
