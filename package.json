@@ -6,6 +6,7 @@
   "main": "registry.json",
   "scripts": {
     "build": "node scripts/build-registry.js",
+    "sync-skills": "node scripts/build-registry.js",
     "test": "node scripts/build-registry.js && echo Registry generated successfully!"
   }
 }

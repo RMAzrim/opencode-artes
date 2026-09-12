@@ -12,6 +12,7 @@ const path = require('path');
 const PROJECT_ROOT = path.join(__dirname, '..');
 const SKILLS_DIR = path.join(PROJECT_ROOT, 'skills');
 const REGISTRY_PATH = path.join(PROJECT_ROOT, 'registry.json');
+const OPENCODE_SKILLS_DIR = path.join(PROJECT_ROOT, '.opencode', 'skills');
 
 /**
  * Parses YAML frontmatter from a markdown file.
@@ -124,6 +125,62 @@ function scanSkillsDirectory() {
 }
 
 /**
+ * Extracts the markdown body that follows a --- delimited frontmatter block.
+ *
+ * @param {string} content - Full file content
+ * @returns {string} Body content (without leading blank lines)
+ */
+function extractBody(content) {
+  if (!content.startsWith('---')) return content;
+
+  const closingDelimiter = content.indexOf('---', 3);
+  if (closingDelimiter === -1) return content;
+
+  return content.slice(closingDelimiter + 3).trimStart();
+}
+
+/**
+ * Generates OpenCode-discoverable SKILL.md files from the canonical skill
+ * sources. OpenCode loads skills from .opencode/skills/<name>/SKILL.md,
+ * where `name` in frontmatter must equal the folder name, and requires a
+ * non-empty `description`. The canonical skills/<id>/<id>.md file remains
+ * the single source of truth; this function maps it to OpenCode's format.
+ *
+ * @param {Array} skills - Skill objects from scanSkillsDirectory()
+ * @returns {number} Number of SKILL.md files generated
+ */
+function generateOpenCodeSkills(skills) {
+  let count = 0;
+
+  for (const skill of skills) {
+    const sourceFile = path.join(SKILLS_DIR, skill.id, `${skill.id}.md`);
+    if (!fs.existsSync(sourceFile)) continue;
+
+    const content = fs.readFileSync(sourceFile, 'utf-8');
+    const body = extractBody(content);
+    const skillDir = path.join(OPENCODE_SKILLS_DIR, skill.id);
+    fs.mkdirSync(skillDir, { recursive: true });
+
+    const sk = [
+      '---',
+      `name: ${skill.id}`,
+      `description: ${skill.description}`,
+      'metadata:',
+      `  source: ${skill.file_path}`,
+      '---',
+      '',
+      body,
+      ''
+    ].join('\n');
+
+    fs.writeFileSync(path.join(skillDir, 'SKILL.md'), sk);
+    count++;
+  }
+
+  return count;
+}
+
+/**
  * Main execution
  */
 try {
@@ -135,6 +192,11 @@ try {
   
   console.log(`Registry generated successfully: ${skills.length} skills`);
   console.log(`Output: ${REGISTRY_PATH}`);
+
+  // Generate .opencode/skills/<id>/SKILL.md for OpenCode discovery
+  const generated = generateOpenCodeSkills(skills);
+  console.log(`OpenCode skills generated: ${generated}`);
+  console.log(`Output: ${OPENCODE_SKILLS_DIR}`);
   
 } catch (error) {
   console.error('Error generating registry:', error.message);

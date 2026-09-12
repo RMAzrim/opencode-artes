@@ -58,8 +58,14 @@ Before submitting a PR, every skill file must pass a quality control audit:
 
 1. `git clone https://github.com/RMAzrim/opencode-artes.git`
 2. `cd opencode-artes`
-3. `npm run build` ← generates `registry.json` automatically by recursively scanning `skills/*/*.md`
-4. Start using skills immediately – no configuration, no hunting.
+3. `npm run build` ← generates `registry.json` **and** the OpenCode-discoverable `.opencode/skills/<id>/SKILL.md` files by recursively scanning `skills/*/*.md`
+4. Start OpenCode from this directory (`opencode run '<your request>' --dir .`) – all skills are auto-discovered as slash-commands (e.g. `/accessibility-auditor`) and natural-language triggers via their description. No other configuration needed.
+
+> **Note:** OpenCode loads skills at startup. Restart OpenCode after running `npm run build` (or after pulling new versions of this repo) so the new/updated skills are picked up.
+
+### 📁 Source of Truth
+
+Canonical skill files live at `skills/<skill-id>/<skill-id>.md` (with the full YAML frontmatter: `id`, `file_path`, `name`, `category`, `tags`, `author`, `version`, `description`). OpenCode itself reads the generated `.opencode/skills/<skill-id>/SKILL.md` copies, whose frontmatter is rewritten to OpenCode's format (`name` must equal the folder name; `description` drives auto-triggering). The generated copies are regenerated from the canonical files on every `npm run build` — **edit the canonical file, never the generated copy**, then rebuild.
 
 👉 **Star ⭐ the repo** and never look for another skill repository again.
 
@@ -88,7 +94,8 @@ Before submitting a PR, every skill file must pass a quality control audit:
 
 | Script | Description |
 |--------|-------------|
-| `npm run build` | Regenerates `registry.json` by recursively scanning `./skills/*/*.md` |
+| `npm run build` | Regenerates `registry.json` and `syncs .opencode/skills/<id>/SKILL.md` by scanning `./skills/*/*.md` |
+| `npm run sync-skills` | Alias of `npm run build` – regenerates the OpenCode `.opencode/skills/` copies |
 | `npm test` | Runs build and confirms registry generation |
 
 ## 🤝 Contributing
