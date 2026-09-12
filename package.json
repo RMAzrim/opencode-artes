@@ -1,6 +1,6 @@
 {
   "name": "opencode-artes",
-  "version": "1.5.5",
+  "version": "2.0.0",
   "description": "A modular monorepo containing production-ready AI agent skills stored as structured Markdown files.",
   "license": "MIT",
   "main": "registry.json",
