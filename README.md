@@ -114,7 +114,7 @@ Each skill file follows the exact same contract: `## 1. System Architecture & Pr
 Every skill below is loadable via its folder-derived ID as a slash command
 (`/<id>`), discoverable by natural language through its `description`, and has a
 complete production reference implementation inside its document. Header row
-per category shows the category-wide skill count for the **v3.0.0** release.
+per category shows the category-wide skill count for the **v3.5.0** release.
 
 | Skill ID | Display name | What it does (description) |
 |---|---|---|

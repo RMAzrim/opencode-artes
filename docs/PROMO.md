@@ -6,7 +6,7 @@ Post-ready copy for announcing the repository. Copy-paste, adapt, publish. Every
 
 ## 📢 GitHub Release / Release Notes (short)
 
-> **opencode-artes v3.0.0 is here — 115 production-grade OpenCode skills in one repo.**
+> **opencode-artes v3.5.0 is here — 115 production-grade OpenCode skills in one repo.**
 >
 > Fullstack web development, localhost security auditing, testing, devops, and four one-command suite orchestrators. Every skill ships a complete, runnable reference implementation with a strict 5-section contract.
 >
