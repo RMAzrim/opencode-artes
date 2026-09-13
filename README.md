@@ -257,10 +257,6 @@ If this repository helps you ship faster or builds something you are proud of, g
 
 Ready-to-post promo copy (X/Twitter, LinkedIn, Reddit, dev.to) lives in [docs/PROMO.md](docs/PROMO.md).
 
-## 📈 Star history
-
-![Star History](https://api.star-history.com/svg?repos=RMAzrim/opencode-artes&type=Date)
-
 ## 🙏 Acknowledgments
 
 Built with ❤️ for the OpenCode agent community.

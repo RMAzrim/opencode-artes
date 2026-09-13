@@ -7,7 +7,7 @@ All notable changes to **opencode-artes** are documented here. This project adhe
 - **Live GitHub Pages catalog site** at <https://rmazrim.github.io/opencode-artes/> (set as repo homepage): searchable grid of all 97 skills across 17 categories, per-skill GitHub links, and install instructions. The HTTP catalog at `…/skills/` serves the generated OpenCode skills for one-line install.
 - **Promo kit** — `docs/PROMO.md` with post-ready copy for X/Twitter, LinkedIn, Reddit and dev.to.
 - `CITATION.cff` (v1.2.0, scholarly citation), `FUNDING.yml` (Sponsor button), `.gitattributes` (LF normalization), and `assets/terminal.svg` demo.
-- README: "See it in action" terminal demo, "Support & share" section, and a live **star-history** chart.
+- README: "See it in action" terminal demo and a "Support & share" section.
 
 ### Changed
 - Package version `2.5.0 → 2.6.0` (visibility release).
