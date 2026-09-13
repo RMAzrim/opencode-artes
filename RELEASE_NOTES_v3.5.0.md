@@ -1,4 +1,4 @@
-# Release Notes v3.0.0 - 18 Production-Grade Skills & Deep QC Audit
+# Release Notes v3.5.0 - 18 Production-Grade Skills & Deep QC Audit
 
 **Published**: `2026-09-13`
 
@@ -79,12 +79,12 @@ Custom tags/categories unchanged — the 17-category taxonomy is preserved.
 
 ## 📦 Version Details
 
-- **Version:** `v3.0.0`
+- **Version:** `v3.5.0`
 - **Release Date:** `2026-09-13`
 - **Total Skills:** `115` (across 17 categories)
 - **Registry Delta:** `97 → 115` (+18)
-- **Tag:** `v3.0.0` (annotated Git tag)
-- **GitHub Release:** `v3.0.0 - 18 Production-Grade Skills & Deep QC Audit`
+- **Tag:** `v3.5.0` (annotated Git tag)
+- **GitHub Release:** `v3.5.0 - 18 Production-Grade Skills & Deep QC Audit`
 
 ---
 
