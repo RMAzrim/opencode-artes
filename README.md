@@ -37,6 +37,12 @@ One repository, **every skill** your OpenCode agent could ever need — from sca
 - **Localhost-first security** — CVE audit, SAST, SQLi/XSS, JWT cracking, IDOR/BOLA, rate-limit, and header hardening all run against your *local* codebase and server.
 - **Battle-tested structure** — canonical files in `skills/`, generated `.opencode/skills/`, audited with 0 errors.
 
+## 🎬 See it in action
+
+One command chains the whole security audit pipeline and writes a single report; a second one scaffolds a production Next.js app router:
+
+<img src="assets/terminal.svg" alt="Demo: orchestrated security audit + Next.js scaffold + live catalog" width="100%">
+
 ## 🚀 Quick Start
 
 ### Option A — global install (recommended, 10 seconds)
@@ -108,7 +114,7 @@ Each skill file follows the exact same contract: `## 1. System Architecture & Pr
 Every skill below is loadable via its folder-derived ID as a slash command
 (`/<id>`), discoverable by natural language through its `description`, and has a
 complete production reference implementation inside its document. Header row
-per category shows the category-wide skill count for the **v2.5.0** release.
+per category shows the category-wide skill count for the **v2.6.0** release.
 
 | Skill ID | Display name | What it does (description) |
 |---|---|---|
@@ -241,7 +247,19 @@ per category shows the category-wide skill count for the **v2.5.0** release.
 
 ## 🤝 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines, including the mandatory pre‑PR QC step for every skill file.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines, including the mandatory pre‑PR QC step for every skill file. Every PR is gated by the [`verify`](.github/workflows/verify.yml) CI workflow.
+
+Community docs & templates: [SECURITY.md](SECURITY.md) · [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) · [CHANGELOG.md](CHANGELOG.md) · [💬 Discussions](https://github.com/RMAzrim/opencode-artes/discussions) · [🐛 Bug report](.github/ISSUE_TEMPLATE/bug_report.md) · [✨ Feature request](.github/ISSUE_TEMPLATE/feature_request.md)
+
+## ⭐ Support & share
+
+If this repository helps you ship faster or builds something you are proud of, give it a ⭐ — it is the single biggest boost for discoverability. Share the live catalog: **https://rmazrim.github.io/opencode-artes/**
+
+Ready-to-post promo copy (X/Twitter, LinkedIn, Reddit, dev.to) lives in [docs/PROMO.md](docs/PROMO.md).
+
+## 📈 Star history
+
+![Star History](https://api.star-history.com/svg?repos=RMAzrim/opencode-artes&type=Date)
 
 ## 🙏 Acknowledgments
 

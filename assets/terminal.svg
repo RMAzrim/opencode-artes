@@ -1,0 +1,52 @@
+<svg width="900" height="560" viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="opencode-artes demo terminal">
+  <defs>
+    <linearGradient id="tbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#070a10"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="884" height="544" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <line x1="8" y1="52" x2="892" y2="52" stroke="#30363d" stroke-width="1.5"/>
+  <circle cx="34" cy="30" r="7" fill="#ff5f56"/>
+  <circle cx="58" cy="30" r="7" fill="#ffbd2e"/>
+  <circle cx="82" cy="30" r="7" fill="#27c93f"/>
+  <text x="200" y="35" font-family="'Segoe UI', sans-serif" font-size="14" fill="#8b949e">opencode-artes — RMAzrim/opencode-artes (97 skills)</text>
+
+  <g font-family="'Cascadia Code','Consolas',monospace" font-size="15">
+    <text x="30" y="90" fill="#58a6ff">$</text>
+    <text x="52" y="90" fill="#c9d1d9">opencode run</text>
+    <text x="158" y="90" fill="#7ee787">'/security-suite-orchestrator full_run'</text>
+
+    <text x="30" y="126" fill="#c9d1d9">● security-suite-orchestrator v2.6.0</text>
+    <text x="40" y="150" fill="#8b949e">stage 1/8  dependency-cve-audit-patcher ..........</text>
+    <text x="320" y="150" fill="#3fb950">OK (0 high, 2 low)</text>
+    <text x="40" y="174" fill="#8b949e">stage 2/8  owasp-sast-auditor ....................</text>
+    <text x="320" y="174" fill="#3fb950">OK (open.svg fixed)</text>
+    <text x="40" y="198" fill="#8b949e">stage 3/8  sqli-xss-payload-sanitizer ............</text>
+    <text x="320" y="198" fill="#3fb950">OK (3 payloads blocked)</text>
+    <text x="40" y="222" fill="#8b949e">stage 4/8  jwt-security-cracker-tester ............</text>
+    <text x="320" y="222" fill="#d29922">WARN (weak secret found)</text>
+    <text x="40" y="246" fill="#8b949e">stage 5/8  bola-idor-vulnerability-scanner .........</text>
+    <text x="320" y="246" fill="#3fb950">OK</text>
+    <text x="40" y="270" fill="#8b949e">stage 6/8  rate-limit-bruteforce-shield ...........</text>
+    <text x="320" y="270" fill="#3fb950">OK (redis-backed)</text>
+    <text x="40" y="294" fill="#8b949e">stage 7/8  cors-csp-headers-hardener ..............</text>
+    <text x="320" y="294" fill="#3fb950">OK (strict_csp.txt)</text>
+    <text x="40" y="318" fill="#8b949e">stage 8/8  report consolidation ...................</text>
+    <text x="320" y="318" fill="#3fb950">OK</text>
+
+    <text x="30" y="356" fill="#c9d1d9">═══════════════════ SECURITY_AUDIT_REPORT.md ═══════════════════</text>
+    <text x="40" y="384" fill="#8b949e">high: 0  ·  medium: 1  ·  low: 2  ·  passed: 8/8</text>
+    <text x="40" y="414" fill="#8b949e">top remediation: rotate JWT secret → HS256+expiry</text>
+
+    <text x="30" y="450" fill="#58a6ff">$</text>
+    <text x="52" y="450" fill="#c9d1d9">opencode run</text>
+    <text x="158" y="450" fill="#7ee787">'/nextjs-app-router-scaffolder --project demo'</text>
+    <text x="30" y="478" fill="#c9d1d9">✓ app/ scaffolded — 23 files, npm run build PASSED</text>
+
+    <text x="30" y="514" fill="#58a6ff">$</text>
+    <text x="52" y="514" fill="#c9d1d9">curl -sL https://rmazrim.github.io/opencode-artes/skills/</text>
+    <text x="30" y="540" fill="#3fb950">HTTP/1.1 200 OK · 97 skills · 0 audit errors</text>
+  </g>
+</svg>

@@ -1,8 +1,18 @@
 # Changelog
 
-All notable changes to **opencode-artes** are documented here. This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/).
+All notable changes to **opencode-artes** are documented here. This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org).
 
-## [2.5.0] — latest
+## [2.6.0] — latest
+### Added
+- **Live GitHub Pages catalog site** at <https://rmazrim.github.io/opencode-artes/> (set as repo homepage): searchable grid of all 97 skills across 17 categories, per-skill GitHub links, and install instructions. The HTTP catalog at `…/skills/` serves the generated OpenCode skills for one-line install.
+- **Promo kit** — `docs/PROMO.md` with post-ready copy for X/Twitter, LinkedIn, Reddit and dev.to.
+- `CITATION.cff` (v1.2.0, scholarly citation), `FUNDING.yml` (Sponsor button), `.gitattributes` (LF normalization), and `assets/terminal.svg` demo.
+- README: "See it in action" terminal demo, "Support & share" section, and a live **star-history** chart.
+
+### Changed
+- Package version `2.5.0 → 2.6.0` (visibility release).
+
+## [2.5.0]
 ### Added
 - **4 suite orchestrators** (category `orchestrator`): `security-suite-orchestrator` (8-stage audit chain → `SECURITY_AUDIT_REPORT.md`), `frontend-suite-orchestrator`, `backend-suite-orchestrator`, `infra-qa-suite-orchestrator` — each supports `full_run` / `include_steps` / `skip_steps`, predecessor gating, fail-fast and consolidated per-step reports.
 - **20 production web & security skills** across 4 domains:
@@ -38,6 +48,7 @@ All notable changes to **opencode-artes** are documented here. This project adhe
 ### Added
 - 58 skills with docs and MIT license.
 
+[2.6.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v2.6.0
 [2.5.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v2.5.0
 [2.0.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v2.0.0
 [1.5.5]: https://github.com/RMAzrim/opencode-artes/releases/tag/v1.5.5
