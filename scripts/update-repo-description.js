@@ -22,9 +22,9 @@ function main() {
 
   const count = skills.length;
   const description =
-    `opencode-artes: ${count} OpenCode skills - the only repository you need to ` +
-    'power up your OpenCode AI agent. Frontend, backend, devops, testing and ' +
-    'AI-ops skill ecosystem in one place.';
+    `opencode-artes: ${count} production-grade OpenCode skills for fullstack web ` +
+    'development, localhost security auditing and AI agent automation. Frontend, ' +
+    'backend, devops, testing and AI-ops skill ecosystem in one place.';
 
   const res = spawnSync('gh', ['repo', 'edit', OWNER_REPO, '--description', description], {
     stdio: 'inherit',

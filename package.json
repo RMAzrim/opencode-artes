@@ -8,6 +8,8 @@
     "build": "node scripts/build-registry.js",
     "sync-skills": "node scripts/build-registry.js",
     "update-description": "node scripts/update-repo-description.js",
-    "test": "node scripts/build-registry.js && echo Registry generated successfully!"
+    "test": "node scripts/build-registry.js && echo Registry generated successfully!",
+    "ci": "npm run build && node scripts/ci-verify.js",
+    "pages": "node scripts/sync-pages.js"
   }
 }

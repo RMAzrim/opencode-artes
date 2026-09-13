@@ -1,0 +1,39 @@
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate registry + .opencode/skills
+        run: npm run build
+
+      - name: Verify skill contract (BOM, frontmatter, registries, generated copies)
+        run: node scripts/ci-verify.js
+
+      - name: Confirm build is reproducible (no uncommitted diffs)
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::npm run build produced uncommitted changes. Commit the regenerated registry.json and .opencode/skills/."
+            git status --porcelain
+            exit 1
+          fi
+          echo "Build is reproducible — working tree clean after regeneration."

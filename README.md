@@ -1,93 +1,105 @@
 # opencode-artes 🚀
 
-**The ONLY repository you will need to power up your OpenCode AI agent.**
-
-*One repo to rule them all – the single ecosystem your OpenCode agent needs.*
-
 <div align="center">
-  <a href="https://github.com/RMAzrim/opencode-artes">
-    <img src="https://img.shields.io/github/stars/RMAzrim/opencode-artes?style=for-the-badge&logo=github&logoColor=white" alt="Star">
-  </a>
+
+  <img src="assets/banner.svg" alt="opencode-artes — 97 production-grade OpenCode skills" width="100%">
+
+  **The only skill ecosystem your OpenCode AI agent will ever need.**
+
+  **97 production-grade skills · Fullstack web · Localhost security auditing · 4 suite orchestrators**
+
+  [![Stars](https://img.shields.io/github/stars/RMAzrim/opencode-artes?style=for-the-badge&logo=github&logoColor=white&color=gold)](https://github.com/RMAzrim/opencode-artes/stargazers)
+  [![Forks](https://img.shields.io/github/forks/RMAzrim/opencode-artes?style=for-the-badge&logo=git&logoColor=white&color=blue)](https://github.com/RMAzrim/opencode-artes/network)
+  [![Skills](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=skills&query=%24.length&color=6f42c1&url=https%3A%2F%2Fraw.githubusercontent.com%2FRMAzrim%2Fopencode-artes%2Fmain%2Fregistry.json)](https://github.com/RMAzrim/opencode-artes/blob/main/registry.json)
+  [![License: MIT](https://img.shields.io/github/license/RMAzrim/opencode-artes?style=for-the-badge&color=green)](LICENSE)
+  [![CI](https://img.shields.io/github/actions/workflow/status/RMAzrim/opencode-artes/verify.yml?style=for-the-badge&branch=main)](https://github.com/RMAzrim/opencode-artes/actions/workflows/verify.yml)
+  [![Last commit](https://img.shields.io/github/last-commit/RMAzrim/opencode-artes?style=for-the-badge&color=orange)](https://github.com/RMAzrim/opencode-artes/commits/main)
+  [![OpenCode](https://img.shields.io/badge/powered%20by-OpenCode-black?style=for-the-badge&logo=opencode)](https://opencode.ai)
+
 </div>
 
-## 🎯 The Value Hook
+<p align="center">
+  <a href="https://github.com/RMAzrim/opencode-artes/stargazers">⭐ Star the repo</a> ·
+  <a href="https://github.com/RMAzrim/opencode-artes/discussions">💬 Discussions</a> ·
+  <a href="https://rmazrim.github.io/opencode-artes/">🌐 Live catalog</a> ·
+  <a href="#quick-start">⚡ Install</a> ·
+  <a href="CONTRIBUTING.md">🤝 Contribute</a>
+</p>
 
-Why browse dozens of scattered repositories when **all** the skills your OpenCode agent could ever need are housed right here?
+## ✨ Why opencode-artes?
 
-- **frontend** – UI magic, accessibility, Tailwind, SEO, i18n.
-- **backend** – APIs, GraphQL, caching, rate limiting, JWT rotation.
-- **devops** – Dockerfiles, Kubernetes, CI/CD, Terraform modules.
-- **testing** – unit tests, integration, property‑based testing.
-- **ai-ops** – prompt evaluation, context compression, tool‑schema building.
-- **core-coding** – design patterns, async concurrency, data structures, memory debugging.
-- **orchestrator** – pipeline deployment, auto‑building, iterative fix loops.
-- **core-engine-hardening** – command sanitization, verification, context banking, dependency mapping, requirement closure, regression detection, memory journaling, output trust, subagent evidence, schema validation, mega-pipeline deployment, project auto‑building, looping auto‑fix.
+One repository, **every skill** your OpenCode agent could ever need — from scaffolding a full Next.js stack to auditing its security like a pentester, and orchestrating the whole pipeline with one command.
 
-Each skill is a fully‑documented, production‑ready Markdown file with front‑matter, execution steps, edge‑case handling and validation criteria. Drop‑in ready. No bloat. Instant power.
+- **97 production-grade skills** across 17 categories — frontend, backend, API, database, devops, testing, AI-ops, security auditing, and more.
+- **Complete, runnable reference implementations** inside every skill (no filler, no placeholders) with explicit 5-part structure: architecture, data contracts, reference code, execution protocol, edge cases.
+- **Zero-config discovery** — load as slash commands (`/security-suite-orchestrator`) and natural-language auto-triggers with zero extra configuration.
+- **4 suite orchestrators** that chain the skills into one-command pipelines: security, frontend, backend, and infrastructure/QA.
+- **Localhost-first security** — CVE audit, SAST, SQLi/XSS, JWT cracking, IDOR/BOLA, rate-limit, and header hardening all run against your *local* codebase and server.
+- **Battle-tested structure** — canonical files in `skills/`, generated `.opencode/skills/`, audited with 0 errors.
 
-## 📁 Nested Skill Directory Structure
+## 🚀 Quick Start
 
-Skills follow a flat namespace under `skills/`, organized into skill‑specific subdirectories:
+### Option A — global install (recommended, 10 seconds)
+
+Add one line to your OpenCode config (`~/.config/opencode/opencode.jsonc`), then restart OpenCode:
+
+```jsonc
+{
+  "skills": ["https://rmazrim.github.io/opencode-artes/skills/"]
+}
+```
+
+All 97 skills become available everywhere. (This HTTP-catalog URL serves the latest generated `.opencode/skills/` copies.)
+
+### Option B — clone & build
+
+```bash
+git clone https://github.com/RMAzrim/opencode-artes.git
+cd opencode-artes
+npm install
+npm run build    # regenerates registry.json + .opencode/skills (97 skills)
+opencode run '<your request>' --dir .
+```
+
+> **Note:** OpenCode loads skills at startup — restart OpenCode after `npm run build` (or after pulling new versions) so new skills are picked up. No other configuration needed.
+
+## 🗺️ What's inside — 97 skills across 17 categories
+
+| Category | Skills | Representative skills |
+|----------|:------:|------------------------|
+| **ai-ops** | 6 | `prompt-evaluator`, `structured-output-enforcer`, `tool-schema-builder` |
+| **algorithms** | 2 | `data-structure-optimizer`, `procedural-dungeon-generator` |
+| **api** | 3 | `graphql-schema-designer`, `mcp-tools-auto-bridge`, `webhook-handler-generator` |
+| **backend** | 14 | `express-fastapi-route-builder`, `auth-session-oauth2-scaffolder`, `redis-pubsub-cache-manager` |
+| **cloud** | 3 | `terraform-module-builder`, `k8s-manifest-validator`, `serverless-function-generator` |
+| **core-coding** | 7 | `ast-anti-pattern-slayer`, `error-class-hierarchy-builder`, `bytecode-decompiler-assistant` |
+| **core-engine-hardening** | 11 | `cmd-sanitizer`, `memory-journal`, `verify-orchestrator` |
+| **data-science** | 2 | `pandas-data-cleaner`, `chart-config-generator` |
+| **database** | 6 | `drizzle-prisma-orm-architect`, `database-zero-downtime-migrator`, `sql-query-optimizer` |
+| **debugging** | 1 | `memory-leak-debugger` |
+| **developer-experience** | 9 | `cli-tool-scaffolder`, `mermaid-diagrammer`, `git-bisect-time-traveler` |
+| **devops** | 2 | `dockerfile-builder`, `github-actions-generator` |
+| **frontend** | 10 | `nextjs-app-router-scaffolder`, `tailwind-responsive-darkmode-styler`, `accessibility-auditor` |
+| **orchestrator** | 7 | `security-suite-orchestrator`, `frontend-suite-orchestrator`, `infra-qa-suite-orchestrator` |
+| **security** | 10 | `owasp-sast-auditor`, `jwt-security-cracker-tester`, `dependency-cve-audit-patcher` |
+| **software-architecture** | 3 | `design-pattern-implementer`, `dependency-injection-wire` |
+| **testing** | 1 | `unit-test-generator` |
+
+> The full 97-skill catalog with per-skill descriptions is in the [**Full Skill Catalog**](#-full-skill-catalog--function) section below.
+
+## 📦 Repository structure
 
 ```
-skills/
-  mega-pipeline-deployer/
-    mega-pipeline-deployer.md
-  project-auto-builder/
-    project-auto-builder.md
-  looping-auto-fixer/
-    looping-auto-fixer.md
-  accessibility-auditor/
-    accessibility-auditor.md
-  ... (all other skills)
+opencode-artes/
+├── skills/<skill-id>/<skill-id>.md   # canonical, source-of-truth skill files
+├── .opencode/skills/<id>/SKILL.md    # generated OpenCode-discoverable copies (npm run build)
+├── registry.json                     # machine-readable catalog (id, path, category, tags, description)
+├── scripts/                          # build, audit and GitHub-sync tooling
+├── docs/                             # GitHub Pages catalog site (live catalog)
+└── assets/                           # banners, screenshots, demos
 ```
 
-**Each skill resides at `skills/<skill-id>/<skill-id>.md`** — the `file_path` in YAML frontmatter must match this pattern exactly.
-
-### Per‑File QC Requirement
-
-Before submitting a PR, every skill file must pass a quality control audit:
-
-- **Frontmatter Check**: Verify `id`, `name`, `category`, `tags`, `author`, `version`, and `description` exist and are valid YAML.
-- **Path Alignment**: Verify that `file_path` in the YAML frontmatter strictly matches `skills/<skill-id>/<skill-id>.md`.
-- **Internal References QC**: Scan the Markdown body and update any outdated cross‑reference paths pointing to other skills (e.g., change `skills/other-skill.md` to `skills/other-skill/other-skill.md`).
-- **Dry‑Run Test**: Apply `scripts/build-registry.js` validation rules to ensure code blocks and execution steps remain logically sound.
-- **QC Status**: Log `[PASS]` or `[FAIL + Reason]` for this specific file before merging.
-
-## 🚀 Get Started in 10 Seconds
-
-1. `git clone https://github.com/RMAzrim/opencode-artes.git`
-2. `cd opencode-artes`
-3. `npm run build` ← generates `registry.json` **and** the OpenCode-discoverable `.opencode/skills/<id>/SKILL.md` files by recursively scanning `skills/*/*.md`
-4. Repo maintainers: run `npm run update-description` after each build so the GitHub repository description always advertises the current skill count (automated via `gh repo edit`).
-4. Start OpenCode from this directory (`opencode run '<your request>' --dir .`) – all skills are auto-discovered as slash-commands (e.g. `/accessibility-auditor`) and natural-language triggers via their description. No other configuration needed.
-
-> **Note:** OpenCode loads skills at startup. Restart OpenCode after running `npm run build` (or after pulling new versions of this repo) so the new/updated skills are picked up.
-
-### 📁 Source of Truth
-
-Canonical skill files live at `skills/<skill-id>/<skill-id>.md` (with the full YAML frontmatter: `id`, `file_path`, `name`, `category`, `tags`, `author`, `version`, `description`). OpenCode itself reads the generated `.opencode/skills/<skill-id>/SKILL.md` copies in the recommended directory form. Per OpenCode's docs, the skill **ID is path-derived** (the folder name, lowercase kebab-case); frontmatter `name` is only a display label (we write the canonical human-readable name) and a non-empty `description` is what lets the model discover and auto-trigger the skill. Such a skill directory is also the private home for any supporting `scripts/`, `references/`, or `templates/` files, referenced relative to the folder containing `SKILL.md`. The generated copies are regenerated from the canonical files on every `npm run build` — **edit the canonical file, never the generated copy**, then rebuild.
-
-👉 **Star ⭐ the repo** and never look for another skill repository again.
-
-## 📦 Quick Overview
-
-| Category | Skill Count | Representative Skills |
-|----------|-------------|----------------------|
-| **ai-ops** | 5 | prompt-evaluator, context-compressor, rag-chunking-evaluator, structured-output-enforcer, tool-schema-builder |
-| **algorithms** | 1 | data-structure-optimizer |
-| **api** | 2 | graphql-schema-designer, webhook-handler-generator |
-| **backend** | 5 | caching-strategy-implementer, jwt-token-rotator, pagination-cursor-builder, rate-limiter-middleware, websocket-realtime-handler |
-| **cloud** | 3 | terraform-module-builder, serverless-function-generator, k8s-manifest-validator |
-| **core-coding** | 4 | async-concurrency-handler, error-class-hierarchy-builder, regex-builder-explainer, regex-builder-parser |
-| **core-engine-hardening** | 10 | cmd-sanitizer, verify-orchestrator, context-bank, deptomap, spec-loop-closer, regression-sentinel, memory-journal, output-trust-check, subagent-evidence, schema-sync |
-| **database** | 3 | sql-query-optimizer, db-migration-generator, tool-schema-builder |
-| **developer-experience** | 7 | cli-tool-scaffolder, mermaid-diagrammer, regex-builder-explainer, i18n-locale-extractor, prompt-evaluator, openapi-spec-writer, cron-schedule-parser |
-| **frontend** | 5 | accessibility-auditor, i18n-locale-extractor, seo-metadata-builder, tailwind-converter, type-definition-generator |
-| **orchestrator** | 3 | mega-pipeline-deployer, project-auto-builder, looping-auto-fixer |
-| **security** | 2 | secrets-leak-detector, jwt-token-rotator |
-| **software-architecture** | 2 | design-pattern-implementer, dependency-injection-wire |
-| **testing** | 1 | unit-test-generator |
+Each skill file follows the exact same contract: `## 1. System Architecture & Prerequisites`, `## 2. Input/Output Data Contracts`, `## 3. Production Reference Implementation` (complete runnable code), `## 4. Execution Protocol & Step-by-Step Workflow`, `## 5. Edge Cases & Error Handling`.
 
 ---
 
@@ -222,6 +234,8 @@ per category shows the category-wide skill count for the **v2.5.0** release.
 |--------|-------------|
 | `npm run build` | Regenerates `registry.json` and `syncs .opencode/skills/<id>/SKILL.md` by scanning `./skills/*/*.md` |
 | `npm run sync-skills` | Alias of `npm run build` – regenerates the OpenCode `.opencode/skills/` copies |
+| `npm run pages` | Copies the generated skills into `docs/skills/` for the GitHub Pages live catalog |
+| `npm run ci` | Runs build + the `scripts/ci-verify.js` contract check (used by GitHub Actions) |
 | `npm run update-description` | Reads the skill count from `registry.json` and writes it into the GitHub repository description via `gh repo edit` (run after every `npm run build`) |
 | `npm test` | Runs build and confirms registry generation |
 

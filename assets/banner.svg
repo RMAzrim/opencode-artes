@@ -1,0 +1,47 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="opencode-artes: 97 production-grade OpenCode skills">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b1a"/>
+      <stop offset="0.5" stop-color="#151234"/>
+      <stop offset="1" stop-color="#2b1055"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6f42c1"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.2" r="0.6">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#glow)"/>
+  <line x1="0" y1="318" x2="1280" y2="318" stroke="url(#accent)" stroke-width="4"/>
+
+  <text x="64" y="120" font-family="'Segoe UI', Verdana, sans-serif" font-size="64" font-weight="700" fill="#ffffff">opencode-artes</text>
+
+  <text x="64" y="168" font-family="'Segoe UI', Verdana, sans-serif" font-size="22" fill="#c7c0e8">97 production-grade skills · Fullstack · Security audit · Orchestrators</text>
+  <text x="64" y="200" font-family="'Segoe UI', Verdana, sans-serif" font-size="18" fill="#8f87b5">The only skill ecosystem your OpenCode AI agent will ever need.</text>
+
+  <g font-family="'Segoe UI', Verdana, sans-serif" font-size="14" font-weight="600">
+    <rect x="1060" y="82" rx="14" width="156" height="40" fill="#6f42c1"/>
+    <text x="1138" y="107" text-anchor="middle" fill="#ffffff">★ Star me</text>
+  </g>
+
+  <g font-family="'Consolas', monospace" font-size="15" fill="#a78bfa">
+    <text x="64" y="256">$ opencode run '/security-suite-orchestrator'</text>
+    <text x="64" y="286" fill="#39d353">8-stage audit → SECURITY_AUDIT_REPORT.md · 0 errors</text>
+  </g>
+
+  <g font-family="'Segoe UI', Verdana, sans-serif" font-size="12" font-weight="600">
+    <rect x="390" y="246" rx="10" width="92" height="24" fill="#1f1d3d"/>
+    <text x="436" y="262" text-anchor="middle" fill="#c7c0e8">MIT LICENSE</text>
+    <rect x="488" y="246" rx="10" width="132" height="24" fill="#1f1d3d"/>
+    <text x="554" y="262" text-anchor="middle" fill="#c7c0e8">17 CATEGORIES</text>
+    <rect x="626" y="246" rx="10" width="120" height="24" fill="#1f1d3d"/>
+    <text x="686" y="262" text-anchor="middle" fill="#c7c0e8">4 ORCHESTRATORS</text>
+    <rect x="752" y="246" rx="10" width="150" height="24" fill="#1f1d3d"/>
+    <text x="827" y="262" text-anchor="middle" fill="#c7c0e8">0-AUDIT-ERROR GATED</text>
+  </g>
+</svg>

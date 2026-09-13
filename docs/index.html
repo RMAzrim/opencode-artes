@@ -1,0 +1,1041 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>opencode-artes — 97 OpenCode skills</title>
+<meta name="description" content="97 production-grade OpenCode skills across 17 categories: fullstack web development, localhost security auditing and AI-agent automation.">
+<meta property="og:title" content="opencode-artes — 97 OpenCode skills">
+<meta property="og:description" content="The only skill ecosystem your OpenCode AI agent will ever need.">
+<meta property="og:url" content="https://rmazrim.github.io/opencode-artes/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+<style>
+  :root { --bg:#0b0b1a; --card:#14122b; --line:#221f43; --txt:#e8e6f5; --mut:#9d96c9; --acc:#a78bfa; --acc2:#6f42c1; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:'Segoe UI', system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--txt); line-height:1.55; }
+  header { padding:56px 20px 30px; text-align:center; border-bottom:1px solid var(--line); background:radial-gradient(600px 300px at 80% 0%, #3d1f7a55, transparent), var(--bg); }
+  h1 { margin:0; font-size:42px; }
+  h1 span { background:linear-gradient(90deg,var(--acc2),var(--acc)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .sub { color:var(--mut); font-size:17px; margin-top:6px; }
+  .stat { margin:22px auto 0; display:inline-flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+  .stat span { border:1px solid var(--line); border-radius:999px; padding:6px 16px; font-size:14px; background:var(--card); }
+  .stat b { color:var(--acc); }
+  nav.filter { position:sticky; top:0; z-index:5; background:#0d0c1f; padding:12px 16px; border-bottom:1px solid var(--line); display:flex; flex-wrap:wrap; gap:8px; align-items:center; justify-content:center; }
+  .chip { color:var(--mut); border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-size:12.5px; text-decoration:none; }
+  .chip:hover { color:#fff; border-color:var(--acc); }
+  .chip b { color:var(--acc); margin-left:3px; }
+  input#search { background:var(--card); color:var(--txt); border:1px solid var(--line); border-radius:8px; padding:7px 12px; width:240px; outline:none; font-size:13px; }
+  main { max-width:1180px; margin:0 auto; padding:28px 20px 80px; }
+  section.cat { margin-top:34px; scroll-margin-top:70px; }
+  section.cat h2 { font-size:20px; text-transform:capitalize; display:flex; align-items:center; gap:10px; }
+  .count { background:var(--acc2); color:#fff; font-size:12px; border-radius:999px; padding:2px 10px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+  .card:hover { border-color:var(--acc); transform:translateY(-1px); transition:.12s; }
+  .card-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+  .cmd { color:var(--acc); font-family:Consolas,monospace; font-size:13px; }
+  .card-title { font-weight:600; font-size:15px; }
+  .card-desc { color:var(--mut); font-size:13px; margin-top:4px; }
+  .tags { margin-top:8px; display:flex; flex-wrap:wrap; gap:5px; }
+  .tags span { font-size:11px; color:var(--acc); background:#22193f; border-radius:6px; padding:2px 8px; }
+  .gh { font-size:12.5px; color:var(--acc2); text-decoration:none; }
+  .gh:hover { color:var(--acc); }
+  .install { background:#06060f; border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin-top:34px; }
+  pre { background:#06060f; border:1px solid var(--line); border-radius:8px; padding:12px 14px; overflow:auto; font-family:Consolas,monospace; font-size:13px; }
+  code { font-family:Consolas,monospace; }
+  ::selection { background:var(--acc2); }
+  footer { text-align:center; color:var(--mut); font-size:13px; padding:30px 0 44px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header>
+  <h1>🚀 opencode<span>-artes</span></h1>
+  <div class="sub">The only skill ecosystem your OpenCode AI agent will ever need.</div>
+  <div class="stat">
+    <span><b>97</b> skills</span>
+    <span><b>17</b> categories</span>
+    <span><b>4</b> suite orchestrators</span>
+    <span>MIT License</span>
+  </div>
+</header>
+
+<nav class="filter">
+  <input id="search" type="search" placeholder="Search skill, tag, keyword…" autocomplete="off">
+  <a href="#cat-ai-ops" class="chip">ai-ops <b>6</b></a> <a href="#cat-algorithms" class="chip">algorithms <b>2</b></a> <a href="#cat-api" class="chip">api <b>3</b></a> <a href="#cat-backend" class="chip">backend <b>14</b></a> <a href="#cat-cloud" class="chip">cloud <b>3</b></a> <a href="#cat-core-coding" class="chip">core-coding <b>7</b></a> <a href="#cat-core-engine-hardening" class="chip">core-engine-hardening <b>11</b></a> <a href="#cat-data-science" class="chip">data-science <b>2</b></a> <a href="#cat-database" class="chip">database <b>6</b></a> <a href="#cat-debugging" class="chip">debugging <b>1</b></a> <a href="#cat-developer-experience" class="chip">developer-experience <b>9</b></a> <a href="#cat-devops" class="chip">devops <b>2</b></a> <a href="#cat-frontend" class="chip">frontend <b>10</b></a> <a href="#cat-orchestrator" class="chip">orchestrator <b>7</b></a> <a href="#cat-security" class="chip">security <b>10</b></a> <a href="#cat-software-architecture" class="chip">software-architecture <b>3</b></a> <a href="#cat-testing" class="chip">testing <b>1</b></a>
+</nav>
+
+<main id="list">
+  
+      <section class="cat" id="cat-ai-ops">
+        <h2>ai-ops <span class="count">6</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/agent-self-debugger-loop</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/agent-self-debugger-loop/agent-self-debugger-loop.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Agent Self-Debugger Loop</div>
+          <div class="card-desc">A Python CLI (self_debug.py) that parses pytest stderr/stdout tracebacks, extracts the failing File x.py line N location, reads and rewrites that file via an ast.NodeTran…</div>
+          <div class="tags"><span>agent</span><span>debugging</span><span>self-healing</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/context-compressor</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/context-compressor/context-compressor.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Context Compressor</div>
+          <div class="card-desc">Compress long conversation histories or documents to save context window token limits.</div>
+          <div class="tags"><span>context-window</span><span>token-optimization</span><span>summarization</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/prompt-evaluator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/prompt-evaluator/prompt-evaluator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Prompt Evaluator</div>
+          <div class="card-desc">Evaluate agent prompt effectiveness using accuracy metrics and token constraints.</div>
+          <div class="tags"><span>prompt-engineering</span><span>llm-evaluation</span><span>accuracy</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/rag-chunking-evaluator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/rag-chunking-evaluator/rag-chunking-evaluator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">RAG Chunking Evaluator</div>
+          <div class="card-desc">Analyze document structures to recommend optimal chunking strategies and overlap ratios for RAG pipelines.</div>
+          <div class="tags"><span>rag</span><span>chunking</span><span>embeddings</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/structured-output-enforcer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/structured-output-enforcer/structured-output-enforcer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Structured Output Enforcer</div>
+          <div class="card-desc">Convert unstructured LLM output into validated JSON adhering to strict Zod or JSON Schema rules.</div>
+          <div class="tags"><span>zod</span><span>json-schema</span><span>llm-output</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/tool-schema-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/tool-schema-builder/tool-schema-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Tool Schema Builder</div>
+          <div class="card-desc">Convert standard code functions into JSON schema format for AI function calling.</div>
+          <div class="tags"><span>function-calling</span><span>json-schema</span><span>tool-use</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-algorithms">
+        <h2>algorithms <span class="count">2</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/data-structure-optimizer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/data-structure-optimizer/data-structure-optimizer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Data Structure Optimizer</div>
+          <div class="card-desc">Analyze algorithm time/space complexity (Big O) and refactor logic using optimal data structures (Heaps, Tries, Hash Maps).</div>
+          <div class="tags"><span>algorithms</span><span>big-o</span><span>data-structures</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/procedural-dungeon-generator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/procedural-dungeon-generator/procedural-dungeon-generator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Procedural Dungeon &amp; Map Generator</div>
+          <div class="card-desc">Implements deterministic 2D tilemap generation with Binary Space Partitioning for rectangular rooms, A* grid pathfinding for corridor carving between room centers, and a …</div>
+          <div class="tags"><span>procedural</span><span>dungeon</span><span>bsp</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-api">
+        <h2>api <span class="count">3</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/graphql-schema-designer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/graphql-schema-designer/graphql-schema-designer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">GraphQL Schema Designer</div>
+          <div class="card-desc">Design GraphQL type definitions, query/mutation schemas, and resolver boilerplate code.</div>
+          <div class="tags"><span>graphql</span><span>schema</span><span>type-definitions</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/mcp-tools-auto-bridge</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/mcp-tools-auto-bridge/mcp-tools-auto-bridge.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">MCP Tools Auto Bridge</div>
+          <div class="card-desc">A Python generator (bridge_gen.py) that reads a target source file via ast reflection, extracts public function signatures (name, parameters, type annotations, docstrings…</div>
+          <div class="tags"><span>mcp</span><span>fastmcp</span><span>python</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/webhook-handler-generator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/webhook-handler-generator/webhook-handler-generator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Webhook Handler Generator</div>
+          <div class="card-desc">Draft secure webhook receiver endpoints complete with cryptographic signature verification (Stripe, GitHub, Midtrans).</div>
+          <div class="tags"><span>webhook</span><span>security</span><span>signature-verification</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-backend">
+        <h2>backend <span class="count">14</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/auth-session-oauth2-scaffolder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/auth-session-oauth2-scaffolder/auth-session-oauth2-scaffolder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Auth Session &amp; OAuth2 Scaffolder</div>
+          <div class="card-desc">Implements comprehensive user authentication systems supporting secure cookie sessions, JWT refresh token rotation, password hashing, and third-party OAuth2 social logins…</div>
+          <div class="tags"><span>authentication</span><span>oauth2</span><span>jwt</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/caching-strategy-implementer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/caching-strategy-implementer/caching-strategy-implementer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Caching Strategy Implementer</div>
+          <div class="card-desc">Implement Cache-Aside, Write-Through, and TTL-based caching logic using Redis or in-memory LRU caches.</div>
+          <div class="tags"><span>caching</span><span>redis</span><span>cache-aside</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/docker-multi-stage-stack-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/docker-multi-stage-stack-builder/docker-multi-stage-stack-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Docker Multi-Stage Stack Builder</div>
+          <div class="card-desc">Containerizes web applications and dependencies into lightweight, production-ready multi-stage Docker images orchestrated via Docker Compose.</div>
+          <div class="tags"><span>docker</span><span>docker-compose</span><span>nginx</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/express-fastapi-route-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/express-fastapi-route-builder/express-fastapi-route-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Express &amp; FastAPI Route Builder</div>
+          <div class="card-desc">Generates enterprise-grade RESTful API routes in Node.js (Express) or Python (FastAPI) complete with payload validation, unified error handling, and automated Swagger spe…</div>
+          <div class="tags"><span>express</span><span>fastapi</span><span>rest-api</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/graphql-schema-dataloader-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/graphql-schema-dataloader-builder/graphql-schema-dataloader-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">GraphQL Schema &amp; DataLoader Builder</div>
+          <div class="card-desc">Designs performance-optimized GraphQL APIs with strict type definitions, clean Query/Mutation resolvers, and batching mechanisms to eliminate N+1 database queries.</div>
+          <div class="tags"><span>graphql</span><span>dataloader</span><span>apollo-server</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/jwt-token-rotator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/jwt-token-rotator/jwt-token-rotator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">JWT Token Rotator</div>
+          <div class="card-desc">Implement secure short-lived access token renewal and refresh token rotation with revocation blacklisting.</div>
+          <div class="tags"><span>jwt</span><span>authentication</span><span>token-rotation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/pagination-cursor-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/pagination-cursor-builder/pagination-cursor-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Pagination Cursor Builder</div>
+          <div class="card-desc">Build cursor-based and keyset pagination handlers for database queries and API endpoints.</div>
+          <div class="tags"><span>pagination</span><span>cursor</span><span>keyset</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/playwright-e2e-security-flow-tester</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/playwright-e2e-security-flow-tester/playwright-e2e-security-flow-tester.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Playwright E2E Security Flow Tester</div>
+          <div class="card-desc">Crafts automated End-to-End (E2E) browser testing suites validating critical user journeys, edge cases, and client-side security boundary enforcement.</div>
+          <div class="tags"><span>playwright</span><span>e2e</span><span>page-object-model</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/rate-limiter-middleware</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/rate-limiter-middleware/rate-limiter-middleware.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Rate Limiter Middleware</div>
+          <div class="card-desc">Build API rate-limiting middleware using Token Bucket or Sliding Window algorithms.</div>
+          <div class="tags"><span>rate-limiting</span><span>token-bucket</span><span>sliding-window</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/redis-pubsub-cache-manager</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/redis-pubsub-cache-manager/redis-pubsub-cache-manager.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Redis Pub/Sub &amp; Cache Manager</div>
+          <div class="card-desc">Deploys high-performance caching strategies and distributed message pub/sub event buses to reduce database load and handle background processing.</div>
+          <div class="tags"><span>redis</span><span>ioredis</span><span>pub-sub</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/wasm-rust-compiler</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/wasm-rust-compiler/wasm-rust-compiler.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">WebAssembly Rust Compiler</div>
+          <div class="card-desc">Surveys JS and Python sources for CPU-bound hot loops, then provides a complete wasm-bindgen Rust implementation, Cargo manifest, wasm-pack build scripts, and browser loa…</div>
+          <div class="tags"><span>wasm</span><span>rust</span><span>wasm-bindgen</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/websocket-realtime-handler</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/websocket-realtime-handler/websocket-realtime-handler.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">WebSocket Realtime Handler</div>
+          <div class="card-desc">Implement WebSocket connection lifecycles, ping/pong heartbeats, reconnect logic, and event broadcasting.</div>
+          <div class="tags"><span>websocket</span><span>realtime</span><span>heartbeat</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/websocket-realtime-secure-engine</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/websocket-realtime-secure-engine/websocket-realtime-secure-engine.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">WebSocket Realtime Secure Engine</div>
+          <div class="card-desc">Scaffolds high-throughput, bidirectional real-time communication layers over WebSockets or Server-Sent Events (SSE) with robust reconnection and authentication controls.</div>
+          <div class="tags"><span>websocket</span><span>socket.io</span><span>realtime</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/websocket-realtime-sync-engine</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/websocket-realtime-sync-engine/websocket-realtime-sync-engine.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">WebSocket Realtime Sync Engine</div>
+          <div class="card-desc">Implements a dependency-light ESM WebSocket sync client with exponential-backoff reconnection, heartbeat ping/pong keep-alive, JSON Patch style delta application, and ver…</div>
+          <div class="tags"><span>websocket</span><span>sse</span><span>reconnection</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-cloud">
+        <h2>cloud <span class="count">3</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/k8s-manifest-validator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/k8s-manifest-validator/k8s-manifest-validator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">K8s Manifest Validator</div>
+          <div class="card-desc">Validate and lint Kubernetes manifest files (YAML/JSON) against required fields, resource constraints, and best practices, with an optional kubectl dry-run schema check.</div>
+          <div class="tags"><span>kubernetes</span><span>k8s</span><span>manifest</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/serverless-function-generator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/serverless-function-generator/serverless-function-generator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Serverless Function Generator</div>
+          <div class="card-desc">Scaffold lightweight serverless handlers for Cloudflare Workers or AWS Lambda with standard CORS and error handling.</div>
+          <div class="tags"><span>serverless</span><span>lambda</span><span>cloudflare-workers</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/terraform-module-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/terraform-module-builder/terraform-module-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Terraform Module Builder</div>
+          <div class="card-desc">Draft modular, reusable Infrastructure-as-Code Terraform modules for cloud infrastructure.</div>
+          <div class="tags"><span>terraform</span><span>iac</span><span>cloud</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-core-coding">
+        <h2>core-coding <span class="count">7</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/ast-anti-pattern-slayer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/ast-anti-pattern-slayer/ast-anti-pattern-slayer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">AST Anti-Pattern Slayer</div>
+          <div class="card-desc">Parses Python or JavaScript-style source into an AST, computes cyclomatic complexity v(G) as decision count plus one, maximum block nesting depth, bare except clauses and…</div>
+          <div class="tags"><span>ast</span><span>refactoring</span><span>cyclomatic-complexity</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/async-concurrency-handler</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/async-concurrency-handler/async-concurrency-handler.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Async Concurrency Handler</div>
+          <div class="card-desc">Implement async/await workflows, promise pools, worker threads, or goroutines while preventing race conditions.</div>
+          <div class="tags"><span>async</span><span>concurrency</span><span>promises</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/bytecode-decompiler-assistant</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/bytecode-decompiler-assistant/bytecode-decompiler-assistant.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Bytecode Decompiler &amp; Obfuscation Assistant</div>
+          <div class="card-desc">Loads Python pyc bytecode via marshal after importlib header validation, pretty-prints raw dis, reconstructs a basic-block control-flow graph annotated with loop heads an…</div>
+          <div class="tags"><span>bytecode</span><span>decompiler</span><span>dis</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/chess-engine-mechanic-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/chess-engine-mechanic-builder/chess-engine-mechanic-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Custom Chess Engine Mechanic Builder</div>
+          <div class="card-desc">Wraps python-chess inside a SkillChessBoard that adds turn tracking, per-skill cooldown ticks, a Teleport mechanic and a Freeze Square mechanic with expiry timers, plus r…</div>
+          <div class="tags"><span>chess</span><span>python-chess</span><span>pygame</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/error-class-hierarchy-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/error-class-hierarchy-builder/error-class-hierarchy-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Error Class Hierarchy Builder</div>
+          <div class="card-desc">Create domain-specific custom exception classes with standardized error codes, HTTP statuses, and metadata payloads.</div>
+          <div class="tags"><span>error-handling</span><span>custom-exceptions</span><span>hierarchy</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/regex-builder-parser</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/regex-builder-parser/regex-builder-parser.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Regex Builder &amp; Parser</div>
+          <div class="card-desc">Construct ReDoS-safe regular expressions and string parser logic for complex input string extraction.</div>
+          <div class="tags"><span>regex</span><span>redoS</span><span>parser</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/type-definition-generator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/type-definition-generator/type-definition-generator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Type Definition Generator</div>
+          <div class="card-desc">Convert untyped JavaScript, Python dicts, or raw JSON payloads into strict TypeScript interfaces or Type Hint annotations.</div>
+          <div class="tags"><span>typescript</span><span>type-definitions</span><span>python</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-core-engine-hardening">
+        <h2>core-engine-hardening <span class="count">11</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/cmd-sanitizer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/cmd-sanitizer/cmd-sanitizer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Cmd Sanitizer</div>
+          <div class="card-desc">Static linter over command strings before execution. Detects and rewrites unsafe Win32/PowerShell 5.1 patterns: bare &amp;&amp; chaining, unquoted spaced paths, $? vs $LASTEXITCO…</div>
+          <div class="tags"><span>powershell</span><span>windows</span><span>exit-status</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/context-bank</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/context-bank/context-bank.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Context Bank</div>
+          <div class="card-desc">Materializes a structured CONTEXT_BANK.md + JSON file that captures verified file paths, decided invariants, active TODOs, and open risks, allowing subagents and repeated…</div>
+          <div class="tags"><span>context-window</span><span>token-management</span><span>memory</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/deptomap</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/deptomap/deptomap.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Dep Map</div>
+          <div class="card-desc">Builds a persistent dependency graph (`dep-graph.json`) by scanning `import`/`require`/`include` patterns across the codebase. Before any edit it lists the blast radius o…</div>
+          <div class="tags"><span>dependency-graph</span><span>import-mapping</span><span>ripple-effect</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/memory-journal</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/memory-journal/memory-journal.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Memory Journal</div>
+          <div class="card-desc">Cross-session ledger at `~/.opencode/memory/*.md`: appends decisions/rejections/root-causes during a session; on session start, diffs against the live transcript so the a…</div>
+          <div class="tags"><span>cross-session-memory</span><span>decision-log</span><span>session-diff</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/memory-leak-profiler-debugger</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/memory-leak-profiler-debugger/memory-leak-profiler-debugger.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Memory Leak Profiler &amp; Debugger</div>
+          <div class="card-desc">Instruments a target callable under tracemalloc and the cyclic garbage collector, takes paired allocation snapshots across repeated runs, flags allocations whose cumulati…</div>
+          <div class="tags"><span>memory</span><span>tracemalloc</span><span>leak</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/output-trust-check</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/output-trust-check/output-trust-check.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Output Trust Check</div>
+          <div class="card-desc">Wraps every truncating tool call: when output is truncated/byte-capped, refuses to decide on the truncated portion and automatically requests the tail window or a targete…</div>
+          <div class="tags"><span>trust-but-verify</span><span>truncation</span><span>encoding</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/regression-sentinel</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/regression-sentinel/regression-sentinel.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Regression Sentinel</div>
+          <div class="card-desc">Before each new task in a long session, re-runs the last N passing checkpoints captured by verify-orchestrator as a smoke suite, catching regressions caused by recent edi…</div>
+          <div class="tags"><span>smoke-test</span><span>regression-detection</span><span>checkpoint</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/schema-sync</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/schema-sync/schema-sync.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Schema Sync</div>
+          <div class="card-desc">Before multi-step toolkit workflows, pings the live tool (via schema-style endpoints / search tools) and diffs against my cached schema; on mismatch, rewrites the workflo…</div>
+          <div class="tags"><span>api-schema</span><span>integration-drift</span><span>schema-diff</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/spec-loop-closer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/spec-loop-closer/spec-loop-closer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Spec Loop Closer</div>
+          <div class="card-desc">Forces every user requirement through a 1:1 mapping to a checkable assertion (grep-able token, executable test, or numeric threshold) before implementation begins. Blocks…</div>
+          <div class="tags"><span>requirement-closure</span><span>assertion-mapping</span><span>gigo-prevention</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/subagent-evidence</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/subagent-evidence/subagent-evidence.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Subagent Evidence</div>
+          <div class="card-desc">Dispatch-time contract for explore agents: return only observations each with a `file:line` citation and raw excerpt; inference must be explicitly tagged `[INFERRED]`. Po…</div>
+          <div class="tags"><span>subagent-compression</span><span>evidence-citation</span><span>inference-tagging</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/verify-orchestrator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/verify-orchestrator/verify-orchestrator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Verify Orchestrator</div>
+          <div class="card-desc">Auto-discovers project verification surface (test/lint/typecheck configs), runs the minimal verification suite, and gates every completion claim on machine-parsed exit co…</div>
+          <div class="tags"><span>verification</span><span>test-suite</span><span>lint</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-data-science">
+        <h2>data-science <span class="count">2</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/chart-config-generator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/chart-config-generator/chart-config-generator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Chart Config Generator</div>
+          <div class="card-desc">Map raw JSON datasets into ready-to-use chart configuration objects (Chart.js, Recharts, or ECharts).</div>
+          <div class="tags"><span>chartjs</span><span>recharts</span><span>echarts</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/pandas-data-cleaner</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/pandas-data-cleaner/pandas-data-cleaner.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Pandas Data Cleaner</div>
+          <div class="card-desc">Generate Python Pandas scripts to handle missing values, drop duplicates, and normalize column data types.</div>
+          <div class="tags"><span>pandas</span><span>data-cleaning</span><span>data-science</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-database">
+        <h2>database <span class="count">6</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/database-zero-downtime-migrator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/database-zero-downtime-migrator/database-zero-downtime-migrator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Database Zero-Downtime Migrator</div>
+          <div class="card-desc">Generates Expand-and-Contract (Parallel Change) migration SQL as four ordered stage files plus a JSON manifest from a MigrationPlan, emitting Postgres or MySQL dialect ou…</div>
+          <div class="tags"><span>database</span><span>migrations</span><span>zero-downtime</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/db-migration-generator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/db-migration-generator/db-migration-generator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">DB Migration Generator</div>
+          <div class="card-desc">Generate database schema migration scripts (Prisma/TypeORM/Alembic) based on model changes.</div>
+          <div class="tags"><span>migrations</span><span>schema-evolution</span><span>prisma</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/drizzle-prisma-orm-architect</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/drizzle-prisma-orm-architect/drizzle-prisma-orm-architect.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Drizzle &amp; Prisma ORM Architect</div>
+          <div class="card-desc">Architect relational database schemas, model complex entity relationships, optimize query execution, and generate zero-downtime database migration files.</div>
+          <div class="tags"><span>drizzle</span><span>prisma</span><span>postgresql</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/sql-query-optimizer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/sql-query-optimizer/sql-query-optimizer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">SQL Query Optimizer</div>
+          <div class="card-desc">Analyze slow SQL queries, recommend indexes, and restructure join clauses.</div>
+          <div class="tags"><span>sql</span><span>performance-tuning</span><span>indexing</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/vector-db-hybrid-indexer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/vector-db-hybrid-indexer/vector-db-hybrid-indexer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Vector DB Hybrid Search Indexer</div>
+          <div class="card-desc">A dependency-light Python module (hybrid_index.py) implementing a self-contained BM25 sparse scorer, a cosine-similarity dense index with optional numpy and pure-math fal…</div>
+          <div class="tags"><span>vector-db</span><span>hybrid-search</span><span>bm25</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/vector-db-indexer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/vector-db-indexer/vector-db-indexer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Vector DB Indexer</div>
+          <div class="card-desc">Chunk documents and store vector embeddings into a Vector DB.</div>
+          <div class="tags"><span>embeddings</span><span>vector-database</span><span>rag</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-debugging">
+        <h2>debugging <span class="count">1</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/memory-leak-debugger</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/memory-leak-debugger/memory-leak-debugger.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Memory Leak Debugger</div>
+          <div class="card-desc">Identify and resolve unmanaged memory leaks, event listener leaks, and circular references across runtimes.</div>
+          <div class="tags"><span>memory-leak</span><span>debugging</span><span>garbage-collection</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-developer-experience">
+        <h2>developer-experience <span class="count">9</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/changelog-generator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/changelog-generator/changelog-generator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Changelog Generator</div>
+          <div class="card-desc">Parse Git commit logs to generate a CHANGELOG.md adhering to Conventional Commits.</div>
+          <div class="tags"><span>changelog</span><span>conventional-commits</span><span>semver</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/cli-tool-scaffolder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/cli-tool-scaffolder/cli-tool-scaffolder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">CLI Tool Scaffolder</div>
+          <div class="card-desc">Scaffold interactive command-line interface tools with argument parsing, flags, spinners, and help menus.</div>
+          <div class="tags"><span>cli</span><span>commander</span><span>yargs</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/code-translator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/code-translator/code-translator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Code Translator</div>
+          <div class="card-desc">Precisely convert code logic from one programming language to another.</div>
+          <div class="tags"><span>code-conversion</span><span>polyglot</span><span>refactoring</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/cron-schedule-parser</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/cron-schedule-parser/cron-schedule-parser.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Cron Schedule Parser</div>
+          <div class="card-desc">Translate natural language time rules into valid 5-part or 6-part Cron schedule expressions.</div>
+          <div class="tags"><span>cron</span><span>scheduling</span><span>time-rules</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/git-bisect-time-traveler</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/git-bisect-time-traveler/git-bisect-time-traveler.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Git Bisect Time Traveler</div>
+          <div class="card-desc">Automates regression tracking by orchestrating non-interactive git bisect sessions wrapped around a headless test harness, parses the first-bad-commit SHA, subject and da…</div>
+          <div class="tags"><span>git</span><span>bisect</span><span>regression</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/mermaid-diagrammer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/mermaid-diagrammer/mermaid-diagrammer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Mermaid Diagrammer</div>
+          <div class="card-desc">Convert code logic, database structures, or system architectures into valid Mermaid.js visual diagrams.</div>
+          <div class="tags"><span>mermaid</span><span>diagrams</span><span>documentation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/openapi-spec-writer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/openapi-spec-writer/openapi-spec-writer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">OpenAPI Spec Writer</div>
+          <div class="card-desc">Extract backend API code into OpenAPI/Swagger 3.0 documentation.</div>
+          <div class="tags"><span>openapi</span><span>swagger</span><span>api-docs</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/regex-builder-explainer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/regex-builder-explainer/regex-builder-explainer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Regex Builder &amp; Explainer</div>
+          <div class="card-desc">Construct complex regular expressions based on pattern requirements with step-by-step logic breakdown.</div>
+          <div class="tags"><span>regex</span><span>pattern-matching</span><span>expressions</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/tui-app-scaffolder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/tui-app-scaffolder/tui-app-scaffolder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Interactive TUI Application Scaffolder</div>
+          <div class="card-desc">Scaffolds a complete reactive Textual terminal Todo application with header, input, DataTable, footer, status label, custom keybindings and CRUD handlers, and includes a …</div>
+          <div class="tags"><span>tui</span><span>textual</span><span>rich</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-devops">
+        <h2>devops <span class="count">2</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/dockerfile-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/dockerfile-builder/dockerfile-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Dockerfile Builder</div>
+          <div class="card-desc">Draft efficient, secure, and minimal multi-stage Dockerfiles.</div>
+          <div class="tags"><span>docker</span><span>multi-stage-build</span><span>container-security</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/github-actions-generator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/github-actions-generator/github-actions-generator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">GitHub Actions Generator</div>
+          <div class="card-desc">Design automated CI/CD workflows for testing, building, and deployment.</div>
+          <div class="tags"><span>ci-cd</span><span>github-actions</span><span>automation</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-frontend">
+        <h2>frontend <span class="count">10</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/accessibility-auditor</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/accessibility-auditor/accessibility-auditor.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Accessibility Auditor</div>
+          <div class="card-desc">Audit HTML/JSX code against WCAG 2.1 guidelines and provide accessible ARIA code fixes.</div>
+          <div class="tags"><span>accessibility</span><span>wcag</span><span>aria</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/form-validation-schema-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/form-validation-schema-builder/form-validation-schema-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Form Validation &amp; Schema Builder</div>
+          <div class="card-desc">Builds robust, type-safe interactive web forms featuring complex validation logic, real-time error feedback, and seamless client-server schema synchronization.</div>
+          <div class="tags"><span>react-hook-form</span><span>zod</span><span>validation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/i18n-locale-extractor</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/i18n-locale-extractor/i18n-locale-extractor.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">i18n Locale Extractor</div>
+          <div class="card-desc">Extract hardcoded UI text strings into structured internationalization JSON translation files.</div>
+          <div class="tags"><span>i18n</span><span>localization</span><span>json</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/lighthouse-web-vitals-optimizer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/lighthouse-web-vitals-optimizer/lighthouse-web-vitals-optimizer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Lighthouse &amp; Web Vitals Optimizer</div>
+          <div class="card-desc">Audits web performance metrics, optimizes client-side bundle footprints, and refactors resource delivery to achieve maximum Core Web Vitals scores.</div>
+          <div class="tags"><span>lighthouse</span><span>core-web-vitals</span><span>performance</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/nextjs-app-router-scaffolder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/nextjs-app-router-scaffolder/nextjs-app-router-scaffolder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Next.js App Router Scaffolder</div>
+          <div class="card-desc">Automatically scaffolds production-ready Next.js App Router directory structures, isolating React Server Components (RSC) from Client Components, configuring standardized…</div>
+          <div class="tags"><span>nextjs</span><span>react-server-components</span><span>app-router</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/seo-metadata-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/seo-metadata-builder/seo-metadata-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">SEO &amp; Metadata Builder</div>
+          <div class="card-desc">Generate complete HTML meta tags, Open Graph, Twitter Cards, and JSON-LD structured data.</div>
+          <div class="tags"><span>seo</span><span>metadata</span><span>open-graph</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/state-management-architect</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/state-management-architect/state-management-architect.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">State Management Architect</div>
+          <div class="card-desc">Implement clean application state management patterns (Zustand, Redux Toolkit, Pinia) with atomic state updates.</div>
+          <div class="tags"><span>zustand</span><span>redux-toolkit</span><span>pinia</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/state-management-query-architect</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/state-management-query-architect/state-management-query-architect.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">State Management &amp; Query Architect</div>
+          <div class="card-desc">Establishes a clean separation between global client UI state and asynchronous server state management using Zustand and TanStack Query (React Query).</div>
+          <div class="tags"><span>zustand</span><span>tanstack-query</span><span>state-management</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/tailwind-converter</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/tailwind-converter/tailwind-converter.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Tailwind CSS Converter</div>
+          <div class="card-desc">Convert raw CSS or inline styles into clean, idiomatic Tailwind CSS utility classes.</div>
+          <div class="tags"><span>css</span><span>tailwind</span><span>utility-classes</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/tailwind-responsive-darkmode-styler</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/tailwind-responsive-darkmode-styler/tailwind-responsive-darkmode-styler.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Tailwind Responsive &amp; Darkmode Styler</div>
+          <div class="card-desc">Transforms raw JSX or HTML structures into fully responsive, accessible, dark-mode ready web interfaces using Tailwind CSS utility classes.</div>
+          <div class="tags"><span>tailwindcss</span><span>responsive-design</span><span>dark-mode</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-orchestrator">
+        <h2>orchestrator <span class="count">7</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/backend-suite-orchestrator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/backend-suite-orchestrator/backend-suite-orchestrator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Backend Suite Orchestrator</div>
+          <div class="card-desc">Orchestrates the 4-stage backend build chain — REST routes with OpenAPI spec (skills/express-fastapi-route-builder), auth/session/OAuth2 (skills/auth-session-oauth2-scaff…</div>
+          <div class="tags"><span>orchestrator</span><span>workflow</span><span>automation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/frontend-suite-orchestrator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/frontend-suite-orchestrator/frontend-suite-orchestrator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Frontend Suite Orchestrator</div>
+          <div class="card-desc">Orchestrates a 5-stage frontend build chain over a Next.js project: App Router scaffold, Tailwind responsive/dark-mode styling, zod-backed progressive forms, and the Zust…</div>
+          <div class="tags"><span>orchestrator</span><span>workflow</span><span>automation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/infra-qa-suite-orchestrator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/infra-qa-suite-orchestrator/infra-qa-suite-orchestrator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Infrastructure &amp; QA Suite Orchestrator</div>
+          <div class="card-desc">Orchestrates the 5-stage infrastructure and QA chain — ORM schemas plus zero-downtime migrations (skills/drizzle-prisma-orm-architect), Redis caching and pub/sub event bu…</div>
+          <div class="tags"><span>orchestrator</span><span>workflow</span><span>automation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/looping-auto-fixer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/looping-auto-fixer/looping-auto-fixer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Looping Auto Fixer</div>
+          <div class="card-desc">Iterative fixer that runs unit-test-generator → validates via skill-tester → if tests fail, feeds error logs to memory-leak-debugger or patches code → repeats up to 3 ret…</div>
+          <div class="tags"><span>orchestrator</span><span>workflow</span><span>automation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/mega-pipeline-deployer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/mega-pipeline-deployer/mega-pipeline-deployer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Mega Pipeline Deployer</div>
+          <div class="card-desc">Flexible orchestration engine that executes pipeline workflows in Full Mode (all 7 steps sequentially) or Selective Mode (user-specified step subset). Performs data contr…</div>
+          <div class="tags"><span>orchestrator</span><span>workflow</span><span>automation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/project-auto-builder</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/project-auto-builder/project-auto-builder.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Project Auto Builder</div>
+          <div class="card-desc">Dynamic orchestrator that inspects ./registry.json, analyzes the project workspace stack (Node.js, Python, Docker, etc.), automatically matches and orders optimal skills …</div>
+          <div class="tags"><span>orchestrator</span><span>workflow</span><span>automation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/security-suite-orchestrator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/security-suite-orchestrator/security-suite-orchestrator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Security Suite Orchestrator</div>
+          <div class="card-desc">Orchestrates a full 8-stage security audit chain over a local web app: dependency CVE scan, OWASP SAST static audit, SQLi/XSS input sanitization, JWT security cracking, B…</div>
+          <div class="tags"><span>orchestrator</span><span>workflow</span><span>automation</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-security">
+        <h2>security <span class="count">10</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/bola-idor-vulnerability-scanner</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/bola-idor-vulnerability-scanner/bola-idor-vulnerability-scanner.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">BOLA / IDOR Vulnerability Scanner</div>
+          <div class="card-desc">Inspects API endpoints for Broken Object Level Authorization (BOLA/IDOR) flaws to ensure users cannot manipulate resource IDs to access foreign data.</div>
+          <div class="tags"><span>bola</span><span>idor</span><span>authorization</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/cors-csp-headers-hardener</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/cors-csp-headers-hardener/cors-csp-headers-hardener.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">CORS &amp; CSP Headers Hardener</div>
+          <div class="card-desc">Inspects HTTP response headers on local web servers and injects defensive security headers to prevent clickjacking, cross-site scripting, and unauthorized domain access.</div>
+          <div class="tags"><span>cors</span><span>csp</span><span>security-headers</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/dependency-cve-audit-patcher</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/dependency-cve-audit-patcher/dependency-cve-audit-patcher.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Dependency CVE Audit &amp; Patcher</div>
+          <div class="card-desc">Audits third-party open-source packages for known vulnerabilities (CVEs), evaluating breaking change risks and generating automated patch updates.</div>
+          <div class="tags"><span>cve</span><span>npm-audit</span><span>dependencies</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/jwt-security-cracker-tester</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/jwt-security-cracker-tester/jwt-security-cracker-tester.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">JWT Security &amp; Algorithm Cracker Tester</div>
+          <div class="card-desc">Evaluates JSON Web Token handling on local API routes to identify token forgery, algorithm confusion, and weak signature secrets.</div>
+          <div class="tags"><span>jwt</span><span>security-testing</span><span>cracking</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/owasp-sast-auditor</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/owasp-sast-auditor/owasp-sast-auditor.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">OWASP SAST Security Auditor</div>
+          <div class="card-desc">Audits local web application source code for OWASP Top 10 vulnerabilities, generating security report logs and applying immediate automated code fixes.</div>
+          <div class="tags"><span>owasp</span><span>sast</span><span>static-analysis</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/owasp-vulnerability-checker</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/owasp-vulnerability-checker/owasp-vulnerability-checker.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">OWASP Vulnerability Checker</div>
+          <div class="card-desc">Audit API endpoints for common security vulnerabilities (XSS, SQLi, CSRF).</div>
+          <div class="tags"><span>owasp-top-10</span><span>api-security</span><span>xss</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/prompt-injection-shield</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/prompt-injection-shield/prompt-injection-shield.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Prompt Injection &amp; Security Shield</div>
+          <div class="card-desc">A stdlib-only Python module (shield.py) implementing InjectionShield static inspection for jailbreak signatures, system-prompt extraction patterns, and command-injection …</div>
+          <div class="tags"><span>security</span><span>prompt-injection</span><span>jailbreak</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/rate-limit-bruteforce-shield</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/rate-limit-bruteforce-shield/rate-limit-bruteforce-shield.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Rate-Limit &amp; Brute-Force Shield</div>
+          <div class="card-desc">Scans sensitive authentication endpoints and implements Redis-backed rate-limiting controls to block credential stuffing and brute-force attacks.</div>
+          <div class="tags"><span>rate-limiting</span><span>brute-force</span><span>redis</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/secrets-leak-detector</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/secrets-leak-detector/secrets-leak-detector.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Secrets Leak Detector</div>
+          <div class="card-desc">Scan codebases to detect leaked API keys, tokens, or credentials.</div>
+          <div class="tags"><span>secrets-detection</span><span>gitleaks</span><span>trufflehog</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/sqli-xss-payload-sanitizer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/sqli-xss-payload-sanitizer/sqli-xss-payload-sanitizer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">SQLi &amp; XSS Payload Sanitizer</div>
+          <div class="card-desc">Identifies unescaped user inputs and unparameterized database queries, injecting sanitization middleware and parameterized bindings to neutralize XSS and SQLi.</div>
+          <div class="tags"><span>sqli</span><span>xss</span><span>sanitization</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-software-architecture">
+        <h2>software-architecture <span class="count">3</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/dependency-injection-wire</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/dependency-injection-wire/dependency-injection-wire.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Dependency Injection Wiring</div>
+          <div class="card-desc">Decouple code modules using Inversion of Control (IoC) containers and explicit interface abstractions.</div>
+          <div class="tags"><span>dependency-injection</span><span>ioc</span><span>inversion-of-control</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/design-pattern-implementer</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/design-pattern-implementer/design-pattern-implementer.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Design Pattern Implementer</div>
+          <div class="card-desc">Refactor code to apply object-oriented design patterns (Factory, Strategy, Observer, Decorator, Adapter) cleanly.</div>
+          <div class="tags"><span>object-oriented</span><span>design-patterns</span><span>refactoring</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/pygame-state-machine-architect</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/pygame-state-machine-architect/pygame-state-machine-architect.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Pygame State Machine Architect</div>
+          <div class="card-desc">Defines an abstract BaseState lifecycle (startup, cleanup, get_event, update, draw) plus a StateMachine manager running a fixed delta-time loop with dt = clock.tick(60) /…</div>
+          <div class="tags"><span>pygame</span><span>state-machine</span><span>game</span></div>
+        </div></div>
+      </section>
+      <section class="cat" id="cat-testing">
+        <h2>testing <span class="count">1</span></h2>
+        <div class="grid">
+        <div class="card">
+          <div class="card-head">
+            <code class="cmd">/unit-test-generator</code>
+            <a class="gh" href="https://github.com/RMAzrim/opencode-artes/blob/main/skills/unit-test-generator/unit-test-generator.md" target="_blank" rel="noopener">view →</a>
+          </div>
+          <div class="card-title">Unit Test Generator</div>
+          <div class="card-desc">Generate automated unit test suites (Jest, Pytest, Go test) with complete mocking.</div>
+          <div class="tags"><span>jest</span><span>pytest</span><span>go-test</span></div>
+        </div></div>
+      </section>
+
+  <div class="install">
+    <h2>⚡ Install</h2>
+    <p><b>Option A</b> — one line in <code>~/config/opencode/opencode.jsonc</code>, then restart OpenCode:</p>
+    <pre>{ &quot;skills&quot;: [&quot;https://rmazrim.github.io/opencode-artes/skills/&quot;] }</pre>
+    <p><b>Option B</b> — clone &amp; build (97 skills generated locally):</p>
+    <pre>git clone https://github.com/RMAzrim/opencode-artes.git &amp;&amp; cd opencode-artes &amp;&amp; npm install &amp;&amp; npm run build</pre>
+  </div>
+</main>
+
+<footer>opencode-artes · 97 skills · <a class="gh" href="https://github.com/RMAzrim/opencode-artes" target="_blank" rel="noopener">github.com/RMAzrim/opencode-artes</a> · MIT</footer>
+
+<script>
+  const input = document.getElementById('search');
+  const cards = [...document.querySelectorAll('.card')];
+  const cats = [...document.querySelectorAll('section.cat')];
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    for (const cat of cats) {
+      let visible = 0;
+      for (const c of cat.querySelectorAll('.card')) {
+        const hit = !q || c.textContent.toLowerCase().includes(q);
+        c.style.display = hit ? '' : 'none';
+        if (hit) visible++;
+      }
+      cat.style.display = visible ? '' : 'none';
+    }
+  });
+</script>
+</body>
+</html>
