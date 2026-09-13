@@ -2,11 +2,11 @@
 
 <div align="center">
 
-  <img src="assets/banner.svg" alt="opencode-artes — 97 production-grade OpenCode skills" width="100%">
+  <img src="assets/banner.svg" alt="opencode-artes — 115 production-grade OpenCode skills" width="100%">
 
   **The only skill ecosystem your OpenCode AI agent will ever need.**
 
-  **97 production-grade skills · Fullstack web · Localhost security auditing · 4 suite orchestrators**
+  **115 production-grade skills · Fullstack web · Localhost security auditing · 4 suite orchestrators**
 
   [![Stars](https://img.shields.io/github/stars/RMAzrim/opencode-artes?style=for-the-badge&logo=github&logoColor=white&color=gold)](https://github.com/RMAzrim/opencode-artes/stargazers)
   [![Forks](https://img.shields.io/github/forks/RMAzrim/opencode-artes?style=for-the-badge&logo=git&logoColor=white&color=blue)](https://github.com/RMAzrim/opencode-artes/network)
@@ -30,7 +30,7 @@
 
 One repository, **every skill** your OpenCode agent could ever need — from scaffolding a full Next.js stack to auditing its security like a pentester, and orchestrating the whole pipeline with one command.
 
-- **97 production-grade skills** across 17 categories — frontend, backend, API, database, devops, testing, AI-ops, security auditing, and more.
+- **115 production-grade skills** across 17 categories — frontend, backend, API, database, devops, testing, AI-ops, security auditing, and more.
 - **Complete, runnable reference implementations** inside every skill (no filler, no placeholders) with explicit 5-part structure: architecture, data contracts, reference code, execution protocol, edge cases.
 - **Zero-config discovery** — load as slash commands (`/security-suite-orchestrator`) and natural-language auto-triggers with zero extra configuration.
 - **4 suite orchestrators** that chain the skills into one-command pipelines: security, frontend, backend, and infrastructure/QA.
@@ -55,7 +55,7 @@ Add one line to your OpenCode config (`~/.config/opencode/opencode.jsonc`), then
 }
 ```
 
-All 97 skills become available everywhere. (This HTTP-catalog URL serves the latest generated `.opencode/skills/` copies.)
+All 115 skills become available everywhere. (This HTTP-catalog URL serves the latest generated `.opencode/skills/` copies.)
 
 ### Option B — clone & build
 
@@ -63,35 +63,35 @@ All 97 skills become available everywhere. (This HTTP-catalog URL serves the lat
 git clone https://github.com/RMAzrim/opencode-artes.git
 cd opencode-artes
 npm install
-npm run build    # regenerates registry.json + .opencode/skills (97 skills)
+npm run build    # regenerates registry.json + .opencode/skills (115 skills)
 opencode run '<your request>' --dir .
 ```
 
 > **Note:** OpenCode loads skills at startup — restart OpenCode after `npm run build` (or after pulling new versions) so new skills are picked up. No other configuration needed.
 
-## 🗺️ What's inside — 97 skills across 17 categories
+## 🗺️ What's inside — 115 skills across 17 categories
 
 | Category | Skills | Representative skills |
 |----------|:------:|------------------------|
 | **ai-ops** | 6 | `prompt-evaluator`, `structured-output-enforcer`, `tool-schema-builder` |
 | **algorithms** | 2 | `data-structure-optimizer`, `procedural-dungeon-generator` |
 | **api** | 3 | `graphql-schema-designer`, `mcp-tools-auto-bridge`, `webhook-handler-generator` |
-| **backend** | 14 | `express-fastapi-route-builder`, `auth-session-oauth2-scaffolder`, `redis-pubsub-cache-manager` |
+| **backend** | 16 | `express-fastapi-route-builder`, `auth-session-oauth2-scaffolder`, `middleware-order-validator` |
 | **cloud** | 3 | `terraform-module-builder`, `k8s-manifest-validator`, `serverless-function-generator` |
-| **core-coding** | 7 | `ast-anti-pattern-slayer`, `error-class-hierarchy-builder`, `bytecode-decompiler-assistant` |
+| **core-coding** | 9 | `ast-anti-pattern-slayer`, `startup-cold-boot-optimizer`, `refactor-safety-harness` |
 | **core-engine-hardening** | 11 | `cmd-sanitizer`, `memory-journal`, `verify-orchestrator` |
 | **data-science** | 2 | `pandas-data-cleaner`, `chart-config-generator` |
-| **database** | 6 | `drizzle-prisma-orm-architect`, `database-zero-downtime-migrator`, `sql-query-optimizer` |
-| **debugging** | 1 | `memory-leak-debugger` |
-| **developer-experience** | 9 | `cli-tool-scaffolder`, `mermaid-diagrammer`, `git-bisect-time-traveler` |
-| **devops** | 2 | `dockerfile-builder`, `github-actions-generator` |
+| **database** | 7 | `drizzle-prisma-orm-architect`, `database-zero-downtime-migrator`, `schema-drift-detector` |
+| **debugging** | 2 | `memory-leak-debugger`, `postmortem-autobiographer` |
+| **developer-experience** | 13 | `pr-logic-reviewer`, `timezone-trap-cron-debugger`, `monorepo-package-cleaner` |
+| **devops** | 5 | `dockerfile-builder`, `dependency-fitness-scorecard`, `performance-budget-bouncer` |
 | **frontend** | 10 | `nextjs-app-router-scaffolder`, `tailwind-responsive-darkmode-styler`, `accessibility-auditor` |
 | **orchestrator** | 7 | `security-suite-orchestrator`, `frontend-suite-orchestrator`, `infra-qa-suite-orchestrator` |
-| **security** | 10 | `owasp-sast-auditor`, `jwt-security-cracker-tester`, `dependency-cve-audit-patcher` |
+| **security** | 12 | `owasp-sast-auditor`, `trojan-source-hunter`, `license-clash-mediator` |
 | **software-architecture** | 3 | `design-pattern-implementer`, `dependency-injection-wire` |
-| **testing** | 1 | `unit-test-generator` |
+| **testing** | 4 | `unit-test-generator`, `flaky-test-jury`, `golden-snapshot-migrator` |
 
-> The full 97-skill catalog with per-skill descriptions is in the [**Full Skill Catalog**](#-full-skill-catalog--function) section below.
+> The full 115-skill catalog with per-skill descriptions is in the [**Full Skill Catalog**](#-full-skill-catalog--function) section below.
 
 ## 📦 Repository structure
 
@@ -114,7 +114,7 @@ Each skill file follows the exact same contract: `## 1. System Architecture & Pr
 Every skill below is loadable via its folder-derived ID as a slash command
 (`/<id>`), discoverable by natural language through its `description`, and has a
 complete production reference implementation inside its document. Header row
-per category shows the category-wide skill count for the **v2.6.0** release.
+per category shows the category-wide skill count for the **v3.0.0** release.
 
 | Skill ID | Display name | What it does (description) |
 |---|---|---|
@@ -132,7 +132,7 @@ per category shows the category-wide skill count for the **v2.6.0** release.
 | `graphql-schema-designer` | GraphQL Schema Designer | Design GraphQL type definitions, query/mutation schemas, and resolver boilerplate code. |
 | `mcp-tools-auto-bridge` | MCP Tools Auto Bridge | A Python generator (bridge_gen.py) that reads a target source file via ast reflection, extracts public function signatures (name, parameters, type annotations, docstrings, return types), and writes a standalone MCP server (mcp_server.py) using mcp.server.fastmcp.FastMCP with one @mcp.tool() per function and a stdio transport entry point. Stdlib-only generator; runtime requires mcp package. |
 | `webhook-handler-generator` | Webhook Handler Generator | Draft secure webhook receiver endpoints complete with cryptographic signature verification (Stripe, GitHub, Midtrans). |
-| **backend** (14) | | | |
+| **backend** (16) | | | |
 | `auth-session-oauth2-scaffolder` | Auth Session & OAuth2 Scaffolder | Implements comprehensive user authentication systems supporting secure cookie sessions, JWT refresh token rotation, password hashing, and third-party OAuth2 social logins. |
 | `caching-strategy-implementer` | Caching Strategy Implementer | Implement Cache-Aside, Write-Through, and TTL-based caching logic using Redis or in-memory LRU caches. |
 | `docker-multi-stage-stack-builder` | Docker Multi-Stage Stack Builder | Containerizes web applications and dependencies into lightweight, production-ready multi-stage Docker images orchestrated via Docker Compose. |
@@ -147,11 +147,13 @@ per category shows the category-wide skill count for the **v2.6.0** release.
 | `websocket-realtime-handler` | WebSocket Realtime Handler | Implement WebSocket connection lifecycles, ping/pong heartbeats, reconnect logic, and event broadcasting. |
 | `websocket-realtime-secure-engine` | WebSocket Realtime Secure Engine | Scaffolds high-throughput, bidirectional real-time communication layers over WebSockets or Server-Sent Events (SSE) with robust reconnection and authentication controls. |
 | `websocket-realtime-sync-engine` | WebSocket Realtime Sync Engine | Implements a dependency-light ESM WebSocket sync client with exponential-backoff reconnection, heartbeat ping/pong keep-alive, JSON Patch style delta application, and version-vector resync reconciliation, plus a runnable in-memory echo-server demo. |
+| `error-code-consistency-auditor` | Error Code Consistency Auditor | Audit every error class, message, and HTTP mapping across the codebase for duplication, contradictory status codes, and undocumented errors. |
+| `middleware-order-validator` | Middleware Order Validator | Audit middleware registration order in Express/FastAPI apps against safety rules — auth before authz, rate-limit before routes, error handlers last — and emit fixes. |
 | **cloud** (3) | | | |
 | `k8s-manifest-validator` | K8s Manifest Validator | Validate and lint Kubernetes manifest files (YAML/JSON) against required fields, resource constraints, and best practices, with an optional kubectl dry-run schema check. |
 | `serverless-function-generator` | Serverless Function Generator | Scaffold lightweight serverless handlers for Cloudflare Workers or AWS Lambda with standard CORS and error handling. |
 | `terraform-module-builder` | Terraform Module Builder | Draft modular, reusable Infrastructure-as-Code Terraform modules for cloud infrastructure. |
-| **core-coding** (7) | | | |
+| **core-coding** (9) | | | |
 | `ast-anti-pattern-slayer` | AST Anti-Pattern Slayer | Parses Python or JavaScript-style source into an AST, computes cyclomatic complexity v(G) as decision count plus one, maximum block nesting depth, bare except clauses and unreachable dead code, then uses a conservative ast.NodeTransformer to rewrite trailing if/else wrappers into semantics-preserving early return and continue guard clauses, emitting a structured JSON diagnostics report with file line and column locations. |
 | `async-concurrency-handler` | Async Concurrency Handler | Implement async/await workflows, promise pools, worker threads, or goroutines while preventing race conditions. |
 | `bytecode-decompiler-assistant` | Bytecode Decompiler & Obfuscation Assistant | Loads Python pyc bytecode via marshal after importlib header validation, pretty-prints raw dis, reconstructs a basic-block control-flow graph annotated with loop heads and try/except regions, renames mangled single-letter variables using usage heuristics, renders a readable structured pseudo-Python outline, flags obfuscation signatures such as missing strings, oversized constants and dynamic eval execution, and documents the uncompyle6 byte-exact pipeline when it is installable. |
@@ -159,6 +161,8 @@ per category shows the category-wide skill count for the **v2.6.0** release.
 | `error-class-hierarchy-builder` | Error Class Hierarchy Builder | Create domain-specific custom exception classes with standardized error codes, HTTP statuses, and metadata payloads. |
 | `regex-builder-parser` | Regex Builder & Parser | Construct ReDoS-safe regular expressions and string parser logic for complex input string extraction. |
 | `type-definition-generator` | Type Definition Generator | Convert untyped JavaScript, Python dicts, or raw JSON payloads into strict TypeScript interfaces or Type Hint annotations. |
+| `refactor-safety-harness` | Refactor Safety Harness | Record golden outputs of current behavior before a refactor, then diff outputs after to prove behavior is unchanged. |
+| `startup-cold-boot-optimizer` | Startup Cold-Boot Optimizer | Profile application cold-start, identify heavy imports and work in the boot hot path, and produce a targeted lazy-load optimization plan plus proven timings. |
 | **core-engine-hardening** (11) | | | |
 | `cmd-sanitizer` | Cmd Sanitizer | Static linter over command strings before execution. Detects and rewrites unsafe Win32/PowerShell 5.1 patterns: bare && chaining, unquoted spaced paths, $? vs $LASTEXITCODE confusion, UTF-16 pipe corruption, and timeout-kill indeterminacy. Emits sanitized command + guard boilerplate. |
 | `context-bank` | Context Bank | Materializes a structured CONTEXT_BANK.md + JSON file that captures verified file paths, decided invariants, active TODOs, and open risks, allowing subagents and repeated sessions to reload a lean current snapshot instead of decaying transcript memory. |
@@ -174,16 +178,18 @@ per category shows the category-wide skill count for the **v2.6.0** release.
 | **data-science** (2) | | | |
 | `chart-config-generator` | Chart Config Generator | Map raw JSON datasets into ready-to-use chart configuration objects (Chart.js, Recharts, or ECharts). |
 | `pandas-data-cleaner` | Pandas Data Cleaner | Generate Python Pandas scripts to handle missing values, drop duplicates, and normalize column data types. |
-| **database** (6) | | | |
+| **database** (7) | | | |
 | `database-zero-downtime-migrator` | Database Zero-Downtime Migrator | Generates Expand-and-Contract (Parallel Change) migration SQL as four ordered stage files plus a JSON manifest from a MigrationPlan, emitting Postgres or MySQL dialect output through a Python stdlib argparse module. |
 | `db-migration-generator` | DB Migration Generator | Generate database schema migration scripts (Prisma/TypeORM/Alembic) based on model changes. |
 | `drizzle-prisma-orm-architect` | Drizzle & Prisma ORM Architect | Architect relational database schemas, model complex entity relationships, optimize query execution, and generate zero-downtime database migration files. |
 | `sql-query-optimizer` | SQL Query Optimizer | Analyze slow SQL queries, recommend indexes, and restructure join clauses. |
 | `vector-db-hybrid-indexer` | Vector DB Hybrid Search Indexer | A dependency-light Python module (hybrid_index.py) implementing a self-contained BM25 sparse scorer, a cosine-similarity dense index with optional numpy and pure-math fallback, Reciprocal Rank Fusion (RRF, k=60) merging, and a Cross-Encoder-style re-ranker via embedding dot products (drop-in replaceable by sentence-transformers). Functions index_documents(docs), search(query, top_k), rrf(rankings, k=60), plus a main() demo over a built-in corpus. |
 | `vector-db-indexer` | Vector DB Indexer | Chunk documents and store vector embeddings into a Vector DB. |
-| **debugging** (1) | | | |
+| `schema-drift-detector` | Schema Drift Detector | Compare SQL migrations, ORM models, and TypeScript types against one another to find which layer is silently out of sync before your queries start breaking. |
+| **debugging** (2) | | | |
 | `memory-leak-debugger` | Memory Leak Debugger | Identify and resolve unmanaged memory leaks, event listener leaks, and circular references across runtimes. |
-| **developer-experience** (9) | | | |
+| `postmortem-autobiographer` | Postmortem Autobiographer | Turn an incident description or production stack trace into a structured postmortem with timeline, 5-whys, and trackable action items — ready for team review. |
+| **developer-experience** (13) | | | |
 | `changelog-generator` | Changelog Generator | Parse Git commit logs to generate a CHANGELOG.md adhering to Conventional Commits. |
 | `cli-tool-scaffolder` | CLI Tool Scaffolder | Scaffold interactive command-line interface tools with argument parsing, flags, spinners, and help menus. |
 | `code-translator` | Code Translator | Precisely convert code logic from one programming language to another. |
@@ -193,9 +199,16 @@ per category shows the category-wide skill count for the **v2.6.0** release.
 | `mermaid-diagrammer` | Mermaid Diagrammer | Convert code logic, database structures, or system architectures into valid Mermaid.js visual diagrams. |
 | `openapi-spec-writer` | OpenAPI Spec Writer | Extract backend API code into OpenAPI/Swagger 3.0 documentation. |
 | `regex-builder-explainer` | Regex Builder & Explainer | Construct complex regular expressions based on pattern requirements with step-by-step logic breakdown. |
-| **devops** (2) | | | |
+| `env-config-sleuth` | Env Config Sleuth | Cross-reference environment variables referenced by code against definitions in .env files, CI workflows, and docs to find missing, misspelled, and orphaned configuration keys. |
+| `monorepo-package-cleaner` | Monorepo Package Cleaner | Audit a monorepo workspace for dependency cycles, mismatched shared versions, and cross-boundary imports, then emit a prioritized cleanup plan. |
+| `pr-logic-reviewer` | PR Logic Reviewer | Review a pull-request diff for logic bugs — boundary conditions, null safety, state and edge semantics — not style, and emit a bug-first review report. |
+| `timezone-trap-cron-debugger` | Timezone-Trap Cron Debugger | Simulate thousands of scheduled job runs across timezones and DST transitions to provably detect misfires, skips, and duplicate executions hidden in cron schedules. |
+| **devops** (5) | | | |
 | `dockerfile-builder` | Dockerfile Builder | Draft efficient, secure, and minimal multi-stage Dockerfiles. |
 | `github-actions-generator` | GitHub Actions Generator | Design automated CI/CD workflows for testing, building, and deployment. |
+| `codegen-drift-watchdog` | Codegen Drift Watchdog | Detect when generated output (Prisma client, tRPC router types, OpenAPI clients) is stale versus its source schema, then auto-regenerate or fail CI with a precise list. |
+| `dependency-fitness-scorecard` | Dependency Fitness Scorecard | Score every third-party dependency on maintenance activity, release cadence, issue health, and size so upgrade decisions are data-driven instead of fear-driven. |
+| `performance-budget-bouncer` | Performance Budget Bouncer | Enforce performance budgets in CI and reject pull requests that exceed size, weight, or timing thresholds with a machine-readable flagging report. |
 | **frontend** (10) | | | |
 | `accessibility-auditor` | Accessibility Auditor | Audit HTML/JSX code against WCAG 2.1 guidelines and provide accessible ARIA code fixes. |
 | `form-validation-schema-builder` | Form Validation & Schema Builder | Builds robust, type-safe interactive web forms featuring complex validation logic, real-time error feedback, and seamless client-server schema synchronization. |
@@ -215,7 +228,7 @@ per category shows the category-wide skill count for the **v2.6.0** release.
 | `mega-pipeline-deployer` | Mega Pipeline Deployer | Flexible orchestration engine that executes pipeline workflows in Full Mode (all 7 steps sequentially) or Selective Mode (user-specified step subset). Performs data contracting and validation between active steps, skips inactive steps gracefully without breaking the chain, and halts execution with exact error logging when an active step fails. |
 | `project-auto-builder` | Project Auto Builder | Dynamic orchestrator that inspects ./registry.json, analyzes the project workspace stack (Node.js, Python, Docker, etc.), automatically matches and orders optimal skills into an execution sequence, runs the selected skills, and generates a final readiness summary report. |
 | `security-suite-orchestrator` | Security Suite Orchestrator | Orchestrates a full 8-stage security audit chain over a local web app: dependency CVE scan, OWASP SAST static audit, SQLi/XSS input sanitization, JWT security cracking, BOLA/IDOR authorization scan, rate-limit brute-force shielding, and CORS/CSP header hardening, then consolidates every per-stage report into one SECURITY_AUDIT_REPORT.md. Supports full_run, include_steps, skip_steps, fail_fast, and report_dir customization so operators can re-run a subset of the chain without touching the others. Aggregates severity counts per category, per-stage pass/fail status, and a top-remediation ranked list from all seven stage artifacts. |
-| **security** (10) | | | |
+| **security** (12) | | | |
 | `bola-idor-vulnerability-scanner` | BOLA / IDOR Vulnerability Scanner | Inspects API endpoints for Broken Object Level Authorization (BOLA/IDOR) flaws to ensure users cannot manipulate resource IDs to access foreign data. |
 | `cors-csp-headers-hardener` | CORS & CSP Headers Hardener | Inspects HTTP response headers on local web servers and injects defensive security headers to prevent clickjacking, cross-site scripting, and unauthorized domain access. |
 | `dependency-cve-audit-patcher` | Dependency CVE Audit & Patcher | Audits third-party open-source packages for known vulnerabilities (CVEs), evaluating breaking change risks and generating automated patch updates. |
@@ -226,12 +239,17 @@ per category shows the category-wide skill count for the **v2.6.0** release.
 | `rate-limit-bruteforce-shield` | Rate-Limit & Brute-Force Shield | Scans sensitive authentication endpoints and implements Redis-backed rate-limiting controls to block credential stuffing and brute-force attacks. |
 | `secrets-leak-detector` | Secrets Leak Detector | Scan codebases to detect leaked API keys, tokens, or credentials. |
 | `sqli-xss-payload-sanitizer` | SQLi & XSS Payload Sanitizer | Identifies unescaped user inputs and unparameterized database queries, injecting sanitization middleware and parameterized bindings to neutralize XSS and SQLi. |
+| `license-clash-mediator` | License Clash Mediator | Build a dependency-license graph and flag copyleft/permissive conflicts plus missing license metadata before they become legal incidents. |
+| `trojan-source-hunter` | Trojan Source Hunter | Scan source files for invisible Unicode/Bidirectional trojan-source characters that silently alter code logic flow without being visible to reviewers. |
 | **software-architecture** (3) | | | |
 | `dependency-injection-wire` | Dependency Injection Wiring | Decouple code modules using Inversion of Control (IoC) containers and explicit interface abstractions. |
 | `design-pattern-implementer` | Design Pattern Implementer | Refactor code to apply object-oriented design patterns (Factory, Strategy, Observer, Decorator, Adapter) cleanly. |
 | `pygame-state-machine-architect` | Pygame State Machine Architect | Defines an abstract BaseState lifecycle (startup, cleanup, get_event, update, draw) plus a StateMachine manager running a fixed delta-time loop with dt = clock.tick(60) / 1000.0, providing concrete MenuState, GameplayState, and PauseState implementations and a SpriteSheetSlicer that parses TexturePacker XML or JSON atlases into pygame.Surface subsurface frames. |
-| **testing** (1) | | | |
+| **testing** (4) | | | |
 | `unit-test-generator` | Unit Test Generator | Generate automated unit test suites (Jest, Pytest, Go test) with complete mocking. |
+| `flaky-test-jury` | Flaky Test Jury | Analyze repeated CI test logs, classify flaky tests by root-cause category, and emit stabilization patches plus a verdict report before they erode team trust. |
+| `golden-snapshot-migrator` | Golden Snapshot Migrator | Capture golden snapshots before a major library or dependency migration and diff after to keep the external behavior contract intact. |
+| `shadow-traffic-replayer` | Shadow Traffic Replayer | Replay recorded production HTTP traffic against a new build and diff responses to surface API regressions without writing a single test. |
 
 
 ## 🔧 Available Scripts

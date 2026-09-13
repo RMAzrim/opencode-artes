@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use opencode-artes in your work or research, please cite this repository."
 title: "opencode-artes"
-abstract: "A curated library of 97 production-grade OpenCode agent skills covering fullstack web development, localhost security auditing, testing, devops and AI-agent orchestration."
-version: 2.6.0
+abstract: "A curated library of 115 production-grade OpenCode agent skills covering fullstack web development, localhost security auditing, testing, devops and AI-agent orchestration."
+version: 3.0.0
 date-released: "2026-09-13"
 license: MIT
 url: "https://github.com/RMAzrim/opencode-artes"

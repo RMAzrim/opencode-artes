@@ -2,7 +2,25 @@
 
 All notable changes to **opencode-artes** are documented here. This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org).
 
-## [2.6.0] — latest
+## [3.0.0] — latest
+### Added
+- **18 new production-grade skills** (registry `97 → 115`):
+  - Backend (+2): `error-code-consistency-auditor`, `middleware-order-validator`
+  - Core-coding (+2): `refactor-safety-harness`, `startup-cold-boot-optimizer`
+  - Database (+1): `schema-drift-detector`
+  - Debugging (+1): `postmortem-autobiographer`
+  - Developer-experience (+4): `env-config-sleuth`, `monorepo-package-cleaner`, `pr-logic-reviewer`, `timezone-trap-cron-debugger`
+  - Devops (+3): `codegen-drift-watchdog`, `dependency-fitness-scorecard`, `performance-budget-bouncer`
+  - Security (+2): `license-clash-mediator`, `trojan-source-hunter`
+  - Testing (+3): `flaky-test-jury`, `golden-snapshot-migrator`, `shadow-traffic-replayer`
+- `RELEASE_NOTES_v3.0.0.md` and README/live-catalog/assets updated to the 115-skill release.
+
+### Changed
+- Deep QC audit of all 18 new skills (runtime smoke + syntax checks); 7 real bugs fixed — see `RELEASE_NOTES_v3.0.0.md` for the full fix list (pr-logic-reviewer hunk regex, timezone-trap-cron-debugger performance, monorepo-package-cleaner crash, and more).
+- Skill count now reads **115 skills** across 17 categories at runtime (registry-driven).
+- Package version `2.6.0 → 3.0.0`.
+
+## [2.6.0]
 ### Added
 - **Live GitHub Pages catalog site** at <https://rmazrim.github.io/opencode-artes/> (set as repo homepage): searchable grid of all 97 skills across 17 categories, per-skill GitHub links, and install instructions. The HTTP catalog at `…/skills/` serves the generated OpenCode skills for one-line install.
 - **Promo kit** — `docs/PROMO.md` with post-ready copy for X/Twitter, LinkedIn, Reddit and dev.to.
@@ -48,6 +66,7 @@ All notable changes to **opencode-artes** are documented here. This project adhe
 ### Added
 - 58 skills with docs and MIT license.
 
+[3.0.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v3.0.0
 [2.6.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v2.6.0
 [2.5.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v2.5.0
 [2.0.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v2.0.0

@@ -237,6 +237,24 @@
     "description": "Precisely convert code logic from one programming language to another."
   },
   {
+    "id": "codegen-drift-watchdog",
+    "file_path": "skills/codegen-drift-watchdog/codegen-drift-watchdog.md",
+    "name": "Codegen Drift Watchdog",
+    "category": "devops",
+    "tags": [
+      "codegen",
+      "prisma",
+      "trpc",
+      "openapi",
+      "drift",
+      "generated-code",
+      "ci"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Detect when generated output (Prisma client, tRPC router types, OpenAPI clients) is stale versus its source schema, then auto-regenerate or fail CI with a precise list."
+  },
+  {
     "id": "context-bank",
     "file_path": "skills/context-bank/context-bank.md",
     "name": "Context Bank",
@@ -361,6 +379,23 @@
     "description": "Audits third-party open-source packages for known vulnerabilities (CVEs), evaluating breaking change risks and generating automated patch updates."
   },
   {
+    "id": "dependency-fitness-scorecard",
+    "file_path": "skills/dependency-fitness-scorecard/dependency-fitness-scorecard.md",
+    "name": "Dependency Fitness Scorecard",
+    "category": "devops",
+    "tags": [
+      "dependencies",
+      "maintenance",
+      "audit",
+      "npm",
+      "scoring",
+      "upgrade"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Score every third-party dependency on maintenance activity, release cadence, issue health, and size so upgrade decisions are data-driven instead of fear-driven."
+  },
+  {
     "id": "dependency-injection-wire",
     "file_path": "skills/dependency-injection-wire/dependency-injection-wire.md",
     "name": "Dependency Injection Wiring",
@@ -452,6 +487,23 @@
     "description": "Architect relational database schemas, model complex entity relationships, optimize query execution, and generate zero-downtime database migration files."
   },
   {
+    "id": "env-config-sleuth",
+    "file_path": "skills/env-config-sleuth/env-config-sleuth.md",
+    "name": "Env Config Sleuth",
+    "category": "developer-experience",
+    "tags": [
+      "env-var",
+      "dotenv",
+      "configuration",
+      "ci",
+      "debugging",
+      "drift"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Cross-reference environment variables referenced by code against definitions in .env files, CI workflows, and docs to find missing, misspelled, and orphaned configuration keys."
+  },
+  {
     "id": "error-class-hierarchy-builder",
     "file_path": "skills/error-class-hierarchy-builder/error-class-hierarchy-builder.md",
     "name": "Error Class Hierarchy Builder",
@@ -467,6 +519,23 @@
     "description": "Create domain-specific custom exception classes with standardized error codes, HTTP statuses, and metadata payloads."
   },
   {
+    "id": "error-code-consistency-auditor",
+    "file_path": "skills/error-code-consistency-auditor/error-code-consistency-auditor.md",
+    "name": "Error Code Consistency Auditor",
+    "category": "backend",
+    "tags": [
+      "errors",
+      "http-status",
+      "audit",
+      "consistency",
+      "api",
+      "observability"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Audit every error class, message, and HTTP mapping across the codebase for duplication, contradictory status codes, and undocumented errors."
+  },
+  {
     "id": "express-fastapi-route-builder",
     "file_path": "skills/express-fastapi-route-builder/express-fastapi-route-builder.md",
     "name": "Express & FastAPI Route Builder",
@@ -480,6 +549,23 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Generates enterprise-grade RESTful API routes in Node.js (Express) or Python (FastAPI) complete with payload validation, unified error handling, and automated Swagger specs."
+  },
+  {
+    "id": "flaky-test-jury",
+    "file_path": "skills/flaky-test-jury/flaky-test-jury.md",
+    "name": "Flaky Test Jury",
+    "category": "testing",
+    "tags": [
+      "flaky-tests",
+      "ci",
+      "testing",
+      "stability",
+      "root-cause",
+      "retries"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Analyze repeated CI test logs, classify flaky tests by root-cause category, and emit stabilization patches plus a verdict report before they erode team trust."
   },
   {
     "id": "form-validation-schema-builder",
@@ -542,6 +628,22 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Design automated CI/CD workflows for testing, building, and deployment."
+  },
+  {
+    "id": "golden-snapshot-migrator",
+    "file_path": "skills/golden-snapshot-migrator/golden-snapshot-migrator.md",
+    "name": "Golden Snapshot Migrator",
+    "category": "testing",
+    "tags": [
+      "snapshot",
+      "migration",
+      "regression",
+      "dependency-upgrade",
+      "behavior-contract"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Capture golden snapshots before a major library or dependency migration and diff after to keep the external behavior contract intact."
   },
   {
     "id": "graphql-schema-dataloader-builder",
@@ -651,6 +753,22 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Validate and lint Kubernetes manifest files (YAML/JSON) against required fields, resource constraints, and best practices, with an optional kubectl dry-run schema check."
+  },
+  {
+    "id": "license-clash-mediator",
+    "file_path": "skills/license-clash-mediator/license-clash-mediator.md",
+    "name": "License Clash Mediator",
+    "category": "security",
+    "tags": [
+      "licensing",
+      "compliance",
+      "open-source",
+      "ngos",
+      "dependency-graph"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Build a dependency-license graph and flag copyleft/permissive conflicts plus missing license metadata before they become legal incidents."
   },
   {
     "id": "lighthouse-web-vitals-optimizer",
@@ -781,6 +899,40 @@
     "description": "Convert code logic, database structures, or system architectures into valid Mermaid.js visual diagrams."
   },
   {
+    "id": "middleware-order-validator",
+    "file_path": "skills/middleware-order-validator/middleware-order-validator.md",
+    "name": "Middleware Order Validator",
+    "category": "backend",
+    "tags": [
+      "middleware",
+      "express",
+      "fastapi",
+      "security",
+      "ordering",
+      "validators"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Audit middleware registration order in Express/FastAPI apps against safety rules — auth before authz, rate-limit before routes, error handlers last — and emit fixes."
+  },
+  {
+    "id": "monorepo-package-cleaner",
+    "file_path": "skills/monorepo-package-cleaner/monorepo-package-cleaner.md",
+    "name": "Monorepo Package Cleaner",
+    "category": "developer-experience",
+    "tags": [
+      "monorepo",
+      "workspaces",
+      "pnpm",
+      "npm-workspaces",
+      "dependency-cycles",
+      "boundaries"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Audit a monorepo workspace for dependency cycles, mismatched shared versions, and cross-boundary imports, then emit a prioritized cleanup plan."
+  },
+  {
     "id": "nextjs-app-router-scaffolder",
     "file_path": "skills/nextjs-app-router-scaffolder/nextjs-app-router-scaffolder.md",
     "name": "Next.js App Router Scaffolder",
@@ -891,6 +1043,24 @@
     "description": "Generate Python Pandas scripts to handle missing values, drop duplicates, and normalize column data types."
   },
   {
+    "id": "performance-budget-bouncer",
+    "file_path": "skills/performance-budget-bouncer/performance-budget-bouncer.md",
+    "name": "Performance Budget Bouncer",
+    "category": "devops",
+    "tags": [
+      "performance",
+      "ci",
+      "budget",
+      "lighthouse",
+      "bundle-size",
+      "lcp",
+      "gate"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Enforce performance budgets in CI and reject pull requests that exceed size, weight, or timing thresholds with a machine-readable flagging report."
+  },
+  {
     "id": "playwright-e2e-security-flow-tester",
     "file_path": "skills/playwright-e2e-security-flow-tester/playwright-e2e-security-flow-tester.md",
     "name": "Playwright E2E Security Flow Tester",
@@ -904,6 +1074,40 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Crafts automated End-to-End (E2E) browser testing suites validating critical user journeys, edge cases, and client-side security boundary enforcement."
+  },
+  {
+    "id": "postmortem-autobiographer",
+    "file_path": "skills/postmortem-autobiographer/postmortem-autobiographer.md",
+    "name": "Postmortem Autobiographer",
+    "category": "debugging",
+    "tags": [
+      "postmortem",
+      "incident",
+      "root-cause",
+      "5-why",
+      "resilience",
+      "sre"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Turn an incident description or production stack trace into a structured postmortem with timeline, 5-whys, and trackable action items — ready for team review."
+  },
+  {
+    "id": "pr-logic-reviewer",
+    "file_path": "skills/pr-logic-reviewer/pr-logic-reviewer.md",
+    "name": "PR Logic Reviewer",
+    "category": "developer-experience",
+    "tags": [
+      "code-review",
+      "pull-request",
+      "logic",
+      "bugs",
+      "boundaries",
+      "diff"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Review a pull-request diff for logic bugs — boundary conditions, null safety, state and edge semantics — not style, and emit a bug-first review report."
   },
   {
     "id": "procedural-dungeon-generator",
@@ -1050,6 +1254,22 @@
     "description": "Deploys high-performance caching strategies and distributed message pub/sub event buses to reduce database load and handle background processing."
   },
   {
+    "id": "refactor-safety-harness",
+    "file_path": "skills/refactor-safety-harness/refactor-safety-harness.md",
+    "name": "Refactor Safety Harness",
+    "category": "core-coding",
+    "tags": [
+      "refactoring",
+      "golden-tests",
+      "characterization-testing",
+      "safety-net",
+      "regression"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Record golden outputs of current behavior before a refactor, then diff outputs after to prove behavior is unchanged."
+  },
+  {
     "id": "regex-builder-explainer",
     "file_path": "skills/regex-builder-explainer/regex-builder-explainer.md",
     "name": "Regex Builder & Explainer",
@@ -1096,6 +1316,24 @@
     "author": "opencode-core",
     "version": "1.5.0",
     "description": "Before each new task in a long session, re-runs the last N passing checkpoints captured by verify-orchestrator as a smoke suite, catching regressions caused by recent edits before they compound."
+  },
+  {
+    "id": "schema-drift-detector",
+    "file_path": "skills/schema-drift-detector/schema-drift-detector.md",
+    "name": "Schema Drift Detector",
+    "category": "database",
+    "tags": [
+      "schema",
+      "orm",
+      "migration",
+      "drift",
+      "prisma",
+      "drizzle",
+      "typeorm"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Compare SQL migrations, ORM models, and TypeScript types against one another to find which layer is silently out of sync before your queries start breaking."
   },
   {
     "id": "schema-sync",
@@ -1177,6 +1415,22 @@
     "description": "Scaffold lightweight serverless handlers for Cloudflare Workers or AWS Lambda with standard CORS and error handling."
   },
   {
+    "id": "shadow-traffic-replayer",
+    "file_path": "skills/shadow-traffic-replayer/shadow-traffic-replayer.md",
+    "name": "Shadow Traffic Replayer",
+    "category": "testing",
+    "tags": [
+      "replay",
+      "shadow-traffic",
+      "regression",
+      "api-testing",
+      "traffic-capture"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Replay recorded production HTTP traffic against a new build and diff responses to surface API regressions without writing a single test."
+  },
+  {
     "id": "spec-loop-closer",
     "file_path": "skills/spec-loop-closer/spec-loop-closer.md",
     "name": "Spec Loop Closer",
@@ -1221,6 +1475,23 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Identifies unescaped user inputs and unparameterized database queries, injecting sanitization middleware and parameterized bindings to neutralize XSS and SQLi."
+  },
+  {
+    "id": "startup-cold-boot-optimizer",
+    "file_path": "skills/startup-cold-boot-optimizer/startup-cold-boot-optimizer.md",
+    "name": "Startup Cold-Boot Optimizer",
+    "category": "core-coding",
+    "tags": [
+      "startup",
+      "performance",
+      "profiling",
+      "lazy-loading",
+      "cold-start",
+      "code-splitting"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Profile application cold-start, identify heavy imports and work in the boot hot path, and produce a targeted lazy-load optimization plan plus proven timings."
   },
   {
     "id": "state-management-architect",
@@ -1333,6 +1604,23 @@
     "description": "Draft modular, reusable Infrastructure-as-Code Terraform modules for cloud infrastructure."
   },
   {
+    "id": "timezone-trap-cron-debugger",
+    "file_path": "skills/timezone-trap-cron-debugger/timezone-trap-cron-debugger.md",
+    "name": "Timezone-Trap Cron Debugger",
+    "category": "developer-experience",
+    "tags": [
+      "cron",
+      "timezone",
+      "dst",
+      "scheduler",
+      "scheduling",
+      "simulation"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Simulate thousands of scheduled job runs across timezones and DST transitions to provably detect misfires, skips, and duplicate executions hidden in cron schedules."
+  },
+  {
     "id": "tool-schema-builder",
     "file_path": "skills/tool-schema-builder/tool-schema-builder.md",
     "name": "Tool Schema Builder",
@@ -1347,6 +1635,23 @@
     "author": "opencode-core",
     "version": "1.0.0",
     "description": "Convert standard code functions into JSON schema format for AI function calling."
+  },
+  {
+    "id": "trojan-source-hunter",
+    "file_path": "skills/trojan-source-hunter/trojan-source-hunter.md",
+    "name": "Trojan Source Hunter",
+    "category": "security",
+    "tags": [
+      "unicode",
+      "bidi",
+      "trojan-source",
+      "cwe-1007",
+      "cwe-138",
+      "security-scan"
+    ],
+    "author": "opencode-core",
+    "version": "1.0.0",
+    "description": "Scan source files for invisible Unicode/Bidirectional trojan-source characters that silently alter code logic flow without being visible to reviewers."
   },
   {
     "id": "tui-app-scaffolder",

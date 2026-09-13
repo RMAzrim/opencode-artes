@@ -6,7 +6,7 @@ Post-ready copy for announcing the repository. Copy-paste, adapt, publish. Every
 
 ## 📢 GitHub Release / Release Notes (short)
 
-> **opencode-artes v2.6.0 is here — 97 production-grade OpenCode skills in one repo.**
+> **opencode-artes v3.0.0 is here — 115 production-grade OpenCode skills in one repo.**
 >
 > Fullstack web development, localhost security auditing, testing, devops, and four one-command suite orchestrators. Every skill ships a complete, runnable reference implementation with a strict 5-section contract.
 >
@@ -20,11 +20,11 @@ Post-ready copy for announcing the repository. Copy-paste, adapt, publish. Every
 
 ## 🐦 X / Twitter (280 chars)
 
-> 97 production-grade skills for your OpenCode AI agent — one repo: fullstack, devops, testing + localhost security auditing, chained into 1-command orchestrators. One-line install. Live catalog &rarr; https://rmazrim.github.io/opencode-artes/ ⭐ https://github.com/RMAzrim/opencode-artes
+> 115 production-grade skills for your OpenCode AI agent — one repo: fullstack, devops, testing + localhost security auditing, chained into 1-command orchestrators. One-line install. Live catalog &rarr; https://rmazrim.github.io/opencode-artes/ ⭐ https://github.com/RMAzrim/opencode-artes
 
 ## 💼 LinkedIn (post body)
 
-> I've been building **opencode-artes** — a library of 97 production-grade OpenCode agent skills.
+> I've been building **opencode-artes** — a library of 115 production-grade OpenCode agent skills.
 >
 > It covers fullstack web development, database, devops, testing, AI-ops and localhost-first security auditing, plus four suite orchestrators (`/security-suite-orchestrator`, `/backend-suite-orchestrator`, `/frontend-suite-orchestrator`, `/infra-qa-suite-orchestrator`) that chain the skills into a single command.
 >
@@ -34,9 +34,9 @@ Post-ready copy for announcing the repository. Copy-paste, adapt, publish. Every
 
 ## 🔴 Reddit (r/opencode, r/programming, r/webdev)
 
-> **Title:** I built a repo of 97 production-grade skills for OpenCode agents — fullstack, security auditing & orchestrators
+> **Title:** I built a repo of 115 production-grade skills for OpenCode agents — fullstack, security auditing & orchestrators
 >
-> **Body:** I put together `opencode-artes` — 97 OpenCode skills, each with a complete runnable reference implementation (not just an outline). Categories: frontend (Next.js App Router, Tailwind, forms, state), backend (Express/FastAPI, GraphQL, auth/OAuth2, WebSockets), database/ORM, devops, testing, AI-ops, and a localhost security suite (CVE audit, SAST, SQLi/XSS, JWT cracking, IDOR/BOLA, rate limiting, header hardening).
+> **Body:** I put together `opencode-artes` — 115 OpenCode skills, each with a complete runnable reference implementation (not just an outline). Categories: frontend (Next.js App Router, Tailwind, forms, state), backend (Express/FastAPI, GraphQL, auth/OAuth2, WebSockets), database/ORM, devops, testing, AI-ops, and a localhost security suite (CVE audit, SAST, SQLi/XSS, JWT cracking, IDOR/BOLA, rate limiting, header hardening).
 >
 > There are also 4 suite orchestrators that chain the skills into one command — e.g. `/security-suite-orchestrator` runs an 8-stage audit and writes one report.
 >
@@ -46,9 +46,9 @@ Post-ready copy for announcing the repository. Copy-paste, adapt, publish. Every
 
 ## 🖥️ dev.to / blog (short)
 
-> ### 97 OpenCode skills in one repo
+> ### 115 OpenCode skills in one repo
 >
-> `opencode-artes` is a single repository containing 97 production-grade skills for the OpenCode agent. Instead of copy-pasting prompts forever, you get slash-commands and natural-language-triggered capabilities: scaffold a Next.js app, wire GraphQL with DataLoaders, add Redis caching, Dockerize, run Playwright E2E, audit Check WebVitals, and then **audit it all for security** — orchestrated end-to-end in a single flow.
+> `opencode-artes` is a single repository containing 115 production-grade skills for the OpenCode agent. Instead of copy-pasting prompts forever, you get slash-commands and natural-language-triggered capabilities: scaffold a Next.js app, wire GraphQL with DataLoaders, add Redis caching, Dockerize, run Playwright E2E, audit Check WebVitals, and then **audit it all for security** — orchestrated end-to-end in a single flow.
 >
 > Each skill follows the same strict contract, so quality is predictable: System Architecture, Data Contracts, Production Reference Implementation, Execution Protocol, Edge Cases. CI verifies every skill on every PR.
 >

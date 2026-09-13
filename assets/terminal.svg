@@ -11,14 +11,14 @@
   <circle cx="34" cy="30" r="7" fill="#ff5f56"/>
   <circle cx="58" cy="30" r="7" fill="#ffbd2e"/>
   <circle cx="82" cy="30" r="7" fill="#27c93f"/>
-  <text x="200" y="35" font-family="'Segoe UI', sans-serif" font-size="14" fill="#8b949e">opencode-artes — RMAzrim/opencode-artes (97 skills)</text>
+  <text x="200" y="35" font-family="'Segoe UI', sans-serif" font-size="14" fill="#8b949e">opencode-artes — RMAzrim/opencode-artes (115 skills)</text>
 
   <g font-family="'Cascadia Code','Consolas',monospace" font-size="15">
     <text x="30" y="90" fill="#58a6ff">$</text>
     <text x="52" y="90" fill="#c9d1d9">opencode run</text>
     <text x="158" y="90" fill="#7ee787">'/security-suite-orchestrator full_run'</text>
 
-    <text x="30" y="126" fill="#c9d1d9">● security-suite-orchestrator v2.6.0</text>
+    <text x="30" y="126" fill="#c9d1d9">● security-suite-orchestrator v3.0.0</text>
     <text x="40" y="150" fill="#8b949e">stage 1/8  dependency-cve-audit-patcher ..........</text>
     <text x="320" y="150" fill="#3fb950">OK (0 high, 2 low)</text>
     <text x="40" y="174" fill="#8b949e">stage 2/8  owasp-sast-auditor ....................</text>
@@ -47,6 +47,6 @@
 
     <text x="30" y="514" fill="#58a6ff">$</text>
     <text x="52" y="514" fill="#c9d1d9">curl -sL https://rmazrim.github.io/opencode-artes/skills/</text>
-    <text x="30" y="540" fill="#3fb950">HTTP/1.1 200 OK · 97 skills · 0 audit errors</text>
+    <text x="30" y="540" fill="#3fb950">HTTP/1.1 200 OK · 115 skills · 0 audit errors</text>
   </g>
 </svg>
