@@ -2,7 +2,16 @@
 
 All notable changes to **opencode-artes** are documented here. This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org).
 
-## [3.5.0] — latest
+## [4.0.0] — latest
+### Added
+- **🔥 25 Must-Have Skills showcase** — curated list of the 25 highest-impact skills (of the 115) across six practical areas: Frontend & UX, Backend & API, Database & Data, DevOps & Cloud, Testing & QA, and Security (flagship: `security-suite-orchestrator`).
+- New **`🔥 25 Must-Have Skills`** section in the README (with top-nav link) and a featured banner at the top of the GitHub Pages live catalog.
+- `RELEASE_NOTES_v4.0.0.md` documenting the showcase.
+
+### Changed
+- Package version `3.5.0 → 4.0.0`.
+
+## [3.5.0]
 ### Added
 - **18 new production-grade skills** (registry `97 → 115`):
   - Backend (+2): `error-code-consistency-auditor`, `middleware-order-validator`
@@ -66,6 +75,7 @@ All notable changes to **opencode-artes** are documented here. This project adhe
 ### Added
 - 58 skills with docs and MIT license.
 
+[4.0.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v4.0.0
 [3.5.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v3.5.0
 [3.0.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v3.0.0
 [2.5.0]: https://github.com/RMAzrim/opencode-artes/releases/tag/v2.5.0

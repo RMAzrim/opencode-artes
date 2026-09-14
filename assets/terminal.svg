@@ -18,7 +18,7 @@
     <text x="52" y="90" fill="#c9d1d9">opencode run</text>
     <text x="158" y="90" fill="#7ee787">'/security-suite-orchestrator full_run'</text>
 
-    <text x="30" y="126" fill="#c9d1d9">● security-suite-orchestrator v3.5.0</text>
+    <text x="30" y="126" fill="#c9d1d9">● security-suite-orchestrator v4.0.0</text>
     <text x="40" y="150" fill="#8b949e">stage 1/8  dependency-cve-audit-patcher ..........</text>
     <text x="320" y="150" fill="#3fb950">OK (0 high, 2 low)</text>
     <text x="40" y="174" fill="#8b949e">stage 2/8  owasp-sast-auditor ....................</text>

@@ -22,6 +22,7 @@
   <a href="https://github.com/RMAzrim/opencode-artes/stargazers">⭐ Star the repo</a> ·
   <a href="https://github.com/RMAzrim/opencode-artes/discussions">💬 Discussions</a> ·
   <a href="https://rmazrim.github.io/opencode-artes/">🌐 Live catalog</a> ·
+  <a href="#-25-must-have-skills">🔥 25 Must-Have</a> ·
   <a href="#quick-start">⚡ Install</a> ·
   <a href="CONTRIBUTING.md">🤝 Contribute</a>
 </p>
@@ -42,6 +43,61 @@ One repository, **every skill** your OpenCode agent could ever need — from sca
 One command chains the whole security audit pipeline and writes a single report; a second one scaffolds a production Next.js app router:
 
 <img src="assets/terminal.svg" alt="Demo: orchestrated security audit + Next.js scaffold + live catalog" width="100%">
+
+## 🔥 25 Must-Have Skills
+
+Out of 115 skills, these are the 25 most impactful for everyday development, covering frontend to production security.
+
+### Frontend & UX
+| Skill | What it does |
+|---|---|
+| `/nextjs-app-router-scaffolder` | Production-ready Next.js App Router scaffold with RSC/client separation |
+| `/tailwind-responsive-darkmode-styler` | Responsive + dark-mode UI from raw JSX in one step |
+| `/form-validation-schema-builder` | Type-safe forms with real-time validation and client-server schema sync |
+| `/state-management-query-architect` | Zustand + TanStack Query — UI state vs server state done right |
+| `/accessibility-auditor` | WCAG 2.1 audit + automatic ARIA code fixes |
+
+### Backend & API
+| Skill | What it does |
+|---|---|
+| `/express-fastapi-route-builder` | REST API + payload validation + Swagger specs in minutes |
+| `/auth-session-oauth2-scaffolder` | Complete login: cookie sessions, JWT rotation, OAuth2 Google/GitHub |
+| `/websocket-realtime-secure-engine` | Realtime WS/SSE with auth + reconnection controls |
+| `/graphql-schema-dataloader-builder` | GraphQL without N+1 queries via DataLoader batching |
+| `/mcp-tools-auto-bridge` | Turn any Python function into an MCP server for AI agent apps |
+
+### Database & Data
+| Skill | What it does |
+|---|---|
+| `/drizzle-prisma-orm-architect` | Schema + relations + zero-downtime migrations (Prisma/Drizzle) |
+| `/sql-query-optimizer` | Slow queries → index recommendations + join restructuring |
+| `/db-migration-generator` | Safe migration scripts (Prisma/TypeORM/Alembic) from model changes |
+| `/schema-drift-detector` | Catch silently out-of-sync migrations/ORM/types before queries break |
+
+### DevOps & Cloud
+| Skill | What it does |
+|---|---|
+| `/docker-multi-stage-stack-builder` | Lightweight production Docker images + Compose stack |
+| `/github-actions-generator` | CI/CD workflows for test, build, and deploy |
+| `/dockerfile-builder` | Efficient, secure, minimal multi-stage Dockerfiles |
+| `/k8s-manifest-validator` | Validate Kubernetes YAML against best practices before `kubectl apply` |
+
+### Testing & QA
+| Skill | What it does |
+|---|---|
+| `/unit-test-generator` | Jest/Pytest/Go test suites with complete mocking |
+| `/playwright-e2e-security-flow-tester` | E2E browser tests + client-side security boundary enforcement |
+| `/lighthouse-web-vitals-optimizer` | Maximize Core Web Vitals scores and optimize bundle delivery |
+
+### Security
+| Skill | What it does |
+|---|---|
+| `/security-suite-orchestrator` ⭐ | **Flagship.** 8-stage audit chain → one consolidated report |
+| `/owasp-sast-auditor` | OWASP Top 10 scan + automated code fixes |
+| `/dependency-cve-audit-patcher` | Find & patch vulnerable dependencies before release |
+| `/secrets-leak-detector` | Prevent API keys and tokens from leaking into git |
+
+> Every skill above links to its full entry in the [Full Skill Catalog](#-full-skill-catalog--function) below.
 
 ## 🚀 Quick Start
 
@@ -114,7 +170,7 @@ Each skill file follows the exact same contract: `## 1. System Architecture & Pr
 Every skill below is loadable via its folder-derived ID as a slash command
 (`/<id>`), discoverable by natural language through its `description`, and has a
 complete production reference implementation inside its document. Header row
-per category shows the category-wide skill count for the **v3.5.0** release.
+per category shows the category-wide skill count for the **v4.0.0** release.
 
 | Skill ID | Display name | What it does (description) |
 |---|---|---|
