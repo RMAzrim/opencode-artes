@@ -1,0 +1,97 @@
+[
+  {
+    "id": "etl-incremental-pipeline-builder",
+    "score": 37,
+    "categories": [
+      "data-engineering",
+      "database",
+      "data"
+    ],
+    "reason": "deterministic stdlib-python module, matches mixed node+python stack"
+  },
+  {
+    "id": "llm-gateway-model-router",
+    "score": 35,
+    "categories": [
+      "mlops",
+      "backend",
+      "api"
+    ],
+    "reason": "deterministic stdlib-python module, matches mixed node+python stack"
+  },
+  {
+    "id": "portfolio-backtester",
+    "score": 34,
+    "categories": [
+      "fintech",
+      "data",
+      "data-science"
+    ],
+    "reason": "deterministic stdlib-python module, matches mixed node+python stack"
+  },
+  {
+    "id": "voice-agent-turn-engine",
+    "score": 33,
+    "categories": [
+      "voice-ai",
+      "mlops"
+    ],
+    "reason": "deterministic stdlib-python module, matches mixed node+python stack"
+  },
+  {
+    "id": "iot-hub-dashboard-builder",
+    "score": 33,
+    "categories": [
+      "iot",
+      "backend",
+      "data"
+    ],
+    "reason": "deterministic stdlib-python module, matches mixed node+python stack"
+  },
+  {
+    "id": "tamper-proof-hashchain-ledger",
+    "score": 33,
+    "categories": [
+      "blockchain",
+      "security",
+      "data"
+    ],
+    "reason": "deterministic stdlib-python module, matches mixed node+python stack"
+  },
+  {
+    "id": "bullet-hell-pattern-generator",
+    "score": 30,
+    "categories": [
+      "game-dev",
+      "creative-coding"
+    ],
+    "reason": "deterministic stdlib-python module, matches mixed node+python stack"
+  },
+  {
+    "id": "subdomain-recon-osint-scanner",
+    "score": 28,
+    "categories": [
+      "recon",
+      "security"
+    ],
+    "reason": "deterministic stdlib-python module, matches mixed node+python stack"
+  },
+  {
+    "id": "generative-art-svg-engine",
+    "score": 27,
+    "categories": [
+      "creative-coding",
+      "frontend"
+    ],
+    "reason": "deterministic stdlib-python module, matches mixed node+python stack"
+  },
+  {
+    "id": "transcript-to-srt-automator",
+    "score": 27,
+    "categories": [
+      "media",
+      "content"
+    ],
+    "reason": "deterministic stdlib-python module, matches mixed node+python stack"
+  }
+]

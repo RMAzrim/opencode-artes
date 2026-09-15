@@ -1,0 +1,13 @@
+{
+  "primary_stack": "node",
+  "secondary_stack": null,
+  "versions": {
+    "python": "Python 3.14.7",
+    "node": "v22.23.2"
+  },
+  "markers": {
+    "node": [
+      "C:\\Users\\ACER\\opencode-artes\\package.json"
+    ]
+  }
+}
